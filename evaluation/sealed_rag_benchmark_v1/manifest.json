@@ -1,0 +1,64 @@
+{
+  "benchmark": "sealed_rag_benchmark_v1",
+  "status": "frozen_before_first_model_run",
+  "created_by": "AI review against verified statutory catalogue; not lawyer-verified",
+  "counts": {
+    "total": 150,
+    "groups": {
+      "single_provision": 76,
+      "multi_provision": 24,
+      "missing_information": 25,
+      "out_of_scope": 25
+    },
+    "languages": {
+      "en": 96,
+      "hinglish": 27,
+      "hi": 27
+    },
+    "positive_single": 76,
+    "positive_multi": 24,
+    "missing_information": 25,
+    "out_of_scope": 25
+  },
+  "scope": {
+    "recommendation_approved_provisions": [
+      "BNS_115",
+      "BNS_117",
+      "BNS_303",
+      "BNS_304",
+      "BNS_316",
+      "BNS_318",
+      "BNS_319",
+      "BNS_329",
+      "BNS_351",
+      "BNS_75",
+      "BNS_77",
+      "BNS_78",
+      "ITA_65",
+      "ITA_66",
+      "ITA_66B",
+      "ITA_66C",
+      "ITA_66D",
+      "ITA_67",
+      "ITA_67A"
+    ],
+    "provision_count": 19
+  },
+  "separation": {
+    "reference_complaints": 4975,
+    "exact_overlap_count": 0,
+    "maximum_token_jaccard": 0.636364,
+    "threshold": 0.72,
+    "includes_old_manual_21_in_reference": true
+  },
+  "files_sha256": {
+    "benchmark_inputs.jsonl": "59e4465df74735408a19862220c8c669aea9b4151df6eec1fb0f5d254c125bd5",
+    "sealed_answer_key.jsonl": "78a98e02ad3b06f1181193ae0924187c9f40ff21f5f6cbd82c8a37ff4df08ecc",
+    "separation_report.json": "5eaf37035f86a3e64d3c0e1fcfe223ac6a9f8f6a756e30d32e0b617f354fd9a6"
+  },
+  "scoring": {
+    "strict_exact_sections": "predicted section set equals required section set",
+    "acceptable_sections": "all required sections present and predictions contain only required or optional sections",
+    "gold_is_never_added_to_model_prompts": true
+  }
+}

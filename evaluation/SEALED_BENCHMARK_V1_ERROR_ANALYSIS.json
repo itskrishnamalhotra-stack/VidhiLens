@@ -1,0 +1,2783 @@
+{
+  "benchmark_version": "sealed_rag_benchmark_v1",
+  "cases": 150,
+  "cases_with_any_gold_disagreement": 45,
+  "miss_stage_counts": {
+    "retrieval_miss": 13,
+    "candidate_assessor_rejected": 4,
+    "evidence_gate_removed_or_downgraded": 4
+  },
+  "missed_required_sections": {
+    "BNS_75": 1,
+    "BNS_78": 2,
+    "BNS_304": 1,
+    "BNS_318": 2,
+    "ITA_66": 2,
+    "ITA_66C": 2,
+    "ITA_67A": 4,
+    "BNS_319": 3,
+    "BNS_329": 3,
+    "BNS_115": 1
+  },
+  "false_positive_sections": {
+    "BNS_351": 1,
+    "BNS_318": 1,
+    "BNS_303": 6,
+    "BNS_316": 2,
+    "BNS_319": 1,
+    "ITA_66D": 3,
+    "ITA_66": 2,
+    "ITA_67": 4,
+    "BNS_329": 1
+  },
+  "false_positive_assessment_decisions": {
+    "supported": 21
+  },
+  "outcome_error_transitions": {
+    "provision_match -> out_of_scope": 2,
+    "provision_match -> insufficient_information": 4,
+    "insufficient_information -> provision_match": 1,
+    "insufficient_information -> out_of_scope": 4,
+    "out_of_scope -> insufficient_information": 1
+  },
+  "errors": [
+    {
+      "case_id": "SRB1_004",
+      "group": "single_provision",
+      "language": "hi",
+      "complaint": "एक पुरुष प्रशिक्षक ने महिला खिलाड़ी से चयन के बदले यौन संबंध की मांग की। उसने साफ मना किया और बातचीत रिकॉर्ड है।",
+      "gold": {
+        "case_id": "SRB1_004",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of BNS_75.",
+        "required_provision_ids": [
+          "BNS_75"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_69"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_69"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "out_of_scope",
+        "possible_provision_ids": [],
+        "uncertain_sections": []
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_75",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": false,
+      "latency_seconds": 15.928262
+    },
+    {
+      "case_id": "SRB1_009",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "After I repeatedly asked a man to stop contacting me, he followed me from college to my home on four days and waited outside the gate.",
+      "gold": {
+        "case_id": "SRB1_009",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of BNS_78.",
+        "required_provision_ids": [
+          "BNS_78"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_351"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_78",
+        "BNS_351",
+        "BNS_64"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_351"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_78",
+          "stage": "candidate_assessor_rejected",
+          "assessment": {
+            "provision_id": "BNS_78",
+            "title": "Stalking",
+            "recommendable": true,
+            "retrieval_score": 64.362019,
+            "raw_model_output": "{\"provision_id\": \"BNS_78\", \"decision\": \"rejected\", \"missing_facts\": [], \"reason\": \"The incident describes follow-up and monitoring of a person's location, but does not involve repeated contact or attempts to foster personal interaction despite clear disinterest.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_78",
+              "decision": "rejected",
+              "missing_facts": [],
+              "reason": "The incident describes follow-up and monitoring of a person's location, but does not involve repeated contact or attempts to foster personal interaction despite clear disinterest."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "extras": [
+        {
+          "provision_id": "BNS_351",
+          "assessment": {
+            "provision_id": "BNS_351",
+            "title": "Criminal intimidation",
+            "recommendable": true,
+            "retrieval_score": 5.782852,
+            "raw_model_output": "{\"provision_id\": \"BNS_351\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The man followed the complainant from college to home and waited outside the gate after repeated requests to stop contacting, indicating intent to cause alarm or distress.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_351",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The man followed the complainant from college to home and waited outside the gate after repeated requests to stop contacting, indicating intent to cause alarm or distress."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 59.75394
+    },
+    {
+      "case_id": "SRB1_026",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "At the station, a man forcibly pulled my phone from my hand and ran into the crowd.",
+      "gold": {
+        "case_id": "SRB1_026",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [
+          "BNS_303"
+        ],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of BNS_304.",
+        "required_provision_ids": [
+          "BNS_304"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_130"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [],
+      "rag_v2_2_final": {
+        "outcome": "out_of_scope",
+        "possible_provision_ids": [],
+        "uncertain_sections": []
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_304",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": false,
+      "latency_seconds": 4.430564
+    },
+    {
+      "case_id": "SRB1_029",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "I entrusted my camera to a rental agent only for delivery to a customer. The agent instead sold it and kept the proceeds.",
+      "gold": {
+        "case_id": "SRB1_029",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of BNS_316.",
+        "required_provision_ids": [
+          "BNS_316"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_316",
+        "BNS_314",
+        "BNS_318",
+        "BNS_317",
+        "BNS_334",
+        "BNS_303"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316",
+          "BNS_318"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "BNS_318",
+          "assessment": {
+            "provision_id": "BNS_318",
+            "title": "Cheating",
+            "recommendable": true,
+            "retrieval_score": 45.344734,
+            "raw_model_output": "{\"provision_id\": \"BNS_318\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The agent sold the camera without authorization and kept the proceeds, constituting dishonest deception inducing delivery of property.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_318",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The agent sold the camera without authorization and kept the proceeds, constituting dishonest deception inducing delivery of property."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 150.774775
+    },
+    {
+      "case_id": "SRB1_030",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "Our treasurer was entrusted with society maintenance funds for depositing in the bank, but transferred the money to his personal account.",
+      "gold": {
+        "case_id": "SRB1_030",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of BNS_316.",
+        "required_provision_ids": [
+          "BNS_316"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_316",
+        "BNS_314",
+        "BNS_315",
+        "BNS_317",
+        "BNS_196",
+        "BNS_303"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316",
+          "BNS_303"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "BNS_303",
+          "assessment": {
+            "provision_id": "BNS_303",
+            "title": "Theft",
+            "recommendable": true,
+            "retrieval_score": 19.969928,
+            "raw_model_output": "{\"provision_id\": \"BNS_303\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The treasurer moved the society maintenance funds to his personal account without consent, intending to take them dishonestly.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_303",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The treasurer moved the society maintenance funds to his personal account without consent, intending to take them dishonestly."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 153.527363
+    },
+    {
+      "case_id": "SRB1_033",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "A seller advertised a camera he never possessed, accepted my payment, immediately deleted the account and admitted he had never intended to deliver anything.",
+      "gold": {
+        "case_id": "SRB1_033",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of BNS_318.",
+        "required_provision_ids": [
+          "BNS_318"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_318"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_318",
+        "BNS_315",
+        "BNS_338",
+        "BNS_308",
+        "BNS_316",
+        "BNS_334"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_318",
+          "BNS_316"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "BNS_316",
+          "assessment": {
+            "provision_id": "BNS_316",
+            "title": "Criminal breach of trust",
+            "recommendable": true,
+            "retrieval_score": 20.037686,
+            "raw_model_output": "{\"provision_id\": \"BNS_316\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The seller advertised a camera he never possessed, accepted payment, and admitted never intending to deliver, showing dishonest misappropriation of trust in property.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_316",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The seller advertised a camera he never possessed, accepted payment, and admitted never intending to deliver, showing dishonest misappropriation of trust in property."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 177.629261
+    },
+    {
+      "case_id": "SRB1_036",
+      "group": "single_provision",
+      "language": "hi",
+      "complaint": "उसने नकली निवेश योजना बताकर शुरू से धोखे की नीयत से मुझसे पैसे जमा करवाए और तुरंत संपर्क बंद कर दिया।",
+      "gold": {
+        "case_id": "SRB1_036",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of BNS_318.",
+        "required_provision_ids": [
+          "BNS_318"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_319"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_318",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [
+        {
+          "provision_id": "BNS_319",
+          "assessment": {
+            "provision_id": "BNS_319",
+            "title": "Cheating by personation",
+            "recommendable": true,
+            "retrieval_score": 0.0,
+            "raw_model_output": "{\"provision_id\": \"BNS_319\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The accused pretended to be a person (a certain rich banker) and induced the complainant to deposit money, which constitutes cheating by personation.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_319",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The accused pretended to be a person (a certain rich banker) and induced the complainant to deposit money, which constitutes cheating by personation."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 16.823768
+    },
+    {
+      "case_id": "SRB1_038",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "Someone called my supplier while pretending to be me and convinced the supplier to release goods to him.",
+      "gold": {
+        "case_id": "SRB1_038",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of BNS_319.",
+        "required_provision_ids": [
+          "BNS_319"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_319",
+        "ITA_66C",
+        "ITA_66D",
+        "ITA_66B",
+        "ITA_69B",
+        "ITA_69"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_319",
+          "ITA_66D"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66C",
+            "missing_facts": "Did the person fraudulently use your password, electronic signature, or another unique identification feature?"
+          }
+        ]
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "ITA_66D",
+          "assessment": {
+            "provision_id": "ITA_66D",
+            "title": "Punishment for cheating by personation by using computer resource",
+            "recommendable": true,
+            "retrieval_score": 61.709805,
+            "raw_model_output": "{\"provision_id\": \"ITA_66D\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The caller pretended to be the complainant and used a communication device to deceive the supplier into releasing goods.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_66D",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The caller pretended to be the complainant and used a communication device to deceive the supplier into releasing goods."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 148.688611
+    },
+    {
+      "case_id": "SRB1_049",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "A system administrator knowingly deleted the original source-code files that our company is legally required to preserve for inspection, to conceal his unauthorised changes.",
+      "gold": {
+        "case_id": "SRB1_049",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_65.",
+        "required_provision_ids": [
+          "ITA_65"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_65"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_66",
+        "ITA_66C",
+        "ITA_65",
+        "ITA_69B",
+        "ITA_66F",
+        "ITA_69A"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66",
+          "ITA_65"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "ITA_66",
+          "assessment": {
+            "provision_id": "ITA_66",
+            "title": "Computer related offences",
+            "recommendable": true,
+            "retrieval_score": 37.613469,
+            "raw_model_output": "{\"provision_id\": \"ITA_66\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The administrator knowingly deleted the original source-code files with intent to conceal unauthorized changes, constituting dishonest and fraudulent alteration of computer source code.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_66",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The administrator knowingly deleted the original source-code files with intent to conceal unauthorized changes, constituting dishonest and fraudulent alteration of computer source code."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 185.159342
+    },
+    {
+      "case_id": "SRB1_050",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "An employee intentionally altered a computer source document that a regulatory direction required the business to maintain unchanged.",
+      "gold": {
+        "case_id": "SRB1_050",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_65.",
+        "required_provision_ids": [
+          "ITA_65"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_65"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_303",
+        "BNS_304",
+        "BNS_305",
+        "ITA_65",
+        "BNS_328"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303",
+          "ITA_65"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "BNS_303",
+          "assessment": {
+            "provision_id": "BNS_303",
+            "title": "Theft",
+            "recommendable": true,
+            "retrieval_score": 14.968196,
+            "raw_model_output": "{\"provision_id\": \"BNS_303\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The employee intentionally altered a regulatory document required to be maintained unchanged, with intent to take it dishonestly out of possession without consent.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_303",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The employee intentionally altered a regulatory document required to be maintained unchanged, with intent to take it dishonestly out of possession without consent."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 118.435533
+    },
+    {
+      "case_id": "SRB1_054",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "Someone fraudulently entered my cloud account without authorisation and downloaded confidential files from it.",
+      "gold": {
+        "case_id": "SRB1_054",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_66.",
+        "required_provision_ids": [
+          "ITA_66"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_66C"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66C",
+            "missing_facts": "Did the person fraudulently use your password, electronic signature, or another unique identification feature?"
+          }
+        ]
+      },
+      "misses": [
+        {
+          "provision_id": "ITA_66",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": false,
+      "latency_seconds": 14.94611
+    },
+    {
+      "case_id": "SRB1_056",
+      "group": "single_provision",
+      "language": "hi",
+      "complaint": "किसी व्यक्ति ने बेईमानी से मेरे कंप्यूटर खाते में अनधिकृत प्रवेश किया और निजी डेटा डाउनलोड किया।",
+      "gold": {
+        "case_id": "SRB1_056",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_66.",
+        "required_provision_ids": [
+          "ITA_66"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_66C"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66C",
+            "missing_facts": "Did the person fraudulently use your password, electronic signature, or another unique identification feature?"
+          }
+        ]
+      },
+      "misses": [
+        {
+          "provision_id": "ITA_66",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": false,
+      "latency_seconds": 15.280082
+    },
+    {
+      "case_id": "SRB1_057",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "A dealer bought a stolen smartphone after being shown its theft report and then knowingly kept it for resale.",
+      "gold": {
+        "case_id": "SRB1_057",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_66B.",
+        "required_provision_ids": [
+          "ITA_66B"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66B"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_303",
+        "BNS_304",
+        "BNS_305",
+        "ITA_66B",
+        "BNS_317",
+        "BNS_306"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303",
+          "ITA_66B"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "BNS_303",
+          "assessment": {
+            "provision_id": "BNS_303",
+            "title": "Theft",
+            "recommendable": true,
+            "retrieval_score": 41.661866,
+            "raw_model_output": "{\"provision_id\": \"BNS_303\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The dealer knowingly acquired and kept a stolen smartphone, intending to take it dishonestly out of the possession of the original owner without consent.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_303",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The dealer knowingly acquired and kept a stolen smartphone, intending to take it dishonestly out of the possession of the original owner without consent."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 161.800262
+    },
+    {
+      "case_id": "SRB1_058",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "My colleague received a stolen laptop from the thief at a suspiciously low price and admitted that he knew it had been stolen.",
+      "gold": {
+        "case_id": "SRB1_058",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_66B.",
+        "required_provision_ids": [
+          "ITA_66B"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66B"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_303",
+        "BNS_304",
+        "BNS_305",
+        "ITA_66B",
+        "BNS_317",
+        "BNS_252"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303",
+          "ITA_66B"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "BNS_303",
+          "assessment": {
+            "provision_id": "BNS_303",
+            "title": "Theft",
+            "recommendable": true,
+            "retrieval_score": 42.075454,
+            "raw_model_output": "{\"provision_id\": \"BNS_303\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The colleague received a stolen laptop at a suspiciously low price and admitted knowing it was stolen, indicating intent to take dishonestly without consent.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_303",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The colleague received a stolen laptop at a suspiciously low price and admitted knowing it was stolen, indicating intent to take dishonestly without consent."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 161.256101
+    },
+    {
+      "case_id": "SRB1_061",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "My coworker fraudulently used my password to sign into the payroll portal as me and change my bank details.",
+      "gold": {
+        "case_id": "SRB1_061",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [
+          "ITA_66"
+        ],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_66C.",
+        "required_provision_ids": [
+          "ITA_66C"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_66",
+        "ITA_66C",
+        "ITA_66D",
+        "ITA_69B",
+        "ITA_69",
+        "ITA_66B"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66",
+          "ITA_66C",
+          "ITA_66D"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "ITA_66D",
+          "assessment": {
+            "provision_id": "ITA_66D",
+            "title": "Punishment for cheating by personation by using computer resource",
+            "recommendable": true,
+            "retrieval_score": 22.495506,
+            "raw_model_output": "{\"provision_id\": \"ITA_66D\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The coworker used the password to log in as the complainant and alter bank details, constituting personation by means of a computer resource.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_66D",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The coworker used the password to log in as the complainant and alter bank details, constituting personation by means of a computer resource."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 123.774862
+    },
+    {
+      "case_id": "SRB1_063",
+      "group": "single_provision",
+      "language": "hinglish",
+      "complaint": "Usne mera OTP aur login password use karke meri identity mein account access kiya.",
+      "gold": {
+        "case_id": "SRB1_063",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [
+          "ITA_66"
+        ],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_66C.",
+        "required_provision_ids": [
+          "ITA_66C"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_66",
+        "ITA_66C",
+        "ITA_66D",
+        "ITA_69A",
+        "ITA_69B",
+        "ITA_69"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66",
+          "ITA_66D"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66C",
+            "missing_facts": "Did the person fraudulently use your password, electronic signature, or another unique identification feature?"
+          }
+        ]
+      },
+      "misses": [
+        {
+          "provision_id": "ITA_66C",
+          "stage": "evidence_gate_removed_or_downgraded",
+          "assessment": {
+            "provision_id": "ITA_66C",
+            "title": "Punishment for identity theft",
+            "recommendable": true,
+            "retrieval_score": 68.596082,
+            "raw_model_output": "{\"provision_id\": \"ITA_66C\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The incident describes unauthorized use of OTP and login password, which are unique identification features of the person, to access the account.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_66C",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The incident describes unauthorized use of OTP and login password, which are unique identification features of the person, to access the account."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": [
+            {
+              "provision_id": "ITA_66C",
+              "action": "downgraded_to_uncertain",
+              "reason": "Unauthorised access alone does not state use of another person's password or unique identification feature."
+            }
+          ]
+        }
+      ],
+      "extras": [
+        {
+          "provision_id": "ITA_66D",
+          "assessment": {
+            "provision_id": "ITA_66D",
+            "title": "Punishment for cheating by personation by using computer resource",
+            "recommendable": true,
+            "retrieval_score": 21.853452,
+            "raw_model_output": "{\"provision_id\": \"ITA_66D\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The incident involves unauthorized use of OTP and login password to access the account, constituting personation by means of computer resource.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_66D",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The incident involves unauthorized use of OTP and login password to access the account, constituting personation by means of computer resource."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 124.343917
+    },
+    {
+      "case_id": "SRB1_064",
+      "group": "single_provision",
+      "language": "hi",
+      "complaint": "किसी ने मेरे पासवर्ड और डिजिटल हस्ताक्षर का धोखाधड़ी से उपयोग करके मेरे नाम से आवेदन जमा किया।",
+      "gold": {
+        "case_id": "SRB1_064",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [
+          "ITA_66"
+        ],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_66C.",
+        "required_provision_ids": [
+          "ITA_66C"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_66C"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66C",
+            "missing_facts": "Did the person fraudulently use your password, electronic signature, or another unique identification feature?"
+          }
+        ]
+      },
+      "misses": [
+        {
+          "provision_id": "ITA_66C",
+          "stage": "evidence_gate_removed_or_downgraded",
+          "assessment": {
+            "provision_id": "ITA_66C",
+            "title": "Punishment for identity theft",
+            "recommendable": true,
+            "retrieval_score": 0.0,
+            "raw_model_output": "{\"provision_id\": \"ITA_66C\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The incident describes fraudulent use of password and digital signature in another person's name, which matches the definition of identity theft.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_66C",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The incident describes fraudulent use of password and digital signature in another person's name, which matches the definition of identity theft."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": [
+            {
+              "provision_id": "ITA_66C",
+              "action": "downgraded_to_uncertain",
+              "reason": "Unauthorised access alone does not state use of another person's password or unique identification feature."
+            }
+          ]
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": false,
+      "latency_seconds": 15.314523
+    },
+    {
+      "case_id": "SRB1_073",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "A person knowingly uploaded a video showing a sexually explicit act to a public website without consent.",
+      "gold": {
+        "case_id": "SRB1_073",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_67A.",
+        "required_provision_ids": [
+          "ITA_67A"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_67A",
+        "ITA_67B",
+        "BNS_75",
+        "BNS_67",
+        "ITA_67",
+        "BNS_69"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A",
+          "ITA_67"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "ITA_67",
+          "assessment": {
+            "provision_id": "ITA_67",
+            "title": "Punishment for publishing or transmitting obscene material in electronic form",
+            "recommendable": true,
+            "retrieval_score": 23.850475,
+            "raw_model_output": "{\"provision_id\": \"ITA_67\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The video shows a sexually explicit act and was uploaded to a public website without consent, which constitutes publication of material appealing to prurient interest.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_67",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The video shows a sexually explicit act and was uploaded to a public website without consent, which constitutes publication of material appealing to prurient interest."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 144.648114
+    },
+    {
+      "case_id": "SRB1_074",
+      "group": "single_provision",
+      "language": "en",
+      "complaint": "The administrator transmitted a recording containing explicit sexual conduct through a paid messaging channel.",
+      "gold": {
+        "case_id": "SRB1_074",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_67A.",
+        "required_provision_ids": [
+          "ITA_67A"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_67A",
+        "BNS_75",
+        "ITA_67B",
+        "ITA_67",
+        "BNS_69",
+        "BNS_67"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_67A",
+            "missing_facts": "Did the transmitted material contain a sexually explicit act or conduct?"
+          }
+        ]
+      },
+      "misses": [
+        {
+          "provision_id": "ITA_67A",
+          "stage": "evidence_gate_removed_or_downgraded",
+          "assessment": {
+            "provision_id": "ITA_67A",
+            "title": "Punishment for publishing or transmitting of material containing sexually explicit act, etc., in electronic form",
+            "recommendable": true,
+            "retrieval_score": 57.894414,
+            "raw_model_output": "{\"provision_id\": \"ITA_67A\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The recording contains explicit sexual conduct and was transmitted through a paid messaging channel, matching the definition of sexually explicit material in electronic form.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_67A",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The recording contains explicit sexual conduct and was transmitted through a paid messaging channel, matching the definition of sexually explicit material in electronic form."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": [
+            {
+              "provision_id": "ITA_67A",
+              "action": "downgraded_to_uncertain",
+              "reason": "Private or intimate material is not automatically material containing a sexually explicit act or conduct."
+            }
+          ]
+        }
+      ],
+      "extras": [
+        {
+          "provision_id": "ITA_67",
+          "assessment": {
+            "provision_id": "ITA_67",
+            "title": "Punishment for publishing or transmitting obscene material in electronic form",
+            "recommendable": true,
+            "retrieval_score": 28.074219,
+            "raw_model_output": "{\"provision_id\": \"ITA_67\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The recording contains explicit sexual conduct and was transmitted through a paid messaging channel, which may appeal to prurient interest and tend to deprave.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_67",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The recording contains explicit sexual conduct and was transmitted through a paid messaging channel, which may appeal to prurient interest and tend to deprave."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 94.512458
+    },
+    {
+      "case_id": "SRB1_075",
+      "group": "single_provision",
+      "language": "hinglish",
+      "complaint": "Usne sexually explicit act wala video electronic form mein group par publish aur transmit kiya.",
+      "gold": {
+        "case_id": "SRB1_075",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_67A.",
+        "required_provision_ids": [
+          "ITA_67A"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_67A",
+        "ITA_67B",
+        "BNS_75",
+        "ITA_67",
+        "BNS_69",
+        "BNS_67"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A",
+          "ITA_67"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "ITA_67",
+          "assessment": {
+            "provision_id": "ITA_67",
+            "title": "Punishment for publishing or transmitting obscene material in electronic form",
+            "recommendable": true,
+            "retrieval_score": 38.015354,
+            "raw_model_output": "{\"provision_id\": \"ITA_67\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The incident describes publishing and transmitting a sexually explicit video in electronic form, which falls under obscene material as defined in the provision.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_67",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The incident describes publishing and transmitting a sexually explicit video in electronic form, which falls under obscene material as defined in the provision."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 93.638694
+    },
+    {
+      "case_id": "SRB1_076",
+      "group": "single_provision",
+      "language": "hi",
+      "complaint": "एक व्यक्ति ने स्पष्ट यौन कृत्य वाला वीडियो जानबूझकर ऑनलाइन प्रकाशित किया।",
+      "gold": {
+        "case_id": "SRB1_076",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "Facts directly state the distinguishing elements of ITA_67A.",
+        "required_provision_ids": [
+          "ITA_67A"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_67A"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_67A",
+            "missing_facts": "Did the transmitted material contain a sexually explicit act or conduct?"
+          }
+        ]
+      },
+      "misses": [
+        {
+          "provision_id": "ITA_67A",
+          "stage": "evidence_gate_removed_or_downgraded",
+          "assessment": {
+            "provision_id": "ITA_67A",
+            "title": "Punishment for publishing or transmitting of material containing sexually explicit act, etc., in electronic form",
+            "recommendable": true,
+            "retrieval_score": 0.0,
+            "raw_model_output": "{\"provision_id\": \"ITA_67A\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The incident involves deliberate online publication of a video containing sexual explicit act.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_67A",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The incident involves deliberate online publication of a video containing sexual explicit act."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": [
+            {
+              "provision_id": "ITA_67A",
+              "action": "downgraded_to_uncertain",
+              "reason": "Private or intimate material is not automatically material containing a sexually explicit act or conduct."
+            }
+          ]
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": false,
+      "latency_seconds": 15.045932
+    },
+    {
+      "case_id": "SRB1_077",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "A fraudster used my stolen online-banking password to enter my account and transfer funds without permission.",
+      "gold": {
+        "case_id": "SRB1_077",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "ITA_66",
+          "ITA_66C"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_303",
+        "BNS_304",
+        "BNS_305",
+        "ITA_66",
+        "ITA_66C",
+        "ITA_66D"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303",
+          "ITA_66",
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "BNS_303",
+          "assessment": {
+            "provision_id": "BNS_303",
+            "title": "Theft",
+            "recommendable": true,
+            "retrieval_score": 39.510876,
+            "raw_model_output": "{\"provision_id\": \"BNS_303\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The fraudster used the stolen password to access the account and transfer funds without consent, constituting dishonest taking of movable property.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_303",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The fraudster used the stolen password to access the account and transfer funds without consent, constituting dishonest taking of movable property."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 156.005253
+    },
+    {
+      "case_id": "SRB1_079",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "A caller pretended to be my bank manager, used my OTP as my credential and deceived me into approving a transfer.",
+      "gold": {
+        "case_id": "SRB1_079",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [
+          "BNS_318"
+        ],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "BNS_319",
+          "ITA_66C",
+          "ITA_66D"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_66",
+        "ITA_66C",
+        "ITA_66D",
+        "ITA_69B",
+        "ITA_69",
+        "ITA_66B"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C",
+          "ITA_66D"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Did the caller access or secure access to the bank's computer system or network to obtain the OTP?; Was the act of obtaining OTP through deception considered as accessing or securing access to a computer resource without permission?"
+          }
+        ]
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_319",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 140.672487
+    },
+    {
+      "case_id": "SRB1_081",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "A man secretly recorded a woman engaged in a sexual act in a private room and then transmitted the explicit video online.",
+      "gold": {
+        "case_id": "SRB1_081",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "BNS_77",
+          "ITA_67A"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_77"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_77",
+        "BNS_75",
+        "ITA_67B",
+        "ITA_67A",
+        "ITA_67",
+        "BNS_81"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_77",
+          "ITA_67A",
+          "ITA_67"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "ITA_67",
+          "assessment": {
+            "provision_id": "ITA_67",
+            "title": "Punishment for publishing or transmitting obscene material in electronic form",
+            "recommendable": true,
+            "retrieval_score": 30.141309,
+            "raw_model_output": "{\"provision_id\": \"ITA_67\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The transmission of explicit video that appeals to prurient interest and tends to deprave or corrupt persons constitutes publication of obscene material in electronic form.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_67",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The transmission of explicit video that appeals to prurient interest and tends to deprave or corrupt persons constitutes publication of obscene material in electronic form."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 127.999506
+    },
+    {
+      "case_id": "SRB1_082",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "Someone transmitted a sexually explicit video of me and threatened to send it to my employer unless I withdrew my complaint.",
+      "gold": {
+        "case_id": "SRB1_082",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "BNS_351",
+          "ITA_67A"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_78"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_308",
+        "BNS_351",
+        "BNS_78",
+        "BNS_75",
+        "ITA_67B",
+        "ITA_67A"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_351"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [
+        {
+          "provision_id": "ITA_67A",
+          "stage": "candidate_assessor_rejected",
+          "assessment": {
+            "provision_id": "ITA_67A",
+            "title": "Punishment for publishing or transmitting of material containing sexually explicit act, etc., in electronic form",
+            "recommendable": true,
+            "retrieval_score": 60.358688,
+            "raw_model_output": "{\"provision_id\": \"ITA_67A\", \"decision\": \"rejected\", \"missing_facts\": [], \"reason\": \"The incident involves threats and potential harassment, not the transmission of sexually explicit material in electronic form.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_67A",
+              "decision": "rejected",
+              "missing_facts": [],
+              "reason": "The incident involves threats and potential harassment, not the transmission of sexually explicit material in electronic form."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 124.542439
+    },
+    {
+      "case_id": "SRB1_083",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "A stranger entered my locked home intending to steal and then carried away my television without consent.",
+      "gold": {
+        "case_id": "SRB1_083",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "BNS_329",
+          "BNS_303"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_303",
+        "BNS_134",
+        "BNS_314",
+        "BNS_306",
+        "BNS_97",
+        "BNS_317"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_329",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 216.804684
+    },
+    {
+      "case_id": "SRB1_084",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "A man entered my house without permission intending to attack me and deliberately punched me, causing ordinary bruising.",
+      "gold": {
+        "case_id": "SRB1_084",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "BNS_329",
+          "BNS_115"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_115"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_115",
+        "BNS_73"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_115"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_329",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 30.780567
+    },
+    {
+      "case_id": "SRB1_091",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "A person published obscene electronic images about me and separately threatened to damage my house if I asked for their removal.",
+      "gold": {
+        "case_id": "SRB1_091",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "ITA_67",
+          "BNS_351"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_308",
+        "BNS_351",
+        "ITA_67",
+        "BNS_323",
+        "BNS_329",
+        "BNS_309"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_351",
+          "ITA_67",
+          "BNS_329"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "BNS_329",
+          "assessment": {
+            "provision_id": "BNS_329",
+            "title": "Criminal trespass and house-trespass",
+            "recommendable": true,
+            "retrieval_score": 22.90669,
+            "raw_model_output": "{\"provision_id\": \"BNS_329\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The person threatened to damage the house, which constitutes intimidation with intent to annoy or intimidate the occupant.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_329",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The person threatened to damage the house, which constitutes intimidation with intent to annoy or intimidate the occupant."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 163.365833
+    },
+    {
+      "case_id": "SRB1_092",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "An intruder hacked my social-media account and used it to publish a video containing a sexually explicit act.",
+      "gold": {
+        "case_id": "SRB1_092",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "ITA_66",
+          "ITA_67A"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_66",
+        "ITA_66C",
+        "ITA_67A",
+        "ITA_67B",
+        "BNS_75",
+        "ITA_69B"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66C",
+            "missing_facts": "Did the person fraudulently use your password, electronic signature, or another unique identification feature?"
+          }
+        ]
+      },
+      "misses": [
+        {
+          "provision_id": "ITA_67A",
+          "stage": "candidate_assessor_rejected",
+          "assessment": {
+            "provision_id": "ITA_67A",
+            "title": "Punishment for publishing or transmitting of material containing sexually explicit act, etc., in electronic form",
+            "recommendable": true,
+            "retrieval_score": 69.034507,
+            "raw_model_output": "{\"provision_id\": \"ITA_67A\", \"decision\": \"rejected\", \"missing_facts\": [], \"reason\": \"The incident involves unauthorized access to a social media account, not the publication or transmission of material containing a sexually explicit act in electronic form.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_67A",
+              "decision": "rejected",
+              "missing_facts": [],
+              "reason": "The incident involves unauthorized access to a social media account, not the publication or transmission of material containing a sexually explicit act in electronic form."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 168.219075
+    },
+    {
+      "case_id": "SRB1_093",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "A man suddenly yanked my handbag away and intentionally shoved me during the snatching, causing bruises but no fracture.",
+      "gold": {
+        "case_id": "SRB1_093",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [
+          "BNS_303"
+        ],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "BNS_304",
+          "BNS_115"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_130"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_304",
+        "BNS_84"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_115",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 38.56201
+    },
+    {
+      "case_id": "SRB1_095",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "Two people broke into our warehouse and removed stored equipment without the owner's consent.",
+      "gold": {
+        "case_id": "SRB1_095",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "BNS_329",
+          "BNS_303"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_303",
+        "BNS_314",
+        "BNS_89",
+        "BNS_306",
+        "BNS_315",
+        "BNS_317"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_329",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 203.435637
+    },
+    {
+      "case_id": "SRB1_096",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "A dealer knowingly received a stolen laptop and then deceived a buyer by selling it as a new, lawfully owned device.",
+      "gold": {
+        "case_id": "SRB1_096",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "ITA_66B",
+          "BNS_318"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66B"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_303",
+        "BNS_304",
+        "BNS_305",
+        "ITA_66B",
+        "BNS_317",
+        "BNS_306"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303",
+          "ITA_66B"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_318",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [
+        {
+          "provision_id": "BNS_303",
+          "assessment": {
+            "provision_id": "BNS_303",
+            "title": "Theft",
+            "recommendable": true,
+            "retrieval_score": 38.746467,
+            "raw_model_output": "{\"provision_id\": \"BNS_303\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The dealer knowingly received a stolen laptop and sold it as lawfully owned, moving the property with dishonest intent without the owner's consent.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_303",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The dealer knowingly received a stolen laptop and sold it as lawfully owned, moving the property with dishonest intent without the owner's consent."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 114.326669
+    },
+    {
+      "case_id": "SRB1_097",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "A person used my password and then pretended to be me in emails to obtain confidential records from my office.",
+      "gold": {
+        "case_id": "SRB1_097",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [
+          "ITA_66D"
+        ],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "ITA_66C",
+          "BNS_319"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_66",
+        "ITA_66C",
+        "ITA_66D",
+        "ITA_69B",
+        "ITA_69",
+        "ITA_66B"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66",
+          "ITA_66C",
+          "ITA_66D"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_319",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [
+        {
+          "provision_id": "ITA_66",
+          "assessment": {
+            "provision_id": "ITA_66",
+            "title": "Computer related offences",
+            "recommendable": true,
+            "retrieval_score": 11.525201,
+            "raw_model_output": "{\"provision_id\": \"ITA_66\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The person used the password and pretended to be the complainant to obtain confidential records, constituting dishonest and fraudulent access to a computer system.\"}",
+            "parsed_assessment": {
+              "provision_id": "ITA_66",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The person used the password and pretended to be the complainant to obtain confidential records, constituting dishonest and fraudulent access to a computer system."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 147.283259
+    },
+    {
+      "case_id": "SRB1_099",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "After I rejected him, a man hacked my email account so that he could continue monitoring my private communications.",
+      "gold": {
+        "case_id": "SRB1_099",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "BNS_78",
+          "ITA_66"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "ITA_66",
+        "ITA_66C",
+        "BNS_78",
+        "ITA_69B",
+        "ITA_69",
+        "ITA_66F"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66C",
+            "missing_facts": "Did the person fraudulently use your password, electronic signature, or another unique identification feature?"
+          }
+        ]
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_78",
+          "stage": "candidate_assessor_rejected",
+          "assessment": {
+            "provision_id": "BNS_78",
+            "title": "Stalking",
+            "recommendable": true,
+            "retrieval_score": 58.347708,
+            "raw_model_output": "{\"provision_id\": \"BNS_78\", \"decision\": \"rejected\", \"missing_facts\": [], \"reason\": \"Stalking requires repeated contact or monitoring for personal interaction or to foster interaction, not unauthorized access to an email account for monitoring private communications.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_78",
+              "decision": "rejected",
+              "missing_facts": [],
+              "reason": "Stalking requires repeated contact or monitoring for personal interaction or to foster interaction, not unauthorized access to an email account for monitoring private communications."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 172.767526
+    },
+    {
+      "case_id": "SRB1_100",
+      "group": "multi_provision",
+      "language": "en",
+      "complaint": "A repair agent entrusted with my phone pretended to be its owner and sold it to another person, keeping the money.",
+      "gold": {
+        "case_id": "SRB1_100",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "provision_match",
+        "rationale": "The incident contains independent factual elements for each required provision.",
+        "required_provision_ids": [
+          "BNS_316",
+          "BNS_319"
+        ],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [
+        "BNS_316",
+        "BNS_314",
+        "BNS_193",
+        "BNS_315",
+        "BNS_317",
+        "BNS_303"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": []
+      },
+      "misses": [
+        {
+          "provision_id": "BNS_319",
+          "stage": "retrieval_miss",
+          "assessment": null,
+          "gate_actions": []
+        }
+      ],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": true,
+      "latency_seconds": 131.790225
+    },
+    {
+      "case_id": "SRB1_108",
+      "group": "missing_information",
+      "language": "en",
+      "complaint": "A repair shop still has my laptop one day after the estimated date, but I do not know whether it was sold, converted, or simply delayed.",
+      "gold": {
+        "case_id": "SRB1_108",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "insufficient_information",
+        "rationale": "A material fact needed to assess BNS_316 is genuinely absent.",
+        "required_provision_ids": [],
+        "required_uncertain_ids": [
+          "BNS_316"
+        ]
+      },
+      "lora_only": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66B",
+            "missing_facts": "whether_property_was_delivered_or_transferred_from_owner_to_relevant_person_or_another_person"
+          }
+        ]
+      },
+      "retrieved_provision_ids": [
+        "BNS_316",
+        "BNS_314",
+        "ITA_66B",
+        "BNS_317",
+        "BNS_303",
+        "BNS_315"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66B",
+            "missing_facts": "Did the repair shop know the laptop was stolen?; Was the laptop sold, converted, or simply delayed without the owner's consent?"
+          },
+          {
+            "provision_id": "BNS_303",
+            "missing_facts": "Did the repair shop take the laptop dishonestly with intent to deprive the owner of it without consent?; Was the laptop sold, converted, or simply delayed, and was there any intent to take it dishonestly?"
+          }
+        ]
+      },
+      "misses": [],
+      "extras": [
+        {
+          "provision_id": "BNS_316",
+          "assessment": {
+            "provision_id": "BNS_316",
+            "title": "Criminal breach of trust",
+            "recommendable": true,
+            "retrieval_score": 54.613775,
+            "raw_model_output": "{\"provision_id\": \"BNS_316\", \"decision\": \"supported\", \"missing_facts\": [], \"reason\": \"The repair shop is entrusted with the laptop and has not returned it one day after the estimated date, indicating possible dishonest use or conversion of the property.\"}",
+            "parsed_assessment": {
+              "provision_id": "BNS_316",
+              "decision": "supported",
+              "missing_facts": [],
+              "reason": "The repair shop is entrusted with the laptop and has not returned it one day after the estimated date, indicating possible dishonest use or conversion of the property."
+            },
+            "schema_valid": true,
+            "schema_errors": []
+          },
+          "gate_actions": []
+        }
+      ],
+      "missing_required_uncertain_ids": [
+        "BNS_316"
+      ],
+      "outcome_correct": false,
+      "latency_seconds": 241.092621
+    },
+    {
+      "case_id": "SRB1_109",
+      "group": "missing_information",
+      "language": "en",
+      "complaint": "A product I paid for is late. The seller remains reachable and says it is delayed, and I have no facts showing dishonest intention at the time of payment.",
+      "gold": {
+        "case_id": "SRB1_109",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "insufficient_information",
+        "rationale": "A material fact needed to assess BNS_318 is genuinely absent.",
+        "required_provision_ids": [],
+        "required_uncertain_ids": [
+          "BNS_318"
+        ]
+      },
+      "lora_only": {
+        "outcome": "out_of_scope",
+        "possible_provision_ids": [],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [],
+      "rag_v2_2_final": {
+        "outcome": "out_of_scope",
+        "possible_provision_ids": [],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [],
+      "missing_required_uncertain_ids": [
+        "BNS_318"
+      ],
+      "outcome_correct": false,
+      "latency_seconds": 4.163362
+    },
+    {
+      "case_id": "SRB1_110",
+      "group": "missing_information",
+      "language": "en",
+      "complaint": "An account with a bank logo messaged me, but I do not know who controlled it or whether anyone pretended to be a particular person.",
+      "gold": {
+        "case_id": "SRB1_110",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "insufficient_information",
+        "rationale": "A material fact needed to assess BNS_319 is genuinely absent.",
+        "required_provision_ids": [],
+        "required_uncertain_ids": [
+          "BNS_319"
+        ]
+      },
+      "lora_only": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66D",
+            "missing_facts": "identity_control_or_fabrication_and_attempted_deception_or_fraud"
+          }
+        ]
+      },
+      "retrieved_provision_ids": [
+        "ITA_66D",
+        "BNS_180"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66D",
+            "missing_facts": "Did the person pretending to be the bank use a communication device or computer resource to deceive?; Was there an intent to cheat by personation?"
+          }
+        ]
+      },
+      "misses": [],
+      "extras": [],
+      "missing_required_uncertain_ids": [
+        "BNS_319"
+      ],
+      "outcome_correct": true,
+      "latency_seconds": 53.813988
+    },
+    {
+      "case_id": "SRB1_112",
+      "group": "missing_information",
+      "language": "en",
+      "complaint": "A message said 'you will regret this,' but it did not identify any injury to a person, reputation, or property and I do not know what was intended.",
+      "gold": {
+        "case_id": "SRB1_112",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "insufficient_information",
+        "rationale": "A material fact needed to assess BNS_351 is genuinely absent.",
+        "required_provision_ids": [],
+        "required_uncertain_ids": [
+          "BNS_351"
+        ]
+      },
+      "lora_only": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "missing_facts": "The identity of a person or group, the threatened injury, and the context showing intent or knowledge to cause injury",
+            "provision_id": "BNS_351"
+          }
+        ]
+      },
+      "retrieved_provision_ids": [
+        "BNS_351",
+        "BNS_314",
+        "BNS_217",
+        "BNS_356",
+        "BNS_318",
+        "BNS_303"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "out_of_scope",
+        "possible_provision_ids": [],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [],
+      "missing_required_uncertain_ids": [
+        "BNS_351"
+      ],
+      "outcome_correct": false,
+      "latency_seconds": 211.696237
+    },
+    {
+      "case_id": "SRB1_117",
+      "group": "missing_information",
+      "language": "en",
+      "complaint": "A caller asked me to pay a fee, but I do not know whether the caller impersonated anyone or used a false identity.",
+      "gold": {
+        "case_id": "SRB1_117",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "insufficient_information",
+        "rationale": "A material fact needed to assess ITA_66D is genuinely absent.",
+        "required_provision_ids": [],
+        "required_uncertain_ids": [
+          "ITA_66D"
+        ]
+      },
+      "lora_only": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_319",
+            "missing_facts": "whether the caller impersonated someone or used a false identity and cheated or induced an act"
+          }
+        ]
+      },
+      "retrieved_provision_ids": [
+        "BNS_319"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_319",
+            "missing_facts": "Did the caller pretend to be someone else or use a false identity to induce payment?"
+          }
+        ]
+      },
+      "misses": [],
+      "extras": [],
+      "missing_required_uncertain_ids": [
+        "ITA_66D"
+      ],
+      "outcome_correct": true,
+      "latency_seconds": 23.019154
+    },
+    {
+      "case_id": "SRB1_120",
+      "group": "missing_information",
+      "language": "hinglish",
+      "complaint": "Mera phone nahi mil raha; mujhe nahi pata kisi ne churaya, chheena, ya main kahin bhool gaya.",
+      "gold": {
+        "case_id": "SRB1_120",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "insufficient_information",
+        "rationale": "A material fact needed to assess BNS_303 is genuinely absent.",
+        "required_provision_ids": [],
+        "required_uncertain_ids": [
+          "BNS_303"
+        ]
+      },
+      "lora_only": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "missing_facts": "Who moved or concealed the phone without consent and with dishonest intent?",
+            "provision_id": "ITA_66B"
+          }
+        ]
+      },
+      "retrieved_provision_ids": [
+        "ITA_66B"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66B",
+            "missing_facts": "Did the person knowingly receive the phone with dishonest intent, knowing it was stolen?; Was there any evidence of unauthorized taking or concealment of the phone?"
+          }
+        ]
+      },
+      "misses": [],
+      "extras": [],
+      "missing_required_uncertain_ids": [
+        "BNS_303"
+      ],
+      "outcome_correct": true,
+      "latency_seconds": 22.321011
+    },
+    {
+      "case_id": "SRB1_121",
+      "group": "missing_information",
+      "language": "hinglish",
+      "complaint": "Seller ne delivery delay bataya hai aur contact mein hai; mere paas shuru se fraud intention ka koi fact nahi hai.",
+      "gold": {
+        "case_id": "SRB1_121",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "insufficient_information",
+        "rationale": "A material fact needed to assess BNS_318 is genuinely absent.",
+        "required_provision_ids": [],
+        "required_uncertain_ids": [
+          "BNS_318"
+        ]
+      },
+      "lora_only": {
+        "outcome": "out_of_scope",
+        "possible_provision_ids": [],
+        "uncertain_sections": []
+      },
+      "retrieved_provision_ids": [],
+      "rag_v2_2_final": {
+        "outcome": "out_of_scope",
+        "possible_provision_ids": [],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [],
+      "missing_required_uncertain_ids": [
+        "BNS_318"
+      ],
+      "outcome_correct": false,
+      "latency_seconds": 3.57398
+    },
+    {
+      "case_id": "SRB1_123",
+      "group": "missing_information",
+      "language": "hi",
+      "complaint": "एक व्यक्ति दो बार मेरे रास्ते में दिखा, पर उसने संपर्क नहीं किया और मुझे नहीं पता कि वह मेरा पीछा कर रहा था।",
+      "gold": {
+        "case_id": "SRB1_123",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "insufficient_information",
+        "rationale": "A material fact needed to assess BNS_78 is genuinely absent.",
+        "required_provision_ids": [],
+        "required_uncertain_ids": [
+          "BNS_78"
+        ]
+      },
+      "lora_only": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "missing_facts": "Repeated following with intent to cause alarm or abduct",
+            "provision_id": "BNS_203"
+          }
+        ]
+      },
+      "retrieved_provision_ids": [
+        "BNS_203"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "out_of_scope",
+        "possible_provision_ids": [],
+        "uncertain_sections": []
+      },
+      "misses": [],
+      "extras": [],
+      "missing_required_uncertain_ids": [
+        "BNS_78"
+      ],
+      "outcome_correct": false,
+      "latency_seconds": 18.628796
+    },
+    {
+      "case_id": "SRB1_124",
+      "group": "missing_information",
+      "language": "hi",
+      "complaint": "मेरी वस्तु मरम्मत की दुकान पर है और वापसी में देरी हुई है, पर बेचने या हड़पने की कोई जानकारी नहीं है।",
+      "gold": {
+        "case_id": "SRB1_124",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "insufficient_information",
+        "rationale": "A material fact needed to assess BNS_316 is genuinely absent.",
+        "required_provision_ids": [],
+        "required_uncertain_ids": [
+          "BNS_316"
+        ]
+      },
+      "lora_only": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "missing_facts": "Whether the property was stolen or converted by deception during the sale or attempted sale.",
+            "provision_id": "BNS_303"
+          }
+        ]
+      },
+      "retrieved_provision_ids": [
+        "BNS_303"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_303",
+            "missing_facts": "Was the property taken dishonestly without consent, or was it simply delayed in return?"
+          }
+        ]
+      },
+      "misses": [],
+      "extras": [],
+      "missing_required_uncertain_ids": [
+        "BNS_316"
+      ],
+      "outcome_correct": true,
+      "latency_seconds": 29.379711
+    },
+    {
+      "case_id": "SRB1_142",
+      "group": "out_of_scope",
+      "language": "hinglish",
+      "complaint": "Internet plan ki speed advertisement se kam lag rahi hai, provider complaint investigate kar raha hai aur koi dishonest claim ka fact nahi hai.",
+      "gold": {
+        "case_id": "SRB1_142",
+        "forbidden_provision_ids": [],
+        "optional_provision_ids": [],
+        "outcome": "out_of_scope",
+        "rationale": "The stated dispute contains no factual element of a recommendation-approved criminal provision.",
+        "required_provision_ids": [],
+        "required_uncertain_ids": []
+      },
+      "lora_only": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "missing_facts": "Whether the provider knowingly made a false speed claim and deceived a consumer.",
+            "provision_id": "BNS_318"
+          }
+        ]
+      },
+      "retrieved_provision_ids": [
+        "BNS_318",
+        "BNS_323",
+        "BNS_315",
+        "BNS_246",
+        "BNS_320",
+        "BNS_314"
+      ],
+      "rag_v2_2_final": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "Did the provider knowingly make a false claim about the speed of the internet plan?; Was there a deliberate deception to induce the consumer to pay for a service that does not match the advertisement?"
+          }
+        ]
+      },
+      "misses": [],
+      "extras": [],
+      "missing_required_uncertain_ids": [],
+      "outcome_correct": false,
+      "latency_seconds": 132.712513
+    }
+  ]
+}

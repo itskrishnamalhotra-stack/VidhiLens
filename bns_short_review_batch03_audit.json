@@ -1,0 +1,197 @@
+{
+  "reviewed_on": "2026-09-17",
+  "reviewer": "Codex AI PDF text and visual audit",
+  "ledger": "data_drafts\\bns_short_review_batch03.jsonl",
+  "entries": [
+    {
+      "id": "BNS_20",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 25,
+      "extracted_text_sha256": "c5da1b0533fb3dc2bfeaf3ee1ddb327c0a3d523d9b5d2f8ccc723075ddefdce0",
+      "reviewed_text_sha256": "c5da1b0533fb3dc2bfeaf3ee1ddb327c0a3d523d9b5d2f8ccc723075ddefdce0",
+      "removed_layout_artifacts": [],
+      "provision_kind": "exception",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 25 visually checked: child under seven exception, including the age boundary. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_34",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 28,
+      "extracted_text_sha256": "a9f8f5ef12da28343ce9f50533e3145621f2bd93fbef1c4d7496324f10c6c947",
+      "reviewed_text_sha256": "a9f8f5ef12da28343ce9f50533e3145621f2bd93fbef1c4d7496324f10c6c947",
+      "removed_layout_artifacts": [],
+      "provision_kind": "exception",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 28 visually checked: private-defence exception refers to exercise of the right. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_104",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 47,
+      "extracted_text_sha256": "f54805a237688b7de51d908dca2592085b84d03de51b3553c5b953c26a3d1e53",
+      "reviewed_text_sha256": "f54805a237688b7de51d908dca2592085b84d03de51b3553c5b953c26a3d1e53",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 47 visually checked: murder by a person under a life sentence and stated punishment. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_108",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 47,
+      "extracted_text_sha256": "e7e3560b5c1ef8656c0703339f01e1b0dbf502479b847ca89bf6a2fe6d39de49",
+      "reviewed_text_sha256": "e7e3560b5c1ef8656c0703339f01e1b0dbf502479b847ca89bf6a2fe6d39de49",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 47 visually checked: abetment of suicide and stated punishment. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_138",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 57,
+      "extracted_text_sha256": "72f452969214a0fa2c3c0a888389f91744a1b23032e7077aa06e855a36bf2813",
+      "reviewed_text_sha256": "72f452969214a0fa2c3c0a888389f91744a1b23032e7077aa06e855a36bf2813",
+      "removed_layout_artifacts": [],
+      "provision_kind": "definition",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 57 visually checked: force or deceit causing departure; definition, not standalone punishment. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_146",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 59,
+      "extracted_text_sha256": "98a31130580bb194c95a607070097f596fd0fd04c27e516dd07cbaa5a8b14004",
+      "reviewed_text_sha256": "84d52140ea01003291e1f66743e75d44e750e330dfb83555178ffec66f66309a",
+      "removed_layout_artifacts": [
+        {
+          "removed_layout_line": "CHAPTER VII"
+        },
+        {
+          "removed_layout_line": "OF OFFENCES AGAINST THE STATE"
+        }
+      ],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 59 visually checked: unlawful compulsory labour; removed following chapter heading. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_174",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 63,
+      "extracted_text_sha256": "c6ed3f99140ea30536d18b9cc1c3c6f5ea5f43ed54a7c7cd5e7d57602226f4e0",
+      "reviewed_text_sha256": "c6ed3f99140ea30536d18b9cc1c3c6f5ea5f43ed54a7c7cd5e7d57602226f4e0",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 63 visually checked: punishment for undue influence or personation at an election. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_194",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 68,
+      "extracted_text_sha256": "8fbfe7c4c88ac967988a7d384265377221ca844ab36367bdfe7ba5f692957e0c",
+      "reviewed_text_sha256": "8fbfe7c4c88ac967988a7d384265377221ca844ab36367bdfe7ba5f692957e0c",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 68 visually checked: public fight disturbing peace and stated punishment. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_221",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 73,
+      "extracted_text_sha256": "f00b95bcfc3663f743de440c0fe75671ad55b3acc4da0a40afec9efa56465229",
+      "reviewed_text_sha256": "f00b95bcfc3663f743de440c0fe75671ad55b3acc4da0a40afec9efa56465229",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 73 visually checked: voluntary obstruction of a public servant during public functions. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_233",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 76,
+      "extracted_text_sha256": "a0f870da4cb78fbed79a78b74cf9c693db24a9cbcd83fe7f7dc2bc72e6853c59",
+      "reviewed_text_sha256": "a0f870da4cb78fbed79a78b74cf9c693db24a9cbcd83fe7f7dc2bc72e6853c59",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 76 visually checked: corrupt use or attempted use of evidence known false or fabricated. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_292",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 86,
+      "extracted_text_sha256": "839d14729bf4b152fc55a0487ea0f3b6a3ca873a1711d13115f354c8131813d0",
+      "reviewed_text_sha256": "839d14729bf4b152fc55a0487ea0f3b6a3ca873a1711d13115f354c8131813d0",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 86 visually checked: residual public nuisance fine with exception for separately punished cases. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_300",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 87,
+      "extracted_text_sha256": "d9b9036b01934566d56dbc1e0f0f8d3a1f5be85f556df68457c37f07b12bc4e3",
+      "reviewed_text_sha256": "d9b9036b01934566d56dbc1e0f0f8d3a1f5be85f556df68457c37f07b12bc4e3",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 87 visually checked: voluntary disturbance of lawful religious worship or ceremony. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_312",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 92,
+      "extracted_text_sha256": "f2ad0cf7fe5b495a19b491330de4950d9ccec724fe53dba5cd689bb501271c66",
+      "reviewed_text_sha256": "f2ad0cf7fe5b495a19b491330de4950d9ccec724fe53dba5cd689bb501271c66",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 92 visually checked: deadly weapon during attempted robbery or dacoity and minimum term. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    },
+    {
+      "id": "BNS_325",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 98,
+      "extracted_text_sha256": "e9ee027ff3b7a87fed5ae1459c2cd7cfdae0b5835719060a1be998f479d744f0",
+      "reviewed_text_sha256": "e9ee027ff3b7a87fed5ae1459c2cd7cfdae0b5835719060a1be998f479d744f0",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Page 98 visually checked: mischief by killing, poisoning, maiming or rendering an animal useless. Commencement checked against MHA S.O. 850(E); not enabled as a suggestion."
+    }
+  ],
+  "note": "Source-checked for the pinned central PDF; later law changes and state amendments require separate review."
+}

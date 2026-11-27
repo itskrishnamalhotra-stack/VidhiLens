@@ -1,0 +1,37 @@
+{
+  "version": "phase1-candidates-2026-09-16-revised-jan-vishwas",
+  "status": "candidate_only_not_approved",
+  "selection_reason": "A compact first release spanning common physical, property, fraud, threat, and cyber complaint patterns; final inclusion requires source and status review.",
+  "candidate_sections": [
+    {"id": "BNS_75", "act_id": "BNS_2023", "section": "75", "title": "Sexual harassment", "source_pdf_page": 40, "category": "harassment"},
+    {"id": "BNS_77", "act_id": "BNS_2023", "section": "77", "title": "Voyeurism", "source_pdf_page": 40, "category": "privacy"},
+    {"id": "BNS_78", "act_id": "BNS_2023", "section": "78", "title": "Stalking", "source_pdf_page": 41, "category": "harassment"},
+    {"id": "BNS_115", "act_id": "BNS_2023", "section": "115", "title": "Voluntarily causing hurt", "source_pdf_page": 51, "category": "physical_harm"},
+    {"id": "BNS_117", "act_id": "BNS_2023", "section": "117", "title": "Voluntarily causing grievous hurt", "source_pdf_page": 51, "category": "physical_harm"},
+    {"id": "BNS_303", "act_id": "BNS_2023", "section": "303", "title": "Theft", "source_pdf_page": 88, "category": "property"},
+    {"id": "BNS_304", "act_id": "BNS_2023", "section": "304", "title": "Snatching", "source_pdf_page": 89, "category": "property"},
+    {"id": "BNS_316", "act_id": "BNS_2023", "section": "316", "title": "Criminal breach of trust", "source_pdf_page": 93, "category": "property"},
+    {"id": "BNS_318", "act_id": "BNS_2023", "section": "318", "title": "Cheating", "source_pdf_page": 95, "category": "fraud"},
+    {"id": "BNS_319", "act_id": "BNS_2023", "section": "319", "title": "Cheating by personation", "source_pdf_page": 96, "category": "fraud"},
+    {"id": "BNS_329", "act_id": "BNS_2023", "section": "329", "title": "Criminal trespass and house-trespass", "source_pdf_page": 99, "category": "property"},
+    {"id": "BNS_351", "act_id": "BNS_2023", "section": "351", "title": "Criminal intimidation", "source_pdf_page": 106, "category": "threat"},
+    {"id": "ITA_65", "act_id": "ITA_2000", "section": "65", "title": "Tampering with computer source documents", "source_pdf_page": 23, "category": "cyber_integrity"},
+    {"id": "ITA_66", "act_id": "ITA_2000", "section": "66", "title": "Computer related offences", "source_pdf_page": 24, "category": "cyber"},
+    {"id": "ITA_66B", "act_id": "ITA_2000", "section": "66B", "title": "Punishment for dishonestly receiving stolen computer resource or communication device", "source_pdf_page": 24, "category": "cyber_property"},
+    {"id": "ITA_66C", "act_id": "ITA_2000", "section": "66C", "title": "Punishment for identity theft", "source_pdf_page": 24, "category": "cyber_fraud"},
+    {"id": "ITA_66D", "act_id": "ITA_2000", "section": "66D", "title": "Punishment for cheating by personation by using computer resource", "source_pdf_page": 24, "category": "cyber_fraud"},
+    {"id": "ITA_66E", "act_id": "ITA_2000", "section": "66E", "title": "Punishment for violation of privacy", "source_pdf_page": 24, "category": "cyber_privacy"},
+    {"id": "ITA_67", "act_id": "ITA_2000", "section": "67", "title": "Punishment for publishing or transmitting obscene material in electronic form", "source_pdf_page": 25, "category": "cyber_content"},
+    {"id": "ITA_67A", "act_id": "ITA_2000", "section": "67A", "title": "Punishment for publishing or transmitting of material containing sexually explicit act, etc., in electronic form", "source_pdf_page": 25, "category": "cyber_content"}
+  ],
+  "support_sections_not_recommendable": [
+    {"act_id": "BNS_2023", "section": "114", "reason": "Defines hurt for BNS 115"},
+    {"act_id": "BNS_2023", "section": "116", "reason": "Defines grievous hurt for BNS 117"},
+    {"act_id": "ITA_2000", "section": "43", "reason": "Referenced by IT Act 66"}
+  ],
+  "known_exclusions": [
+    {"id": "BNS_106_2", "reason": "Excluded from 1 July 2024 commencement notification; recheck later status before any future inclusion"},
+    {"id": "ITA_66A", "reason": "Struck down by Supreme Court and omitted by Jan Vishwas 2023; never recommend"},
+    {"id": "ITA_72A", "reason": "Jan Vishwas 2023 changed this to a civil penalty; do not recommend as a criminal complaint offence"}
+  ]
+}

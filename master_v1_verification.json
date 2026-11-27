@@ -1,0 +1,35 @@
+{
+  "result": "pass",
+  "master_database": "E:\\term paper project\\phase1\\db\\master_dataset.sqlite",
+  "sqlite_integrity": "ok",
+  "foreign_key_errors": 0,
+  "law_entries": {
+    "BNS_2023": 358,
+    "ITA_2000": 125
+  },
+  "source_rows_hash_checked": 6681,
+  "official_ipc_bns_candidate_pairs": 502,
+  "ipc_bns_labels_autoapproved": 0,
+  "source_rows_screened": 6681,
+  "embedded_artifacts_hash_checked": 57,
+  "family_reviewed_silver_train_rows": 2760,
+  "accepted_scenarios_by_split": {
+    "dev": 35,
+    "sealed_test": 80,
+    "train": 3007
+  },
+  "split_group_leaks": 0,
+  "pilot_export": "E:\\term paper project\\phase1\\exports\\scoped-pilot-20260917T204748Z",
+  "pilot_export_records": {
+    "train": {
+      "triage": 3007,
+      "workflow": 42
+    },
+    "dev": {
+      "triage": 35
+    }
+  },
+  "pilot_export_hashes_valid": true,
+  "sealed_test_files_exported": 0,
+  "scope_note": "Integrity passes. The 3,000 SFT row target includes 2,760 family-reviewed surface variants; full legal coverage and model-quality evidence remain incomplete."
+}

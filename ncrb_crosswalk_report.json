@@ -1,0 +1,14 @@
+{
+  "source_url": "https://www.ncrb.gov.in/uploads/SankalanPortal/SectionTableBNS.html",
+  "source_sha256": "16d042717a7163f8cffaa6011a59e810d01fe54e66278e63ca59133112c7c853",
+  "forward_pairs_parsed": 503,
+  "reverse_pairs_parsed": 502,
+  "reciprocal_candidate_pairs": 502,
+  "unique_ipc_sections": 499,
+  "unique_bns_sections": 346,
+  "ipc_sections_with_multiple_bns_candidates": 3,
+  "bns_sections_with_multiple_ipc_candidates": 48,
+  "pairs_marked_changed": 101,
+  "training_labels_approved": 0,
+  "note": "NCRB correspondence is only a candidate lookup. Compare offence elements and facts before relabelling any IPC complaint as BNS."
+}

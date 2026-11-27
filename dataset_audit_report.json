@@ -1,0 +1,55 @@
+{
+  "accepted_scenarios": 3122,
+  "by_split": {
+    "train": 3007,
+    "sealed_test": 80,
+    "dev": 35
+  },
+  "by_outcome": {
+    "provision_match": 2383,
+    "insufficient_information": 443,
+    "out_of_scope": 296
+  },
+  "positive_labels_by_provision": {
+    "BNS_115": 132,
+    "BNS_117": 129,
+    "BNS_303": 135,
+    "BNS_304": 133,
+    "BNS_316": 134,
+    "BNS_318": 132,
+    "BNS_319": 254,
+    "BNS_329": 131,
+    "BNS_351": 137,
+    "BNS_75": 133,
+    "BNS_77": 130,
+    "BNS_78": 133,
+    "ITA_65": 13,
+    "ITA_66": 132,
+    "ITA_66B": 129,
+    "ITA_66C": 131,
+    "ITA_66D": 131,
+    "ITA_67": 130,
+    "ITA_67A": 131
+  },
+  "structured_fact_rows": 49,
+  "accepted_conversation_actions": {
+    "ask_followup": 12,
+    "explain_uncertainty": 4,
+    "suggest_provisions": 3,
+    "offer_draft": 8,
+    "draft": 8,
+    "edit_draft": 5,
+    "confirm_draft": 5,
+    "cancel_draft": 3,
+    "refer_to_authorities": 5
+  },
+  "issues": [],
+  "pilot_minimum": {
+    "train": 70,
+    "dev": 15,
+    "sealed_test": 15
+  },
+  "pilot_split_ready": true,
+  "ready_to_export": true,
+  "note": "This checks the scenario count, split and internal consistency only. It does not prove legal accuracy, case diversity, workflow adequacy or readiness for full BNS and IT Act coverage; consult data_readiness_report.json."
+}

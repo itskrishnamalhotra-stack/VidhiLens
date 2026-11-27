@@ -1,0 +1,9 @@
+{
+  "run_fingerprint": "cb5faf99eea4918dc6629f344c6d8d328807f0de0079c62da6ffac9bb29e23f8",
+  "adapter_sha256": "2120aa63b63213c4fee541d91f2aa009fc21e4a9ff6282bf342d595ec3b8610c",
+  "adapter_bytes": 148080435,
+  "global_step": 1136,
+  "epochs": 2,
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+}

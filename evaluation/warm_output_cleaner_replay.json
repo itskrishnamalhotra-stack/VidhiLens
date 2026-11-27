@@ -1,0 +1,1584 @@
+{
+  "before": {
+    "cases": 150,
+    "outcome_accuracy": 0.98,
+    "strict_exact_all_case_accuracy": 0.8533333333333334,
+    "strict_exact_positive_section_accuracy": 0.81,
+    "strict_section_precision": 0.9105691056910569,
+    "required_section_recall": 0.8888888888888888,
+    "strict_section_f1": 0.899598393574297,
+    "out_of_scope_false_positive_rate": 0.0,
+    "tp": 112,
+    "fp": 11,
+    "fn": 14
+  },
+  "after": {
+    "cases": 150,
+    "outcome_accuracy": 1.0,
+    "strict_exact_all_case_accuracy": 0.9733333333333334,
+    "strict_exact_positive_section_accuracy": 0.96,
+    "strict_section_precision": 0.9692307692307692,
+    "required_section_recall": 1.0,
+    "strict_section_f1": 0.9843749999999999,
+    "out_of_scope_false_positive_rate": 0.0,
+    "tp": 126,
+    "fp": 4,
+    "fn": 0
+  },
+  "changed_cases": [
+    {
+      "case_id": "SRB1_003",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_75"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_78",
+            "missing_facts": "Was a woman repeatedly followed or contacted despite disinterest, or was her electronic communication monitored?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_75"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_005",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_77"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_67",
+            "missing_facts": "Was obscene or lascivious material published or transmitted electronically?"
+          },
+          {
+            "provision_id": "ITA_67A",
+            "missing_facts": "Was material containing a sexually explicit act or conduct published or transmitted electronically?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_77"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_007",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_77"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_67",
+            "missing_facts": "Was obscene or lascivious material published or transmitted electronically?"
+          },
+          {
+            "provision_id": "ITA_67A",
+            "missing_facts": "Was material containing a sexually explicit act or conduct published or transmitted electronically?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_77"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_008",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_77"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_67",
+            "missing_facts": "Was obscene or lascivious material published or transmitted electronically?"
+          },
+          {
+            "provision_id": "ITA_67A",
+            "missing_facts": "Was material containing a sexually explicit act or conduct published or transmitted electronically?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_77"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_009",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_78"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_78"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_010",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_78"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_78"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_012",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_78"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_78"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_018",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_117"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_115",
+            "missing_facts": "What bodily pain or injury was caused, and was it inflicted intentionally or knowingly?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_117"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_020",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_117"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_115",
+            "missing_facts": "What bodily pain or injury was caused, and was it inflicted intentionally or knowingly?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_117"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_021",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_304",
+            "missing_facts": "Was the property suddenly, quickly or forcibly seized or grabbed from a person or their possession?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_022",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_304",
+            "missing_facts": "Was the property suddenly, quickly or forcibly seized or grabbed from a person or their possession?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_023",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_024",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_304",
+            "missing_facts": "Was the property suddenly, quickly or forcibly seized or grabbed from a person or their possession?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_025",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_303",
+            "missing_facts": "Was movable property dishonestly taken or moved without the possessor's consent?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_026",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_303",
+            "missing_facts": "Was movable property dishonestly taken or moved without the possessor's consent?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_027",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_303",
+            "missing_facts": "Was movable property dishonestly taken or moved without the possessor's consent?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_028",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_303",
+            "missing_facts": "Was movable property dishonestly taken or moved without the possessor's consent?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_029",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_030",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_031",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_303",
+            "missing_facts": "Was movable property dishonestly taken or moved without the possessor's consent?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_032",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_303",
+            "missing_facts": "Was movable property dishonestly taken or moved without the possessor's consent?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_036",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_319"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66D",
+            "missing_facts": "Was a communication device or computer resource used to cheat by pretending to be another person?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_318"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66D",
+            "missing_facts": "Was a communication device or computer resource used to cheat by pretending to be another person?"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SRB1_037",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_319"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_038",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_319"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_039",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_319"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_040",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_318"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_319",
+            "missing_facts": "Did the person pretend to be someone else in order to deceive or induce an action?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_049",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_65"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_65"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_051",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_65"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_65"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_054",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66",
+          "ITA_66C"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_055",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66C",
+            "missing_facts": "Did another person fraudulently or dishonestly use the victim's password, signature or unique identification feature?"
+          },
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_056",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66C",
+            "missing_facts": "Did another person fraudulently or dishonestly use the victim's password, signature or unique identification feature?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_057",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303",
+          "ITA_66B"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66B"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_058",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66B"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66B"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_059",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66B",
+            "missing_facts": "Did the recipient know or have reason to believe the computer resource or device was stolen?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66B"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_060",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66B",
+            "missing_facts": "Did the recipient know or have reason to believe the computer resource or device was stolen?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66B"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_061",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          },
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_063",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_319",
+            "missing_facts": "Did the person pretend to be someone else in order to deceive or induce an action?"
+          },
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_319",
+            "missing_facts": "Did the person pretend to be someone else in order to deceive or induce an action?"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SRB1_064",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          },
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_065",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_066",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_067",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66C",
+            "missing_facts": "Did another person fraudulently or dishonestly use the victim's password, signature or unique identification feature?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_068",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_073",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_67",
+            "missing_facts": "Was obscene or lascivious material published or transmitted electronically?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_074",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_67",
+            "missing_facts": "Was obscene or lascivious material published or transmitted electronically?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_075",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_67",
+            "missing_facts": "Was obscene or lascivious material published or transmitted electronically?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_076",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_77",
+            "missing_facts": "Was a woman's private act watched, captured or disseminated without the relevant consent or expectation of observation?"
+          },
+          {
+            "provision_id": "ITA_67",
+            "missing_facts": "Was obscene or lascivious material published or transmitted electronically?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_77",
+            "missing_facts": "Was a woman's private act watched, captured or disseminated without the relevant consent or expectation of observation?"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SRB1_077",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          },
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C",
+          "ITA_66"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_078",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66C",
+            "missing_facts": "Did another person fraudulently or dishonestly use the victim's password, signature or unique identification feature?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319",
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_079",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319",
+          "ITA_66C"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319",
+          "ITA_66C"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_080",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_65"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_65",
+          "ITA_66"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_081",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A",
+          "BNS_77"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_67",
+            "missing_facts": "Was obscene or lascivious material published or transmitted electronically?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A",
+          "BNS_77"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_082",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A",
+          "BNS_351"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_67",
+            "missing_facts": "Was obscene or lascivious material published or transmitted electronically?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A",
+          "BNS_351"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_083",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_329",
+          "BNS_303"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_329",
+          "BNS_303"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_084",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_329"
+        ],
+        "uncertain_sections": []
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_329",
+          "BNS_115"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_088",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66C",
+            "missing_facts": "Did another person fraudulently or dishonestly use the victim's password, signature or unique identification feature?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66D",
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_092",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          },
+          {
+            "provision_id": "ITA_67",
+            "missing_facts": "Was obscene or lascivious material published or transmitted electronically?"
+          },
+          {
+            "provision_id": "BNS_77",
+            "missing_facts": "Was a woman's private act watched, captured or disseminated without the relevant consent or expectation of observation?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_67A",
+          "ITA_66"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_77",
+            "missing_facts": "Was a woman's private act watched, captured or disseminated without the relevant consent or expectation of observation?"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SRB1_093",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304",
+          "BNS_115"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_303",
+            "missing_facts": "Was movable property dishonestly taken or moved without the possessor's consent?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304",
+          "BNS_115"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_094",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304",
+          "BNS_117"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_303",
+            "missing_facts": "Was movable property dishonestly taken or moved without the possessor's consent?"
+          },
+          {
+            "provision_id": "BNS_115",
+            "missing_facts": "What bodily pain or injury was caused, and was it inflicted intentionally or knowingly?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_304",
+          "BNS_117"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_095",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_329",
+            "missing_facts": "Did the person enter or remain on another's property intending an offence, intimidation, insult or annoyance?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_303",
+          "BNS_329"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_097",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C",
+          "BNS_319"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66D",
+            "missing_facts": "Was a communication device or computer resource used to cheat by pretending to be another person?"
+          },
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          },
+          {
+            "provision_id": "ITA_66",
+            "missing_facts": "Was a computer-related act such as unauthorised access or data interference done dishonestly or fraudulently?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C",
+          "BNS_319"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "ITA_66D",
+            "missing_facts": "Was a communication device or computer resource used to cheat by pretending to be another person?"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SRB1_098",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_75"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_351",
+            "missing_facts": "What injury to a person, reputation or property was threatened, and was it meant to cause alarm or compel action?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_75",
+          "BNS_351"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_099",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "ITA_66C"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_78",
+            "missing_facts": "Was a woman repeatedly followed or contacted despite disinterest, or was her electronic communication monitored?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_78",
+          "ITA_66"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_100",
+      "before": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316"
+        ],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_319",
+            "missing_facts": "Did the person pretend to be someone else in order to deceive or induce an action?"
+          },
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      },
+      "after": {
+        "outcome": "provision_match",
+        "possible_provision_ids": [
+          "BNS_316",
+          "BNS_319"
+        ],
+        "uncertain_sections": []
+      }
+    },
+    {
+      "case_id": "SRB1_109",
+      "before": {
+        "outcome": "out_of_scope",
+        "possible_provision_ids": [],
+        "uncertain_sections": []
+      },
+      "after": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SRB1_121",
+      "before": {
+        "outcome": "out_of_scope",
+        "possible_provision_ids": [],
+        "uncertain_sections": []
+      },
+      "after": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": [
+          {
+            "provision_id": "BNS_318",
+            "missing_facts": "What facts show deception or dishonest intention when the payment, property or action was induced?"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SRB1_130",
+      "before": {
+        "outcome": "insufficient_information",
+        "possible_provision_ids": [],
+        "uncertain_sections": []
+      },
+      "after": {
+        "outcome": "out_of_scope",
+        "possible_provision_ids": [],
+        "uncertain_sections": []
+      }
+    }
+  ]
+}

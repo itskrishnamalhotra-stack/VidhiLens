@@ -1,0 +1,44 @@
+{
+  "warning": "Counts and valid IDs do not establish legal correctness, privacy clearance, or fitness for training.",
+  "bns_structured": {
+    "rows": 358,
+    "unique_section_ids": 358,
+    "missing_from_official_index": []
+  },
+  "bns_qa": {
+    "rows": 2148,
+    "unique_sections": 358,
+    "question_types": {
+      "definitional_topic": 358,
+      "definitional_section": 358,
+      "scenario": 358,
+      "elements": 358,
+      "exceptions": 358,
+      "consequence": 358
+    },
+    "priority_bns_sections_covered": 12
+  },
+  "bns_triage": {
+    "rows": 2219,
+    "distinct_base_sections": 287,
+    "non_section_or_unknown_label_rows": 2,
+    "priority_bns_sections_covered": 10
+  },
+  "nyaya_train": {
+    "rows": 1293,
+    "primary_bns_rows": 253,
+    "primary_it_act_rows": 72,
+    "metadata_verified_true_rows": 0
+  },
+  "nyaya_val": {
+    "rows": 163,
+    "primary_bns_rows": 29,
+    "primary_it_act_rows": 11
+  },
+  "nyaya_eval": {
+    "rows": 500,
+    "bns_rows": 70,
+    "cyber_law_rows": 42,
+    "known_content_discrepancy": "nyaya_eval_000019: BNS 75(1)(iv) remarks penalty differs from official BNS 75(3)"
+  }
+}

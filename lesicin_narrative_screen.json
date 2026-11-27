@@ -1,0 +1,60 @@
+{
+  "counts": {
+    "all_train": 42835,
+    "any_pilot_crosswalk_candidate": 19021,
+    "reasonable_length_no_simple_pii": 12577,
+    "no_obvious_statute_citation": 1450,
+    "no_obvious_procedural_word": 5
+  },
+  "examples_for_ai_inspection": [
+    {
+      "id": "59504994",
+      "labels": [
+        "506",
+        "427",
+        "323",
+        "148",
+        "147"
+      ],
+      "words": 58
+    },
+    {
+      "id": "95648774",
+      "labels": [
+        "34",
+        "354",
+        "506",
+        "376",
+        "452"
+      ],
+      "words": 67
+    },
+    {
+      "id": "1440390",
+      "labels": [
+        "379"
+      ],
+      "words": 67
+    },
+    {
+      "id": "47762524",
+      "labels": [
+        "420",
+        "471",
+        "467",
+        "468",
+        "120B",
+        "506"
+      ],
+      "words": 174
+    },
+    {
+      "id": "1776205",
+      "labels": [
+        "420"
+      ],
+      "words": 107
+    }
+  ],
+  "interpretation": "The last filter is intentionally strict and may reject useful facts. Passing it does not verify the IPC label, BNS mapping, privacy, or complaint style."
+}

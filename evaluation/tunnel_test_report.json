@@ -1,0 +1,32 @@
+{
+  "tunnel_url": "https://gadgets-gpl-exclusively-asia.trycloudflare.com",
+  "health": {
+    "api": "ready",
+    "database": "ready",
+    "build_id": "secure_demo_gateway_2026_09_27",
+    "model": {
+      "ready": true,
+      "models": [
+        "legal-complaint-lora",
+        "legalai-base"
+      ]
+    }
+  },
+  "bad_token_rejected": true,
+  "cross_user_access_blocked": true,
+  "complaint_outcome": "provision_match",
+  "complaint_provisions": [
+    "BNS_303"
+  ],
+  "draft_saved_locally": true,
+  "official_filing_performed": false,
+  "concurrent_requests": 4,
+  "concurrent_outcomes": [
+    "provision_match",
+    "provision_match",
+    "provision_match",
+    "out_of_scope"
+  ],
+  "concurrent_wall_seconds": 22.223,
+  "all_checks_passed": true
+}

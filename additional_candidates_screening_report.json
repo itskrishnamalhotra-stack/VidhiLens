@@ -1,0 +1,54 @@
+{
+  "indexed_rows": 10892,
+  "training_rows_approved": 0,
+  "source_counts": {
+    "nariraksha": {
+      "rows": 1000,
+      "rows_with_bns_it_hint": 916,
+      "publisher_labels_unverified": 1000,
+      "synthetic_template": 1000
+    },
+    "complaint_bns": {
+      "rows": 325,
+      "rows_with_bns_it_hint": 325,
+      "generic_allegation_template": 126,
+      "license_unspecified": 325,
+      "publisher_labels_unverified": 325,
+      "section_answer_in_input": 61,
+      "pre_bns_commencement_date": 56
+    },
+    "nyaya_v3_train": {
+      "rows": 5292,
+      "rows_with_bns_it_hint": 1296,
+      "publisher_verified_false": 5292
+    },
+    "nyaya_v3_val": {
+      "rows": 280,
+      "rows_with_bns_it_hint": 76,
+      "publisher_verified_false": 280
+    },
+    "nyaya_v3_test": {
+      "rows": 857,
+      "rows_with_bns_it_hint": 84,
+      "publisher_test_split_do_not_train": 857,
+      "publisher_verified_false": 857
+    },
+    "fraud_cyber": {
+      "rows": 2658,
+      "rows_with_bns_it_hint": 0,
+      "answer_citations_not_labels": 2658,
+      "license_unspecified": 2658
+    },
+    "nyaya_statute_bns": {
+      "rows": 358,
+      "rows_with_bns_it_hint": 358,
+      "official_source_required": 358
+    },
+    "nyaya_statute_it": {
+      "rows": 122,
+      "rows_with_bns_it_hint": 122,
+      "official_source_required": 122
+    }
+  },
+  "warning": "Publisher labels and third-party statute text are candidate research only. Legal verification requires official law text and fact review."
+}

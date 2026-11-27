@@ -1,0 +1,907 @@
+{
+  "reference_complaints": 4975,
+  "exact_overlap_count": 0,
+  "maximum_token_jaccard": 0.636364,
+  "rows": [
+    {
+      "case_id": "SRB1_001",
+      "max_token_jaccard": 0.333333,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "The complainant reports that a male supervisor demanded a sexual favour from a woman in exchange for approving her request. She refused and reported the demand."
+    },
+    {
+      "case_id": "SRB1_002",
+      "max_token_jaccard": 0.282051,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "The complainant reports that a male coworker deliberately showed pornography to a woman after she said she did not want to see it. She reported that the display was against her will."
+    },
+    {
+      "case_id": "SRB1_003",
+      "max_token_jaccard": 0.209302,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Main ek mahila employee hoon. Mere supervisor ne kai baar mujhse sexual favour maanga aur kaha promotion tabhi milega. Maine mana kiya; uske baad bhi usne wahi demand messages mein bheji."
+    },
+    {
+      "case_id": "SRB1_004",
+      "max_token_jaccard": 0.4,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मैं एक महिला कर्मचारी हूँ। मेरे पुरुष प्रबंधक ने कहा कि नौकरी में आगे बढ़ने के लिए मुझे उसकी यौन मांग माननी होगी। मैंने साफ मना किया, फिर भी उसने वही बात लिखकर दो बार भेजी। मेरे पास दोनों संदेश सुरक्षित हैं।"
+    },
+    {
+      "case_id": "SRB1_005",
+      "max_token_jaccard": 0.282051,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "Someone secretly recorded me while I was changing clothes in a private changing room. I never consented to the recording, and he later sent the video to another person."
+    },
+    {
+      "case_id": "SRB1_006",
+      "max_token_jaccard": 0.263158,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "Someone secretly recorded me while I was changing clothes in a private changing room. I never consented to the recording, and he later sent the video to another person."
+    },
+    {
+      "case_id": "SRB1_007",
+      "max_token_jaccard": 0.421053,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Main kapde badal rahi thi ek band changing room mein. Ek aadmi ne chhupkar darwaze ke gap se mera video banaya. Maine recording ki kabhi permission nahi di aur room private tha."
+    },
+    {
+      "case_id": "SRB1_008",
+      "max_token_jaccard": 0.409091,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "किसी व्यक्ति ने मेरा लॉगिन पासवर्ड बिना पूछे इस्तेमाल करके मेरे खाते में प्रवेश किया और मेरे नाम से कई लोगों को संदेश भेजे। मंच के लॉग में उसके अलग उपकरण का समय दिखता है। मैंने पासवर्ड साझा नहीं किया था।"
+    },
+    {
+      "case_id": "SRB1_009",
+      "max_token_jaccard": 0.405405,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "I am a woman. A man from my class has followed me home on four evenings and keeps contacting me after I clearly told him not to. I have saved the messages."
+    },
+    {
+      "case_id": "SRB1_010",
+      "max_token_jaccard": 0.268293,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "I told a man several times that I did not want any contact with him. He continues following me to work, waiting outside my house and monitoring my social-media activity."
+    },
+    {
+      "case_id": "SRB1_011",
+      "max_token_jaccard": 0.266667,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Main ek mahila hoon. Maine use saaf kaha ki mujhe contact na kare, lekin woh aadmi teen hafte se roz office tak mera peecha karta hai. Maine dates likhi hain aur guard ne bhi dekha."
+    },
+    {
+      "case_id": "SRB1_012",
+      "max_token_jaccard": 0.340426,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मुझे ऑनलाइन किसी ने बैंक कर्मचारी बनकर लिखा कि मेरा खाता बंद होगा और एक लिंक पर भुगतान करना होगा। मैंने उसकी झूठी पहचान पर भरोसा करके रकम भेज दी। बाद में बैंक ने बताया कि वह व्यक्ति उनका कर्मचारी नहीं है।"
+    },
+    {
+      "case_id": "SRB1_013",
+      "max_token_jaccard": 0.285714,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "During an argument, a person deliberately punched a neighbour and caused pain and bruising. The neighbour obtained a medical note."
+    },
+    {
+      "case_id": "SRB1_014",
+      "max_token_jaccard": 0.181818,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A person sent me one unwanted message. There has been no repeated contact or monitoring that I know of."
+    },
+    {
+      "case_id": "SRB1_015",
+      "max_token_jaccard": 0.216216,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Office mein jhagde ke baad ek coworker ne mujhe jaan bujhkar mukka mara. Mere kandhe mein turant dard hua aur sujan bhi aa gayi, lekin doctor ne fracture nahi bataya."
+    },
+    {
+      "case_id": "SRB1_016",
+      "max_token_jaccard": 0.326531,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मैं एक महिला कर्मचारी हूँ। मेरे पुरुष प्रबंधक ने कहा कि नौकरी में आगे बढ़ने के लिए मुझे उसकी यौन मांग माननी होगी। मैंने साफ मना किया, फिर भी उसने वही बात लिखकर दो बार भेजी। मेरे पास दोनों संदेश सुरक्षित हैं।"
+    },
+    {
+      "case_id": "SRB1_017",
+      "max_token_jaccard": 0.233333,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A person deliberately struck my brother with a sharpened metal tool, causing a cut and pain. A clinic recorded the wound and the tool used."
+    },
+    {
+      "case_id": "SRB1_018",
+      "max_token_jaccard": 0.233333,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "During an argument, my neighbour intentionally struck my arm with an iron rod. My arm was fractured, and I have hospital records and an X-ray."
+    },
+    {
+      "case_id": "SRB1_019",
+      "max_token_jaccard": 0.116279,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Main ek mahila employee hoon. Mere supervisor ne kai baar mujhse sexual favour maanga aur kaha promotion tabhi milega. Maine mana kiya; uske baad bhi usne wahi demand messages mein bheji."
+    },
+    {
+      "case_id": "SRB1_020",
+      "max_token_jaccard": 0.285714,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "मेरा फोन घर से निकलने के बाद नहीं मिल रहा है। शायद रास्ते में गिर गया हो या किसी ने उठा लिया हो, लेकिन मैंने किसी को लेते नहीं देखा। अभी मेरे पास केवल अंतिम स्थान का अनुमान है और कोई रिकॉर्डिंग नहीं।"
+    },
+    {
+      "case_id": "SRB1_021",
+      "max_token_jaccard": 0.290323,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "A person struck me so they could take my bag, then carried it away without my consent while I was injured."
+    },
+    {
+      "case_id": "SRB1_022",
+      "max_token_jaccard": 0.285714,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A visitor secretly took my laptop from inside my home without permission and carried it away intending to keep it."
+    },
+    {
+      "case_id": "SRB1_023",
+      "max_token_jaccard": 0.210526,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "Mera phone kal se nahi mil raha aur shayad market mein gir gaya ya kisi ne le liya. Kisi ko phone chhoote nahi dekha; main sirf last location jaanta hoon."
+    },
+    {
+      "case_id": "SRB1_024",
+      "max_token_jaccard": 0.463415,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मैं दुकान का मालिक हूँ। कल बंद करने से पहले एक ग्राहक ने काउंटर से मेरा कैमरा उठाकर अपने बैग में छिपा लिया और बिना पैसे दिए निकल गया। कैमरे में यह घटना दिखती है। मैंने उसे सामान लेने की अनुमति नहीं दी थी।"
+    },
+    {
+      "case_id": "SRB1_025",
+      "max_token_jaccard": 0.30303,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "A rider came up beside me and suddenly yanked my handbag from my hand while I was walking. I did not let go voluntarily and the rider sped away with it."
+    },
+    {
+      "case_id": "SRB1_026",
+      "max_token_jaccard": 0.347826,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A person suddenly grabbed my phone from my hand at a bus stop and ran away with it."
+    },
+    {
+      "case_id": "SRB1_027",
+      "max_token_jaccard": 0.294118,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Kal bus stand par ek aadmi ne mere haath se phone achanak zor se kheench liya aur bhaag gaya. Maine phone dene ki ijazat nahi di thi, aur do logon ne dekha."
+    },
+    {
+      "case_id": "SRB1_028",
+      "max_token_jaccard": 0.405405,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मैं बस में खड़ी थी जब एक आदमी ने अचानक मेरे हाथ में पकड़ा फोन जोर से खींचा और भाग गया। मैंने फोन उसे नहीं दिया था। मेरे साथ खड़ी यात्री ने उसका चेहरा और फोन खींचने का तरीका देखा।"
+    },
+    {
+      "case_id": "SRB1_029",
+      "max_token_jaccard": 0.387097,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "I gave my laptop to a repair-shop owner only for repairs. Instead of returning it, he sold it to another person and kept the money."
+    },
+    {
+      "case_id": "SRB1_030",
+      "max_token_jaccard": 0.407407,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A treasurer entrusted with club funds transferred the money to a personal account and used it for private expenses."
+    },
+    {
+      "case_id": "SRB1_031",
+      "max_token_jaccard": 0.30303,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Maine apne dost ko meri dukaan ki cash rakam sirf bank mein jama karne ke liye di thi. Usne jama nahi ki aur messages mein maana ki paise apne kharch ke liye use kiye."
+    },
+    {
+      "case_id": "SRB1_032",
+      "max_token_jaccard": 0.421053,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मैंने अपने कर्मचारी को कंपनी की नकदी बैंक में जमा कराने के लिए दी थी और उसी दिन जमा पर्ची लाने को कहा था। उसने पैसे अपने खाते में डाल दिए और संदेश में लिखा कि उसने निजी खर्च के लिए रकम इस्तेमाल की।"
+    },
+    {
+      "case_id": "SRB1_033",
+      "max_token_jaccard": 0.242424,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A seller took my payment for a phone after falsely claiming to own it; messages suggest the seller never had any phone to sell."
+    },
+    {
+      "case_id": "SRB1_034",
+      "max_token_jaccard": 0.194444,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "A man falsely claimed that he owned a flat and showed me fabricated ownership documents. I relied on those documents and paid him ₹2 lakh as an advance."
+    },
+    {
+      "case_id": "SRB1_035",
+      "max_token_jaccard": 0.1875,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Main dukaan band kar raha tha jab padosi ne counter par rakha mera camera chupke se apne bag mein daal liya. Video mein dikh raha hai; maine kabhi use lene ki permission nahi di."
+    },
+    {
+      "case_id": "SRB1_036",
+      "max_token_jaccard": 0.425,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मैंने अपने कर्मचारी को कंपनी की नकदी बैंक में जमा कराने के लिए दी थी और उसी दिन जमा पर्ची लाने को कहा था। उसने पैसे अपने खाते में डाल दिए और संदेश में लिखा कि उसने निजी खर्च के लिए रकम इस्तेमाल की।"
+    },
+    {
+      "case_id": "SRB1_037",
+      "max_token_jaccard": 0.27027,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "The complainant reports that a stranger posed as a named supplier's authorised representative, falsely claimed payment was due to them, and induced a customer to hand over cash."
+    },
+    {
+      "case_id": "SRB1_038",
+      "max_token_jaccard": 0.275862,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "A person created a fake profile using my identity, contacted my relatives while pretending to be me and convinced one relative to transfer ₹20,000."
+    },
+    {
+      "case_id": "SRB1_039",
+      "max_token_jaccard": 0.222222,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Ek vyakti mere bhai ke naam aur photo se mila aur bola ki woh hi mera bhai hai. Uski pehchan par vishwas karke maine use bhai ke liye rakhe paise de diye."
+    },
+    {
+      "case_id": "SRB1_040",
+      "max_token_jaccard": 0.377778,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मुझे ऑनलाइन किसी ने बैंक कर्मचारी बनकर लिखा कि मेरा खाता बंद होगा और एक लिंक पर भुगतान करना होगा। मैंने उसकी झूठी पहचान पर भरोसा करके रकम भेज दी। बाद में बैंक ने बताया कि वह व्यक्ति उनका कर्मचारी नहीं है।"
+    },
+    {
+      "case_id": "SRB1_041",
+      "max_token_jaccard": 0.34375,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "According to the complainant, a stranger entered a resident's dwelling without permission intending to insult and intimidate the resident, and stayed after being told to leave."
+    },
+    {
+      "case_id": "SRB1_042",
+      "max_token_jaccard": 0.236842,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "According to the complainant, a building contractor entered a warehouse in another person's possession without consent intending to damage stored property, and began looking for the goods."
+    },
+    {
+      "case_id": "SRB1_043",
+      "max_token_jaccard": 0.170732,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Office mein jhagde ke baad ek coworker ne mujhe jaan bujhkar mukka mara. Mere kandhe mein turant dard hua aur sujan bhi aa gayi, lekin doctor ne fracture nahi bataya."
+    },
+    {
+      "case_id": "SRB1_044",
+      "max_token_jaccard": 0.34,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "एक व्यक्ति ने मुझे संदेश भेजा कि यदि मैंने उसके खिलाफ चल रहा मुकदमा वापस नहीं लिया तो वह मेरे घर में आग लगा देगा। उसने यही शर्त दोहराई और मैं डर गया। मेरे पास पूरा संदेश और भेजने वाले का नंबर है।"
+    },
+    {
+      "case_id": "SRB1_045",
+      "max_token_jaccard": 0.636364,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A person threatened to burn my house unless I withdrew a complaint, and I was frightened by the threat."
+    },
+    {
+      "case_id": "SRB1_046",
+      "max_token_jaccard": 0.241379,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A neighbour threatened to burn my shop unless I paid money, and the threat made me fear immediate harm."
+    },
+    {
+      "case_id": "SRB1_047",
+      "max_token_jaccard": 0.214286,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Ek aadmi ne message mein kaha ki agar main apni zameen ka case wapas nahi leta to mera ghar jala dega. Main dara hua hoon aur usne case chhodne ko kaha hai."
+    },
+    {
+      "case_id": "SRB1_048",
+      "max_token_jaccard": 0.282609,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मैं एक महिला कर्मचारी हूँ। मेरे पुरुष प्रबंधक ने कहा कि नौकरी में आगे बढ़ने के लिए मुझे उसकी यौन मांग माननी होगी। मैंने साफ मना किया, फिर भी उसने वही बात लिखकर दो बार भेजी। मेरे पास दोनों संदेश सुरक्षित हैं।"
+    },
+    {
+      "case_id": "SRB1_049",
+      "max_token_jaccard": 0.30303,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A developer knowingly deleted source code that a law required the company to keep and maintain, intending to prevent its use."
+    },
+    {
+      "case_id": "SRB1_050",
+      "max_token_jaccard": 0.241379,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A developer knowingly deleted source code that a law required the company to keep and maintain, intending to prevent its use."
+    },
+    {
+      "case_id": "SRB1_051",
+      "max_token_jaccard": 0.222222,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Mere colleague ne intentionally company ka source code alter kar diya hai, which was legally required to be maintained. Iska kya punishment hai aur process kya hoga?"
+    },
+    {
+      "case_id": "SRB1_052",
+      "max_token_jaccard": 0.272727,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मैंने अपने कर्मचारी को कंपनी की नकदी बैंक में जमा कराने के लिए दी थी और उसी दिन जमा पर्ची लाने को कहा था। उसने पैसे अपने खाते में डाल दिए और संदेश में लिखा कि उसने निजी खर्च के लिए रकम इस्तेमाल की।"
+    },
+    {
+      "case_id": "SRB1_053",
+      "max_token_jaccard": 0.34375,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "According to the complainant, an individual accessed a business server after access was revoked and deliberately deleted records to cause the business financial loss."
+    },
+    {
+      "case_id": "SRB1_054",
+      "max_token_jaccard": 0.25,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Someone took my phone from my desk without my permission and later said they intended to keep it."
+    },
+    {
+      "case_id": "SRB1_055",
+      "max_token_jaccard": 0.232558,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Company ke server mein ek former worker ne bina permission login karke customer files jaan bujhkar delete kar di, taki company ko nuksan ho. Access logs uska account dikhate hain aur backup se deletion confirm hui."
+    },
+    {
+      "case_id": "SRB1_056",
+      "max_token_jaccard": 0.414634,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "किसी व्यक्ति ने मेरा लॉगिन पासवर्ड बिना पूछे इस्तेमाल करके मेरे खाते में प्रवेश किया और मेरे नाम से कई लोगों को संदेश भेजे। मंच के लॉग में उसके अलग उपकरण का समय दिखता है। मैंने पासवर्ड साझा नहीं किया था।"
+    },
+    {
+      "case_id": "SRB1_057",
+      "max_token_jaccard": 0.291667,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A buyer received a stolen phone after being told it was stolen and kept it anyway."
+    },
+    {
+      "case_id": "SRB1_058",
+      "max_token_jaccard": 0.333333,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A buyer acquired a phone for a suspiciously low price after the seller said it had been stolen, and kept it anyway."
+    },
+    {
+      "case_id": "SRB1_059",
+      "max_token_jaccard": 0.113636,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Main dukaan band kar raha tha jab padosi ne counter par rakha mera camera chupke se apne bag mein daal liya. Video mein dikh raha hai; maine kabhi use lene ki permission nahi di."
+    },
+    {
+      "case_id": "SRB1_060",
+      "max_token_jaccard": 0.421053,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मैंने अपने कर्मचारी को कंपनी की नकदी बैंक में जमा कराने के लिए दी थी और उसी दिन जमा पर्ची लाने को कहा था। उसने पैसे अपने खाते में डाल दिए और संदेश में लिखा कि उसने निजी खर्च के लिए रकम इस्तेमाल की।"
+    },
+    {
+      "case_id": "SRB1_061",
+      "max_token_jaccard": 0.216216,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Someone used my private banking password without permission to log in as me and transfer money to another account. I had not shared it, and the transfer records show the unauthorised use."
+    },
+    {
+      "case_id": "SRB1_062",
+      "max_token_jaccard": 0.166667,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "Someone created an Instagram account using my name and photograph. They are pretending to be me and asking my friends to send money."
+    },
+    {
+      "case_id": "SRB1_063",
+      "max_token_jaccard": 0.257143,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Kisi ne mera email password chura kar mere naam se login kiya aur mere account se contacts ko messages bheje. Login history mein alag device dikh raha hai; maine use access nahi diya."
+    },
+    {
+      "case_id": "SRB1_064",
+      "max_token_jaccard": 0.333333,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "किसी व्यक्ति ने मेरा लॉगिन पासवर्ड बिना पूछे इस्तेमाल करके मेरे खाते में प्रवेश किया और मेरे नाम से कई लोगों को संदेश भेजे। मंच के लॉग में उसके अलग उपकरण का समय दिखता है। मैंने पासवर्ड साझा नहीं किया था।"
+    },
+    {
+      "case_id": "SRB1_065",
+      "max_token_jaccard": 0.384615,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A caller pretending to be a bank employee used a mobile app message to trick me into sending money."
+    },
+    {
+      "case_id": "SRB1_066",
+      "max_token_jaccard": 0.333333,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A scammer pretended through a messaging app to be a bank officer and deceived me into paying a fake security charge."
+    },
+    {
+      "case_id": "SRB1_067",
+      "max_token_jaccard": 0.25,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Mujhe online chat par kisi ne bank officer bankar call kiya aur fake verification ke naam par payment link bheja. Maine uski baat maan kar paise transfer kiye, baad mein bank ne bataya woh employee nahi tha."
+    },
+    {
+      "case_id": "SRB1_068",
+      "max_token_jaccard": 0.355556,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मुझे ऑनलाइन किसी ने बैंक कर्मचारी बनकर लिखा कि मेरा खाता बंद होगा और एक लिंक पर भुगतान करना होगा। मैंने उसकी झूठी पहचान पर भरोसा करके रकम भेज दी। बाद में बैंक ने बताया कि वह व्यक्ति उनका कर्मचारी नहीं है।"
+    },
+    {
+      "case_id": "SRB1_069",
+      "max_token_jaccard": 0.295455,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "{\"complaint\":\"An account publicly posted a lascivious illustration intended to arouse viewers. The image and captions were obscene, but they did not depict any sexually explicit act or conduct. The account owner uploaded the material to an "
+    },
+    {
+      "case_id": "SRB1_070",
+      "max_token_jaccard": 0.228571,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "According to the complainant, a page administrator transmitted an obscene illustrated adult image through an online group, with prurient content but no depicted sexual act."
+    },
+    {
+      "case_id": "SRB1_071",
+      "max_token_jaccard": 0.16,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A person transmitted a video containing a sexually explicit act through an online group."
+    },
+    {
+      "case_id": "SRB1_072",
+      "max_token_jaccard": 0.341463,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मैंने अपने कर्मचारी को कंपनी की नकदी बैंक में जमा कराने के लिए दी थी और उसी दिन जमा पर्ची लाने को कहा था। उसने पैसे अपने खाते में डाल दिए और संदेश में लिखा कि उसने निजी खर्च के लिए रकम इस्तेमाल की।"
+    },
+    {
+      "case_id": "SRB1_073",
+      "max_token_jaccard": 0.3,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A person transmitted a video containing a sexually explicit act through an online group."
+    },
+    {
+      "case_id": "SRB1_074",
+      "max_token_jaccard": 0.28,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "According to the complainant, a page administrator transmitted a digital recording of an explicit sexual act involving adults to an online group."
+    },
+    {
+      "case_id": "SRB1_075",
+      "max_token_jaccard": 0.227273,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A person transmitted a video containing a sexually explicit act through an online group."
+    },
+    {
+      "case_id": "SRB1_076",
+      "max_token_jaccard": 0.272727,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "किसी व्यक्ति ने मेरा लॉगिन पासवर्ड बिना पूछे इस्तेमाल करके मेरे खाते में प्रवेश किया और मेरे नाम से कई लोगों को संदेश भेजे। मंच के लॉग में उसके अलग उपकरण का समय दिखता है। मैंने पासवर्ड साझा नहीं किया था।"
+    },
+    {
+      "case_id": "SRB1_077",
+      "max_token_jaccard": 0.4,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A person used my online-banking password without permission for a dishonest purpose."
+    },
+    {
+      "case_id": "SRB1_078",
+      "max_token_jaccard": 0.233333,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "Someone created an Instagram account using my name and photograph. They are pretending to be me and asking my friends to send money."
+    },
+    {
+      "case_id": "SRB1_079",
+      "max_token_jaccard": 0.333333,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A scammer pretended through a messaging app to be a bank officer and deceived me into paying a fake security charge."
+    },
+    {
+      "case_id": "SRB1_080",
+      "max_token_jaccard": 0.258065,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A developer knowingly deleted source code that a law required the company to keep and maintain, intending to prevent its use."
+    },
+    {
+      "case_id": "SRB1_081",
+      "max_token_jaccard": 0.423077,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A man secretly recorded a woman while she was changing clothes in a private room and sent the video to others."
+    },
+    {
+      "case_id": "SRB1_082",
+      "max_token_jaccard": 0.333333,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A person threatened to burn my house unless I withdrew a complaint, and I was frightened by the threat."
+    },
+    {
+      "case_id": "SRB1_083",
+      "max_token_jaccard": 0.36,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A visitor secretly took my laptop from inside my home without permission and carried it away intending to keep it."
+    },
+    {
+      "case_id": "SRB1_084",
+      "max_token_jaccard": 0.291667,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A person entered another's house without permission intending to steal property from inside."
+    },
+    {
+      "case_id": "SRB1_085",
+      "max_token_jaccard": 0.346154,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A neighbour threatened to burn my shop unless I paid money, and the threat made me fear immediate harm."
+    },
+    {
+      "case_id": "SRB1_086",
+      "max_token_jaccard": 0.214286,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A neighbour threatened to burn my shop unless I paid money, and the threat made me fear immediate harm."
+    },
+    {
+      "case_id": "SRB1_087",
+      "max_token_jaccard": 0.222222,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "I entrusted an employee with stock for delivery, but they sold it and kept the money for themselves."
+    },
+    {
+      "case_id": "SRB1_088",
+      "max_token_jaccard": 0.285714,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "Someone created an Instagram account using my name and photograph. They are pretending to be me and asking my friends to send money."
+    },
+    {
+      "case_id": "SRB1_089",
+      "max_token_jaccard": 0.30303,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "After a woman clearly told a man to stop contacting her, he followed her to work on several days and monitored her online account activity."
+    },
+    {
+      "case_id": "SRB1_090",
+      "max_token_jaccard": 0.3125,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "Someone secretly recorded me while I was changing clothes in a private changing room. I never consented to the recording, and he later sent the video to another person."
+    },
+    {
+      "case_id": "SRB1_091",
+      "max_token_jaccard": 0.266667,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A person threatened to burn my house unless I withdrew a complaint, and I was frightened by the threat."
+    },
+    {
+      "case_id": "SRB1_092",
+      "max_token_jaccard": 0.304348,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A person transmitted a video containing a sexually explicit act through an online group."
+    },
+    {
+      "case_id": "SRB1_093",
+      "max_token_jaccard": 0.243243,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "A rider came up beside me and suddenly yanked my handbag from my hand while I was walking. I did not let go voluntarily and the rider sped away with it."
+    },
+    {
+      "case_id": "SRB1_094",
+      "max_token_jaccard": 0.184211,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "During an argument my neighbour deliberately swung an iron bar at my arm. The hospital X-ray showed a broken forearm bone and I still have the discharge papers."
+    },
+    {
+      "case_id": "SRB1_095",
+      "max_token_jaccard": 0.225806,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "According to the complainant, a person quietly removed a shop owner's boxed tablet from a shelf without consent and carried it away intending to keep it."
+    },
+    {
+      "case_id": "SRB1_096",
+      "max_token_jaccard": 0.24,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A buyer received a stolen phone after being told it was stolen and kept it anyway."
+    },
+    {
+      "case_id": "SRB1_097",
+      "max_token_jaccard": 0.296296,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A person took my phone from my bag without consent and later used my password to access my online account."
+    },
+    {
+      "case_id": "SRB1_098",
+      "max_token_jaccard": 0.291667,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A person threatened to burn my house unless I withdrew a complaint, and I was frightened by the threat."
+    },
+    {
+      "case_id": "SRB1_099",
+      "max_token_jaccard": 0.205128,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A man secretly configured a woman's email account to forward her private messages to his address. He showed her excerpts weeks later; she had never approved monitoring or forwarding of her communications."
+    },
+    {
+      "case_id": "SRB1_100",
+      "max_token_jaccard": 0.375,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "I gave my laptop to a repair-shop owner only for repairs. Instead of returning it, he sold it to another person and kept the money."
+    },
+    {
+      "case_id": "SRB1_101",
+      "max_token_jaccard": 0.333333,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "A person injured me yesterday. I have not explained how it happened, whether it was intentional, what injury occurred or whether a weapon was used."
+    },
+    {
+      "case_id": "SRB1_102",
+      "max_token_jaccard": 0.310345,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Someone says an intimate clip exists, but I do not know what it depicts or whether anyone uploaded or transmitted it."
+    },
+    {
+      "case_id": "SRB1_103",
+      "max_token_jaccard": 0.294118,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Someone splashed an unknown liquid near my friend during a quarrel. I do not know what the liquid was, whether it touched my friend, or what injury was intended."
+    },
+    {
+      "case_id": "SRB1_104",
+      "max_token_jaccard": 0.461538,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "A person injured me yesterday. I have not explained how it happened, whether it was intentional, what injury occurred or whether a weapon was used."
+    },
+    {
+      "case_id": "SRB1_105",
+      "max_token_jaccard": 0.255319,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Someone hit my leg during a quarrel. It is painful and swollen, but no clinician has examined it yet. I am worried a bone may be broken, although I have no test result and cannot describe how hard the blow was."
+    },
+    {
+      "case_id": "SRB1_106",
+      "max_token_jaccard": 0.323529,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A wallet went missing in a crowded bus. I did not see anyone take it and do not know whether force, wrongful restraint, or an immediate threat was used."
+    },
+    {
+      "case_id": "SRB1_107",
+      "max_token_jaccard": 0.294118,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "The complainant reports that a person reported a missing bag after a crowded journey but cannot say whether anyone suddenly seized it or whether it was left behind."
+    },
+    {
+      "case_id": "SRB1_108",
+      "max_token_jaccard": 0.295455,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A seller took payment for a table and has delayed delivery for two weeks. The seller still replies and offers a new date; I do not know whether any representation was false or concealed when I paid."
+    },
+    {
+      "case_id": "SRB1_109",
+      "max_token_jaccard": 0.282051,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "I paid someone for a product, but it has not arrived yet. The seller says delivery is delayed. I do not know whether the seller intended to deceive me."
+    },
+    {
+      "case_id": "SRB1_110",
+      "max_token_jaccard": 0.352941,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "An official received a heated message. I do not know whether it threatened injury to the official or another person with the statutory purpose."
+    },
+    {
+      "case_id": "SRB1_111",
+      "max_token_jaccard": 0.333333,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A person entered a residence and then a dispute arose. I do not know whether entry was house trespass with intent to commit an offence."
+    },
+    {
+      "case_id": "SRB1_112",
+      "max_token_jaccard": 0.375,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A neighbour said, 'You will regret this,' after our disagreement. I was upset, but I cannot say whether they threatened harm to a person, reputation, or property, or asked me to do anything."
+    },
+    {
+      "case_id": "SRB1_113",
+      "max_token_jaccard": 0.380952,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "An administrator intentionally deleted the source-code archive for our computer system after being told to preserve it. I can show the deletion log, but I do not know whether any law required this source code to be kept or maintained."
+    },
+    {
+      "case_id": "SRB1_114",
+      "max_token_jaccard": 0.15,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "An office file disappeared after a network outage, and staff suspect someone accessed the computer. Logs are incomplete, and no one can identify an unauthorised act or dishonest purpose yet."
+    },
+    {
+      "case_id": "SRB1_115",
+      "max_token_jaccard": 0.363636,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A certificate was submitted to an office. I do not know whether the user knew it was false and used it as true."
+    },
+    {
+      "case_id": "SRB1_116",
+      "max_token_jaccard": 0.444444,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "My social-media password stopped working. I think someone may have hacked my account, but I have no login alert or other evidence."
+    },
+    {
+      "case_id": "SRB1_117",
+      "max_token_jaccard": 0.454545,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "A caller asked me to pay an online fee, but the call ended before I paid. I have no recording and do not know whether the caller claimed to represent anyone else."
+    },
+    {
+      "case_id": "SRB1_118",
+      "max_token_jaccard": 0.351351,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A coworker says a private video was shared in a group chat, but I have not seen the file and do not know what it depicts. I only know several people are discussing it."
+    },
+    {
+      "case_id": "SRB1_119",
+      "max_token_jaccard": 0.464286,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Someone says an intimate clip exists, but I do not know what it depicts or whether anyone uploaded or transmitted it."
+    },
+    {
+      "case_id": "SRB1_120",
+      "max_token_jaccard": 0.30303,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "Mera phone kal se nahi mil raha aur shayad market mein gir gaya ya kisi ne le liya. Kisi ko phone chhoote nahi dekha; main sirf last location jaanta hoon."
+    },
+    {
+      "case_id": "SRB1_121",
+      "max_token_jaccard": 0.194444,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Mere boss ne meri salary se PF ka paisa deduct kiya hai, lekin government fund mein jama nahi kiya. Kya ye crime hai? Mujhe kya karna chahiye?"
+    },
+    {
+      "case_id": "SRB1_122",
+      "max_token_jaccard": 0.2,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Kisi ne mera email password chura kar mere naam se login kiya aur mere account se contacts ko messages bheje. Login history mein alag device dikh raha hai; maine use access nahi diya."
+    },
+    {
+      "case_id": "SRB1_123",
+      "max_token_jaccard": 0.425,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "मुझे बताया गया कि किसी ने मेरे नाम से इंटरनेट पर कुछ लिखा है, लेकिन मैंने पोस्ट नहीं देखी और मुझे नहीं पता उसमें क्या कहा गया। मैं अभी केवल दोस्त की बात दोहरा रहा हूँ और मुझे कोई धमकी सीधे नहीं मिली।"
+    },
+    {
+      "case_id": "SRB1_124",
+      "max_token_jaccard": 0.348837,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "हमारी इमारत की लिफ्ट तीन दिनों से बंद है और प्रबंधन कहता है कि मरम्मत में समय लगेगा। मुझे सीढ़ियों से जाना पड़ता है और काम पर देर होती है। किसी ने सामान नहीं लिया, धमकी नहीं दी और कंप्यूटर का मामला नहीं है।"
+    },
+    {
+      "case_id": "SRB1_125",
+      "max_token_jaccard": 0.313725,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "एक व्यक्ति ने मुझे संदेश भेजा कि यदि मैंने उसके खिलाफ चल रहा मुकदमा वापस नहीं लिया तो वह मेरे घर में आग लगा देगा। उसने यही शर्त दोहराई और मैं डर गया। मेरे पास पूरा संदेश और भेजने वाले का नंबर है।"
+    },
+    {
+      "case_id": "SRB1_126",
+      "max_token_jaccard": 0.28125,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "My university gave me fewer marks than I expected in an examination, and I want the professor arrested."
+    },
+    {
+      "case_id": "SRB1_127",
+      "max_token_jaccard": 0.259259,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "My internet connection has been slow for three days even though I paid the monthly bill."
+    },
+    {
+      "case_id": "SRB1_128",
+      "max_token_jaccard": 0.466667,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "My landlord and I disagree about deductions from my security deposit. There were no threats, forged documents or dishonest claims when the agreement was made."
+    },
+    {
+      "case_id": "SRB1_129",
+      "max_token_jaccard": 0.222222,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A restaurant served my meal cold and offered to replace it. I would prefer my money back; I have no evidence that staff lied when taking the order or intended to harm me."
+    },
+    {
+      "case_id": "SRB1_130",
+      "max_token_jaccard": 0.171429,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "My landlord and I disagree about deductions from my security deposit. There were no threats, forged documents or dishonest claims when the agreement was made."
+    },
+    {
+      "case_id": "SRB1_131",
+      "max_token_jaccard": 0.235294,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "My broadband bill increased under a price-change notice. I want to compare plans; I have no allegation of deception, unauthorised access, or tampering."
+    },
+    {
+      "case_id": "SRB1_132",
+      "max_token_jaccard": 0.214286,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "A delivery company says weather delayed my parcel by one day and has provided a new tracking estimate. I want compensation for the delay; there is no stated deception when I paid."
+    },
+    {
+      "case_id": "SRB1_133",
+      "max_token_jaccard": 0.219512,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "My wallet disappeared during a quarrel at the station. Someone pushed past me, but I did not see a taking or know whether the push had anything to do with the missing wallet."
+    },
+    {
+      "case_id": "SRB1_134",
+      "max_token_jaccard": 0.2,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "My landlord and I disagree about deductions from my security deposit. There were no threats, forged documents or dishonest claims when the agreement was made."
+    },
+    {
+      "case_id": "SRB1_135",
+      "max_token_jaccard": 0.243902,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "{\"complaint\":\"A shop accurately described a chair, accepted payment, and delivered the same chair. The buyer later found a lower price elsewhere and regrets the purchase; the report states no false representation or deceptive inducement.\",\""
+    },
+    {
+      "case_id": "SRB1_136",
+      "max_token_jaccard": 0.21875,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "The university moved my exam to a different room and I want the timetable corrected. Nobody threatened me, took property, or accessed my accounts."
+    },
+    {
+      "case_id": "SRB1_137",
+      "max_token_jaccard": 0.193548,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "I found messages showing that a person knew of a plan to kill a shopkeeper and deliberately concealed the plan from investigators to help the planned killing proceed."
+    },
+    {
+      "case_id": "SRB1_138",
+      "max_token_jaccard": 0.194444,
+      "nearest_source": "manual_21",
+      "nearest_text_preview": "My landlord and I disagree about deductions from my security deposit. There were no threats, forged documents or dishonest claims when the agreement was made."
+    },
+    {
+      "case_id": "SRB1_139",
+      "max_token_jaccard": 0.272727,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A courier delayed my parcel because a bridge was closed, then delivered it intact. I report no deception, theft, damage, or computer misuse."
+    },
+    {
+      "case_id": "SRB1_140",
+      "max_token_jaccard": 0.242424,
+      "nearest_source": "colab_training_input_v5/evaluation/sealed_test.jsonl",
+      "nearest_text_preview": "A seller used forged documents to convince me that a flat belonged to him and took my advance payment, although he knew the claim was false."
+    },
+    {
+      "case_id": "SRB1_141",
+      "max_token_jaccard": 0.2,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Mere boss ne meri salary se PF ka paisa deduct kiya hai, lekin government fund mein jama nahi kiya. Kya ye crime hai? Mujhe kya karna chahiye?"
+    },
+    {
+      "case_id": "SRB1_142",
+      "max_token_jaccard": 0.130435,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Kisi ne mera email password chura kar mere naam se login kiya aur mere account se contacts ko messages bheje. Login history mein alag device dikh raha hai; maine use access nahi diya."
+    },
+    {
+      "case_id": "SRB1_143",
+      "max_token_jaccard": 0.15,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "Office software ka purana source code kisi ne badal diya, lekin mujhe nahi pata kisne kiya ya kya is code ko kanoon ke tahat sambhal kar rakhna zaroori tha."
+    },
+    {
+      "case_id": "SRB1_144",
+      "max_token_jaccard": 0.157895,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "Mere boss ne meri salary se PF ka paisa deduct kiya hai, lekin government fund mein jama nahi kiya. Kya ye crime hai? Mujhe kya karna chahiye?"
+    },
+    {
+      "case_id": "SRB1_145",
+      "max_token_jaccard": 0.153846,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "Office software ka purana source code kisi ne badal diya, lekin mujhe nahi pata kisne kiya ya kya is code ko kanoon ke tahat sambhal kar rakhna zaroori tha."
+    },
+    {
+      "case_id": "SRB1_146",
+      "max_token_jaccard": 0.428571,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "मुझे बताया गया कि किसी ने मेरे नाम से इंटरनेट पर कुछ लिखा है, लेकिन मैंने पोस्ट नहीं देखी और मुझे नहीं पता उसमें क्या कहा गया। मैं अभी केवल दोस्त की बात दोहरा रहा हूँ और मुझे कोई धमकी सीधे नहीं मिली।"
+    },
+    {
+      "case_id": "SRB1_147",
+      "max_token_jaccard": 0.404762,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "मुझे बताया गया कि किसी ने मेरे नाम से इंटरनेट पर कुछ लिखा है, लेकिन मैंने पोस्ट नहीं देखी और मुझे नहीं पता उसमें क्या कहा गया। मैं अभी केवल दोस्त की बात दोहरा रहा हूँ और मुझे कोई धमकी सीधे नहीं मिली।"
+    },
+    {
+      "case_id": "SRB1_148",
+      "max_token_jaccard": 0.384615,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "मेरा फोन घर से निकलने के बाद नहीं मिल रहा है। शायद रास्ते में गिर गया हो या किसी ने उठा लिया हो, लेकिन मैंने किसी को लेते नहीं देखा। अभी मेरे पास केवल अंतिम स्थान का अनुमान है और कोई रिकॉर्डिंग नहीं।"
+    },
+    {
+      "case_id": "SRB1_149",
+      "max_token_jaccard": 0.268293,
+      "nearest_source": "colab_training_input_v5/complaint_only/train_sft.jsonl",
+      "nearest_text_preview": "मैं दुकान का मालिक हूँ। कल बंद करने से पहले एक ग्राहक ने काउंटर से मेरा कैमरा उठाकर अपने बैग में छिपा लिया और बिना पैसे दिए निकल गया। कैमरे में यह घटना दिखती है। मैंने उसे सामान लेने की अनुमति नहीं दी थी।"
+    },
+    {
+      "case_id": "SRB1_150",
+      "max_token_jaccard": 0.341463,
+      "nearest_source": "colab_training_input_v5/complaint_only/dev_sft.jsonl",
+      "nearest_text_preview": "मुझे बताया गया कि किसी ने मेरे नाम से इंटरनेट पर कुछ लिखा है, लेकिन मैंने पोस्ट नहीं देखी और मुझे नहीं पता उसमें क्या कहा गया। मैं अभी केवल दोस्त की बात दोहरा रहा हूँ और मुझे कोई धमकी सीधे नहीं मिली।"
+    }
+  ]
+}

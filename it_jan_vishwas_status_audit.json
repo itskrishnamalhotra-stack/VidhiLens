@@ -1,0 +1,112 @@
+{
+  "reviewed_on": "2026-09-17",
+  "reviewer": "Codex AI MeitY amendment status audit",
+  "official_amendment_url": "https://www.meity.gov.in/static/uploads/2024/03/MeitY-JVA-1.pdf",
+  "entries": [
+    {
+      "provision_id": "ITA_33",
+      "status": "in_force",
+      "current_text_source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "current_text_pdf_page": 16,
+      "current_extraction_sha256": "544bb6d63b5274b6288cdbbc1d1e36a8cac82a1a3060bb53f4904121be3b4c0c",
+      "amendment_source_id": "ITA_JAN_VISHWAS_MEITY_MEMO_2023",
+      "amendment_source_sha256": "bdfade182bf457846bb13758829108fe6cefe2442e476dc0f019e09992dda8db",
+      "effective_date": "2023-11-30",
+      "evidence": "Schedule item 32(A); surrender-of-licence penalty",
+      "text_verified_by_this_review": false,
+      "recommendable_by_this_review": false
+    },
+    {
+      "provision_id": "ITA_44",
+      "status": "in_force",
+      "current_text_source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "current_text_pdf_page": 20,
+      "current_extraction_sha256": "68222365177c4f7bcafd46f85a79812f775b2b7e0b6eb2e516c8f362a1b91b2d",
+      "amendment_source_id": "ITA_JAN_VISHWAS_MEITY_MEMO_2023",
+      "amendment_source_sha256": "bdfade182bf457846bb13758829108fe6cefe2442e476dc0f019e09992dda8db",
+      "effective_date": "2023-11-30",
+      "evidence": "Schedule item 32(B); revised information-return penalties",
+      "text_verified_by_this_review": false,
+      "recommendable_by_this_review": false
+    },
+    {
+      "provision_id": "ITA_45",
+      "status": "in_force",
+      "current_text_source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "current_text_pdf_page": 20,
+      "current_extraction_sha256": "d415ab4d7111df97fb2912c18494b6bbf19dfa901124a8f27968e395d426b02a",
+      "amendment_source_id": "ITA_JAN_VISHWAS_MEITY_MEMO_2023",
+      "amendment_source_sha256": "bdfade182bf457846bb13758829108fe6cefe2442e476dc0f019e09992dda8db",
+      "effective_date": "2023-11-30",
+      "evidence": "Schedule item 32(C); revised residual penalty",
+      "text_verified_by_this_review": false,
+      "recommendable_by_this_review": false
+    },
+    {
+      "provision_id": "ITA_46",
+      "status": "in_force",
+      "current_text_source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "current_text_pdf_page": 20,
+      "current_extraction_sha256": "102b6db73c0ab372e0abf88d6f33396be21b6a14bcacd7aa00cf9fcb665a87ce",
+      "amendment_source_id": "ITA_JAN_VISHWAS_MEITY_MEMO_2023",
+      "amendment_source_sha256": "bdfade182bf457846bb13758829108fe6cefe2442e476dc0f019e09992dda8db",
+      "effective_date": "2023-11-30",
+      "evidence": "Schedule item 32(D); adjudicating-officer amendment",
+      "text_verified_by_this_review": false,
+      "recommendable_by_this_review": false
+    },
+    {
+      "provision_id": "ITA_67C",
+      "status": "in_force",
+      "current_text_source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "current_text_pdf_page": 26,
+      "current_extraction_sha256": "e900b3c28707650ceb9fd2d9adb08f9f999a27a06f9076790b143c36581aac17",
+      "amendment_source_id": "ITA_JAN_VISHWAS_MEITY_MEMO_2023",
+      "amendment_source_sha256": "bdfade182bf457846bb13758829108fe6cefe2442e476dc0f019e09992dda8db",
+      "effective_date": "2023-11-30",
+      "evidence": "Schedule item 32(F); revised retention penalty",
+      "text_verified_by_this_review": false,
+      "recommendable_by_this_review": false
+    },
+    {
+      "provision_id": "ITA_68",
+      "status": "in_force",
+      "current_text_source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "current_text_pdf_page": 26,
+      "current_extraction_sha256": "e1bdd1ae7c88e107740b80e4cc2527a2465effc05fbc4f2391a605e2e3f47848",
+      "amendment_source_id": "ITA_JAN_VISHWAS_MEITY_MEMO_2023",
+      "amendment_source_sha256": "bdfade182bf457846bb13758829108fe6cefe2442e476dc0f019e09992dda8db",
+      "effective_date": "2023-11-30",
+      "evidence": "Schedule item 32(G); revised Controller-direction penalty",
+      "text_verified_by_this_review": false,
+      "recommendable_by_this_review": false
+    },
+    {
+      "provision_id": "ITA_72",
+      "status": "in_force",
+      "current_text_source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "current_text_pdf_page": 28,
+      "current_extraction_sha256": "32bbc5400a763be4c03eef0ae0bf937339ab0a5b831abf48b1b1f0a8e7ec0505",
+      "amendment_source_id": "ITA_JAN_VISHWAS_MEITY_MEMO_2023",
+      "amendment_source_sha256": "bdfade182bf457846bb13758829108fe6cefe2442e476dc0f019e09992dda8db",
+      "effective_date": "2023-11-30",
+      "evidence": "Schedule item 32(J); revised confidentiality penalty",
+      "text_verified_by_this_review": false,
+      "recommendable_by_this_review": false
+    },
+    {
+      "provision_id": "ITA_72A",
+      "status": "in_force",
+      "current_text_source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "current_text_pdf_page": 28,
+      "current_extraction_sha256": "2f2a756a7bf1ab108a96a16e35f480eb4aa00f343e1010b9cdd899deca0f827e",
+      "amendment_source_id": "ITA_JAN_VISHWAS_MEITY_MEMO_2023",
+      "amendment_source_sha256": "bdfade182bf457846bb13758829108fe6cefe2442e476dc0f019e09992dda8db",
+      "effective_date": "2023-11-30",
+      "evidence": "Schedule item 32(K); revised contract-disclosure penalty",
+      "text_verified_by_this_review": false,
+      "recommendable_by_this_review": false
+    }
+  ],
+  "note": "Status-only AI review of eight amended sections. No text or complaint-label approval."
+}

@@ -1,0 +1,100 @@
+{
+  "files": [
+    {
+      "key": "nariraksha",
+      "repo": "vikhram-labs/NariRaksha-1K",
+      "revision": "367e5a77a3d482d5465eff872ada31d627293ebc",
+      "remote_path": "data/train-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/vikhram-labs/NariRaksha-1K/resolve/367e5a77a3d482d5465eff872ada31d627293ebc/data/train-00000-of-00001.parquet",
+      "local_path": "external_candidates/additional_20260917/nariraksha.parquet",
+      "license": "apache-2.0",
+      "bytes": 41786,
+      "sha256": "5b917415c6268908b9200fb2f7f2e1841170923df103075fa597abcb0839ca0e",
+      "retrieved_on": "2026-09-17"
+    },
+    {
+      "key": "complaint_bns",
+      "repo": "navaneeth005/complaint-relevant-bns",
+      "revision": "ad746da10022a5fd2103e19d36f06049b7e87642",
+      "remote_path": "generated_bns_complaints_ref_format.jsonl",
+      "url": "https://huggingface.co/datasets/navaneeth005/complaint-relevant-bns/resolve/ad746da10022a5fd2103e19d36f06049b7e87642/generated_bns_complaints_ref_format.jsonl",
+      "local_path": "external_candidates/additional_20260917/complaint_bns.jsonl",
+      "license": null,
+      "bytes": 303757,
+      "sha256": "7e83a0c92ec551aa16e32932b4aafc6c53873b6e46f2f96463749cb67abc994d",
+      "retrieved_on": "2026-09-17"
+    },
+    {
+      "key": "nyaya_v3_train",
+      "repo": "NyayaLabs98/nyaya-train-v3",
+      "revision": "db1421dba11dd12b7e0f42fd5b085422da915a3c",
+      "remote_path": "train.jsonl",
+      "url": "https://huggingface.co/datasets/NyayaLabs98/nyaya-train-v3/resolve/db1421dba11dd12b7e0f42fd5b085422da915a3c/train.jsonl",
+      "local_path": "external_candidates/additional_20260917/nyaya_v3_train.jsonl",
+      "license": "apache-2.0",
+      "bytes": 71981210,
+      "sha256": "1ffc335fb5f876af712a008f53060609d3e6c540b5fe6617fca4180c38fd6494",
+      "retrieved_on": "2026-09-17"
+    },
+    {
+      "key": "nyaya_v3_val",
+      "repo": "NyayaLabs98/nyaya-train-v3",
+      "revision": "db1421dba11dd12b7e0f42fd5b085422da915a3c",
+      "remote_path": "val.jsonl",
+      "url": "https://huggingface.co/datasets/NyayaLabs98/nyaya-train-v3/resolve/db1421dba11dd12b7e0f42fd5b085422da915a3c/val.jsonl",
+      "local_path": "external_candidates/additional_20260917/nyaya_v3_val.jsonl",
+      "license": "apache-2.0",
+      "bytes": 3796831,
+      "sha256": "d996ff7591854cc5306a3112e4378fc83fdb6c3d100445534edb599953208860",
+      "retrieved_on": "2026-09-17"
+    },
+    {
+      "key": "nyaya_v3_test",
+      "repo": "NyayaLabs98/nyaya-train-v3",
+      "revision": "db1421dba11dd12b7e0f42fd5b085422da915a3c",
+      "remote_path": "test.jsonl",
+      "url": "https://huggingface.co/datasets/NyayaLabs98/nyaya-train-v3/resolve/db1421dba11dd12b7e0f42fd5b085422da915a3c/test.jsonl",
+      "local_path": "external_candidates/additional_20260917/nyaya_v3_test.jsonl",
+      "license": "apache-2.0",
+      "bytes": 12551895,
+      "sha256": "fa1910a8be287b06419830e4d6a7a07f428d35796e9e45250118d511a2ec3f92",
+      "retrieved_on": "2026-09-17"
+    },
+    {
+      "key": "fraud_cyber",
+      "repo": "sidddd625/adaption-fraud-and-cyber-safety",
+      "revision": "6963033e41d00d6a9030fb1d24043a6ce6684250",
+      "remote_path": "data/train_0.jsonl",
+      "url": "https://huggingface.co/datasets/sidddd625/adaption-fraud-and-cyber-safety/resolve/6963033e41d00d6a9030fb1d24043a6ce6684250/data/train_0.jsonl",
+      "local_path": "external_candidates/additional_20260917/fraud_cyber.jsonl",
+      "license": [],
+      "bytes": 70136910,
+      "sha256": "da8f6f24e7d66f391317ce6949226fb35643bcec1bb6cff7fa8ed52b68bb874c",
+      "retrieved_on": "2026-09-17"
+    },
+    {
+      "key": "nyaya_statute_bns",
+      "repo": "NyayaLabs98/nyaya-statute-db",
+      "revision": "7e13be9e5f0a2c1532272fcadb6c51de992d4410",
+      "remote_path": "bns_2023.jsonl",
+      "url": "https://huggingface.co/datasets/NyayaLabs98/nyaya-statute-db/resolve/7e13be9e5f0a2c1532272fcadb6c51de992d4410/bns_2023.jsonl",
+      "local_path": "external_candidates/additional_20260917/nyaya_statute_bns.jsonl",
+      "license": "other",
+      "bytes": 533002,
+      "sha256": "2ffd66135cb512d727df2ac162ae38f8ae11636182ac764eaf4b33790ad0a467",
+      "retrieved_on": "2026-09-17"
+    },
+    {
+      "key": "nyaya_statute_it",
+      "repo": "NyayaLabs98/nyaya-statute-db",
+      "revision": "7e13be9e5f0a2c1532272fcadb6c51de992d4410",
+      "remote_path": "it_act_2000.jsonl",
+      "url": "https://huggingface.co/datasets/NyayaLabs98/nyaya-statute-db/resolve/7e13be9e5f0a2c1532272fcadb6c51de992d4410/it_act_2000.jsonl",
+      "local_path": "external_candidates/additional_20260917/nyaya_statute_it.jsonl",
+      "license": "other",
+      "bytes": 154075,
+      "sha256": "c8d35fb4ad3497a1b2be8b622cf8350446852530526b7170cb755703f8e84a36",
+      "retrieved_on": "2026-09-17"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "triage_cases": 88,
+  "json_parse_rate": 1.0,
+  "outcome_accuracy": 1.0,
+  "exact_section_set_accuracy": 0.6022727272727273,
+  "invalid_provision_ids": 0,
+  "selection_score": 0.8011363636363636,
+  "generation_version": "explicit_attention_mask_v1"
+}

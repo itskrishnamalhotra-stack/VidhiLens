@@ -1,0 +1,175 @@
+{
+  "reviewed_on": "2026-09-17",
+  "reviewer": "Codex AI PDF text and visual audit",
+  "ledger": "data_drafts\\bns_offence_review_batch01.jsonl",
+  "entries": [
+    {
+      "id": "BNS_74",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 40,
+      "extracted_text_sha256": "cd7c0268a28e6d2226f2212c9594f04f723e96293d2978442ab5d81eaef8d710",
+      "reviewed_text_sha256": "cd7c0268a28e6d2226f2212c9594f04f723e96293d2978442ab5d81eaef8d710",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF and commencement notice checked. Woman, assault or criminal force, and intent or knowledge about outrage of modesty are material. Hold suggestion until supporting complaint examples and distinction from BNS 75 and 76 are reviewed."
+    },
+    {
+      "id": "BNS_76",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 40,
+      "extracted_text_sha256": "02578ce9c9a30038533e52215b7393dcce83c7c36dc610c19a48f97ab3cd385e",
+      "reviewed_text_sha256": "02578ce9c9a30038533e52215b7393dcce83c7c36dc610c19a48f97ab3cd385e",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF and commencement notice checked. Requires assault or criminal force to a woman, or abetment, with disrobing or compelled-nudity intent. Hold suggestion until differentiated examples exist."
+    },
+    {
+      "id": "BNS_79",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 41,
+      "extracted_text_sha256": "bdc3ac7d312f72da19a7f80a47367693487c604dd2551d118a0a8fa8890a847d",
+      "reviewed_text_sha256": "8c1de533e7dd391b0a03401741b4e055fb1bece1d5cb350b722b65863ddf697e",
+      "removed_layout_artifacts": [
+        {
+          "removed_layout_line": "Of offences relating to marriage"
+        }
+      ],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF and commencement notice checked. Intent to insult modesty of a woman and the stated words, gesture, object or privacy intrusion matter. Removed next subchapter heading from extraction."
+    },
+    {
+      "id": "BNS_80",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 41,
+      "extracted_text_sha256": "70bee5a8cd95096c6d14e908e3b004688c9d95e069814ab6d3feb5ec86a75a72",
+      "reviewed_text_sha256": "70bee5a8cd95096c6d14e908e3b004688c9d95e069814ab6d3feb5ec86a75a72",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF and commencement notice checked. Marriage period, abnormal death, dowry-linked cruelty or harassment soon before death, and husband/relative relationship are material; do not infer from a generic death report."
+    },
+    {
+      "id": "BNS_85",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 42,
+      "extracted_text_sha256": "8d80b919e405d6fcc7347c9d337a43894dbf8d38143a7a7a190426e57ae469d2",
+      "reviewed_text_sha256": "8d80b919e405d6fcc7347c9d337a43894dbf8d38143a7a7a190426e57ae469d2",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF and commencement notice checked. Husband or husband-relative relationship and cruelty are essential; section 86 is source checked as the definition dependency. Complaint labels and testing are still needed."
+    },
+    {
+      "id": "BNS_86",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 42,
+      "extracted_text_sha256": "9372bcff984ed406322eae74135cd96ebebdc0bcfb271dd43a75456bb9845fd6",
+      "reviewed_text_sha256": "9372bcff984ed406322eae74135cd96ebebdc0bcfb271dd43a75456bb9845fd6",
+      "removed_layout_artifacts": [],
+      "provision_kind": "definition",
+      "legal_status": "in_force",
+      "relations": [
+        {
+          "to_provision_id": "BNS_85",
+          "relation_type": "defines",
+          "note": "BNS 86 defines cruelty for BNS 85."
+        }
+      ],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF and commencement notice checked. Defines cruelty for section 85 and is supporting text, not a standalone complaint suggestion."
+    },
+    {
+      "id": "BNS_87",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 42,
+      "extracted_text_sha256": "16bf25394945f80bd50ae87e0331cadfbad2e73ffb26c2d59b02cd59d1cf7ee5",
+      "reviewed_text_sha256": "400b0abc56640171a10403b030d0f0b9017d66431cfe8a834a81cbea2a93e0fe",
+      "removed_layout_artifacts": [
+        {
+          "removed_layout_line": "Of causing miscarriage, etc."
+        }
+      ],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF and commencement notice checked. Kidnapping, abduction or compelled movement and the specified marriage/intercourse intent or knowledge matter. Removed next subchapter heading from extraction."
+    },
+    {
+      "id": "BNS_88",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 42,
+      "extracted_text_sha256": "f1b521939d97a0216bb744a9d936d7fa0719eee5d05a8eacb118d75336b61231",
+      "reviewed_text_sha256": "f1b521939d97a0216bb744a9d936d7fa0719eee5d05a8eacb118d75336b61231",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF and commencement notice checked. Voluntary causation and the good-faith purpose of saving the woman's life are material; do not label solely from a miscarriage report."
+    },
+    {
+      "id": "BNS_89",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 42,
+      "extracted_text_sha256": "57f13b1b6d33c431f076ecfef6cc1cad1aebd57bd85e376bb73aeac33ddfc0d0",
+      "reviewed_text_sha256": "428814d479a1425f6f172eef019260e81b7c785a65d303d6d02a87902789660c",
+      "removed_layout_artifacts": [
+        {
+          "removed_layout_line": "43"
+        }
+      ],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [
+        {
+          "to_provision_id": "BNS_88",
+          "relation_type": "cross_references",
+          "note": "BNS 89 requires commission of the BNS 88 offence without the woman's consent."
+        }
+      ],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF and commencement notice checked across pages 42-43. Depends on section 88 conduct and lack of the woman's consent. Removed page number from extraction."
+    },
+    {
+      "id": "BNS_90",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 43,
+      "extracted_text_sha256": "ccf1aaa6727010fa413e91d89d45581fb5e1a985156ee0f23ffd34e1555774de",
+      "reviewed_text_sha256": "ccf1aaa6727010fa413e91d89d45581fb5e1a985156ee0f23ffd34e1555774de",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF and commencement notice checked. Requires an act intended to cause miscarriage that causes the woman's death; consent changes the subsection and punishment."
+    },
+    {
+      "id": "BNS_95",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 43,
+      "extracted_text_sha256": "ac79cce3e6c34d692ba7fda57c1a43be5c208e52c70cc640cdac391a239a466f",
+      "reviewed_text_sha256": "ac79cce3e6c34d692ba7fda57c1a43be5c208e52c70cc640cdac391a239a466f",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF and commencement notice checked. Hiring, employing or engaging a child to commit an offence is the core conduct; a child merely being present is insufficient."
+    }
+  ],
+  "note": "Source-checked for the pinned central PDF; later law changes and state amendments require separate review."
+}

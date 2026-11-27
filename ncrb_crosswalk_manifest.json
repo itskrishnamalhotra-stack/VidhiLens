@@ -1,0 +1,9 @@
+{
+  "source": "National Crime Records Bureau Sankalan corresponding section table",
+  "url": "https://www.ncrb.gov.in/uploads/SankalanPortal/SectionTableBNS.html",
+  "mha_reference_url": "https://www.mha.gov.in/MHA1/Par2017/pdfs/par2024-pdfs/RS24072024/245.pdf",
+  "retrieved_on": "2026-09-17",
+  "local_path": "sources/ncrb_sankalan_bns_ipc_2026-09-17.html",
+  "sha256": "16d042717a7163f8cffaa6011a59e810d01fe54e66278e63ca59133112c7c853",
+  "use_rule": "Correspondence is a candidate cross-reference. It does not establish identical legal elements, current applicability, or approval for converting IPC complaint labels to BNS training labels."
+}

@@ -1,0 +1,183 @@
+{
+  "tested_url": "https://stops-updated-hostel-rolled.trycloudflare.com",
+  "health": {
+    "api": "ready",
+    "database": "ready",
+    "build_id": "secure_demo_gateway_2026_09_28_chat_ux",
+    "model": {
+      "ready": true,
+      "models": [
+        "legal-complaint-lora",
+        "legalai-base"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "id": "GREETING",
+      "session_id": "ses_76fe4f3fd1a04180865bc4fe021d13c3",
+      "uid": "acceptance_greeting",
+      "elapsed_seconds": 0.365,
+      "action": "conversation",
+      "outcome": null,
+      "provisions": [],
+      "analysis_id": null,
+      "title": "New complaint",
+      "message_count": 2,
+      "has_sources": null,
+      "assistant_text": "Hi! Tell me what happened in your own words. I’ll check the reported facts against reviewed BNS and IT Act provisions, ask only for details that are missing, and help you prepare a complaint draft if a provision may apply."
+    },
+    {
+      "id": "HELP",
+      "session_id": "ses_d9bb861c591e42a5bbd27f816155fa95",
+      "uid": "acceptance_help",
+      "elapsed_seconds": 0.492,
+      "action": "conversation",
+      "outcome": null,
+      "provisions": [],
+      "analysis_id": null,
+      "title": "New complaint",
+      "message_count": 2,
+      "has_sources": null,
+      "assistant_text": "Describe what happened, when and where it happened, who or what was involved, and any payment, account, device, message, threat, witness, or evidence. You can begin with only what you know—I’ll ask a focused follow-up if something important is missing."
+    },
+    {
+      "id": "THEFT",
+      "session_id": "ses_ed5798fe6a564d40a32e4e250c406033",
+      "uid": "acceptance_theft",
+      "elapsed_seconds": 14.184,
+      "action": "offer_draft",
+      "outcome": "provision_match",
+      "provisions": [
+        "BNS_303"
+      ],
+      "analysis_id": "ana_35147c1cb98b47a2a8d04d58e7c5ae50",
+      "title": "Someone opened my bag without my permission and stole my…",
+      "message_count": 2,
+      "has_sources": true,
+      "assistant_text": "The reported facts may relate to BNS_303 (Theft). These are possible provisions for review. Would you like me to prepare a complaint draft from the facts you provided?"
+    },
+    {
+      "id": "VAGUE",
+      "session_id": "ses_048cc891da774afc99519b47470a97fb",
+      "uid": "acceptance_vague",
+      "elapsed_seconds": 26.91,
+      "action": "ask_question",
+      "outcome": "insufficient_information",
+      "provisions": [],
+      "analysis_id": "ana_3164ee22cad6427daa3d0360a48937ab",
+      "title": "My phone is gone",
+      "message_count": 2,
+      "has_sources": null,
+      "assistant_text": "Was movable property dishonestly taken or moved without the possessor's consent?"
+    },
+    {
+      "id": "OTP_FRAUD",
+      "session_id": "ses_ef933c36f3d3473d9a16b2c303f3bfcc",
+      "uid": "acceptance_otp_fraud",
+      "elapsed_seconds": 13.396,
+      "action": "offer_draft",
+      "outcome": "provision_match",
+      "provisions": [
+        "ITA_66D",
+        "BNS_319",
+        "ITA_66C"
+      ],
+      "analysis_id": "ana_130acca093264db680baae37cc80da3c",
+      "title": "A person created a fake profile pretending to be my bank…",
+      "message_count": 2,
+      "has_sources": true,
+      "assistant_text": "The reported facts may relate to ITA_66D (Punishment for cheating by personation by using computer resource), BNS_319 (Cheating by personation), ITA_66C (Punishment for identity theft). These are possible provisions for review. Would you like me to prepare a complaint draft from the facts you provided?"
+    },
+    {
+      "id": "IDENTITY_MISUSE",
+      "session_id": "ses_f16791b0d9fa4cef93f6a57ad78a3c2f",
+      "uid": "acceptance_identity_misuse",
+      "elapsed_seconds": 13.691,
+      "action": "offer_draft",
+      "outcome": "provision_match",
+      "provisions": [
+        "ITA_66C"
+      ],
+      "analysis_id": "ana_82daea6ee2f24050a5dfb8e9a8f251e5",
+      "title": "Someone obtained my password and used my online account…",
+      "message_count": 2,
+      "has_sources": true,
+      "assistant_text": "The reported facts may relate to ITA_66C (Punishment for identity theft). These are possible provisions for review. Would you like me to prepare a complaint draft from the facts you provided?"
+    },
+    {
+      "id": "OUT_OF_SCOPE",
+      "session_id": "ses_68acb410cb0848b8955dabffff6c2473",
+      "uid": "acceptance_out_of_scope",
+      "elapsed_seconds": 3.757,
+      "action": "refer_to_authorities",
+      "outcome": "out_of_scope",
+      "provisions": [],
+      "analysis_id": "ana_0203020e39ea4e48813cc431e0d30d7b",
+      "title": "What will the weather be tomorrow",
+      "message_count": 2,
+      "has_sources": null,
+      "assistant_text": "I could not identify a supported BNS or IT Act provision from the facts provided. You may contact the appropriate local authority or a qualified legal professional for guidance."
+    },
+    {
+      "id": "THREAT",
+      "session_id": "ses_d3cc1db8df214be3ba83e184a48e4bcb",
+      "uid": "acceptance_threat",
+      "elapsed_seconds": 16.191,
+      "action": "offer_draft",
+      "outcome": "provision_match",
+      "provisions": [
+        "BNS_351"
+      ],
+      "analysis_id": "ana_8cd740f538534570aa412ec0cc864c8b",
+      "title": "A person repeatedly sends messages saying they will kill…",
+      "message_count": 2,
+      "has_sources": true,
+      "assistant_text": "The reported facts may relate to BNS_351 (Criminal intimidation). These are possible provisions for review. Would you like me to prepare a complaint draft from the facts you provided?"
+    }
+  ],
+  "concurrency": {
+    "requests": 8,
+    "wall_seconds": 29.771
+  },
+  "model_latency": {
+    "count": 6,
+    "minimum_seconds": 3.757,
+    "median_seconds": 13.938,
+    "maximum_seconds": 26.91
+  },
+  "assertions": {
+    "health_api_ready": true,
+    "health_database_ready": true,
+    "model_ready": true,
+    "current_chat_ux_build": true,
+    "missing_token_rejected": true,
+    "bad_token_rejected": true,
+    "greeting_is_conversation": true,
+    "greeting_does_not_set_title": true,
+    "help_is_conversation": true,
+    "theft_matches_303": true,
+    "theft_title_is_meaningful": true,
+    "vague_is_not_confident_match": true,
+    "otp_fraud_matches": true,
+    "identity_misuse_matches_66c": true,
+    "out_of_scope_clean": true,
+    "threat_is_handled": true,
+    "all_legal_results_grounded": true,
+    "all_sessions_have_history": true,
+    "cross_user_session_blocked": true,
+    "owner_can_read_session": true,
+    "draft_created_as_preview": true,
+    "draft_edits_saved": true,
+    "legal_edits_require_reanalysis": true,
+    "draft_reanalysis_works": true,
+    "draft_confirmed_locally": true,
+    "draft_never_claims_official_filing": true,
+    "saved_draft_persists": true,
+    "saved_draft_delete_works": true,
+    "draft_cancel_works": true
+  },
+  "passed": 29,
+  "failed": [],
+  "all_passed": true
+}

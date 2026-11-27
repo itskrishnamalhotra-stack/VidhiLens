@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "purpose": "warm_vllm_quality_and_latency_gate",
+  "engine": "vllm",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "base_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "adapter_sha256": "2120aa63b63213c4fee541d91f2aa009fc21e4a9ff6282bf342d595ec3b8610c",
+  "pipeline_fingerprint": "grounded_clean_output_2026_09_27",
+  "metrics": {
+    "cases": 150,
+    "outcome_accuracy": 1.0,
+    "strict_exact_all_case_accuracy": 0.9733333333333334,
+    "strict_exact_positive_section_accuracy": 0.96,
+    "answer_key_acceptable_all_case_accuracy": 1.0,
+    "answer_key_acceptable_positive_section_accuracy": 1.0,
+    "strict_section_precision": 0.9692307692307692,
+    "required_section_recall": 1.0,
+    "strict_section_f1": 0.9843749999999999,
+    "out_of_scope_false_positive_rate": 0.0,
+    "invalid_provision_id_count": 0
+  },
+  "warm_latency": {
+    "warmup_excluded": true,
+    "minimum_seconds": 2.1576314389999425,
+    "median_seconds": 13.35161961950007,
+    "p95_seconds": 16.387663918100106,
+    "maximum_seconds": 22.110808088999875,
+    "mean_seconds": 12.536271905279994,
+    "repair_rate": 0.0
+  },
+  "established_rag_v2_2_baseline": {
+    "outcome_accuracy": 0.92,
+    "strict_exact_all_case_accuracy": 0.7066666666666667,
+    "strict_exact_positive_section_accuracy": 0.62,
+    "strict_section_precision": 0.8015267175572519,
+    "required_section_recall": 0.8333333333333334,
+    "out_of_scope_false_positive_rate": 0.0,
+    "invalid_provision_id_count": 0
+  },
+  "quality_gates": {
+    "full_150_case_comparison": true,
+    "output_structure_100_percent": true,
+    "invalid_provision_ids_not_worse": true,
+    "outcome_accuracy_not_worse": true,
+    "exact_all_case_accuracy_not_worse": true,
+    "exact_positive_accuracy_not_worse": true,
+    "precision_not_worse": true,
+    "recall_not_worse": true,
+    "out_of_scope_false_positive_not_worse": true
+  },
+  "quality_preserved_against_established_baseline": true,
+  "note": "Regression labels are AI-reviewed research labels, not lawyer-verified accuracy."
+}

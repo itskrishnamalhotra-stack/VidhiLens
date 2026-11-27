@@ -1,0 +1,36 @@
+{
+  "chosen": "complaint_only",
+  "development": {
+    "complaint_only": {
+      "triage_cases": 323,
+      "json_parse_rate": 1.0,
+      "outcome_accuracy": 1.0,
+      "exact_section_set_accuracy": 0.3219814241486068,
+      "invalid_provision_ids": 8,
+      "selection_score": 0.6609907120743034,
+      "generation_version": "explicit_attention_mask_v1"
+    },
+    "complaint_plus_bns_it_qa": {
+      "triage_cases": 323,
+      "json_parse_rate": 1.0,
+      "outcome_accuracy": 0.9969040247678018,
+      "exact_section_set_accuracy": 0.2848297213622291,
+      "invalid_provision_ids": 6,
+      "selection_score": 0.6408668730650154,
+      "generation_version": "explicit_attention_mask_v1"
+    }
+  },
+  "sealed": {
+    "triage_cases": 88,
+    "json_parse_rate": 1.0,
+    "outcome_accuracy": 1.0,
+    "exact_section_set_accuracy": 0.6022727272727273,
+    "invalid_provision_ids": 0,
+    "selection_score": 0.8011363636363636,
+    "generation_version": "explicit_attention_mask_v1"
+  },
+  "adapter": "runs/complaint_only/final_adapter.zip",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "base_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "note": "Scores measure agreement with AI-reviewed research labels, not lawyer-verified accuracy."
+}

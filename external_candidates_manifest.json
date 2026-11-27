@@ -1,0 +1,88 @@
+{
+  "files": [
+    {
+      "key": "bns_structured",
+      "repo": "GSMS-B/indian-legal-sections-bns-bnss-bsa-2023",
+      "revision": "b2680e920dc25fcc9aa504015cf0660256af2a6c",
+      "path": "bns_sections.json",
+      "license": "apache-2.0",
+      "intended_use": "statute_parse_crosscheck",
+      "url": "https://huggingface.co/datasets/GSMS-B/indian-legal-sections-bns-bnss-bsa-2023/resolve/b2680e920dc25fcc9aa504015cf0660256af2a6c/bns_sections.json",
+      "local_path": "external_candidates/bns_structured_bns_sections.json",
+      "bytes": 541754,
+      "sha256": "b7f7da21489cc1de8f49ea1137621e36485bc06b28744b21b5c3b58ae11ae400",
+      "retrieved_on": "2026-09-16",
+      "review_status": "quarantined_unreviewed"
+    },
+    {
+      "key": "bns_qa",
+      "repo": "GSMS-B/Indian-Legal-QA-BNS-BNSS-BSA",
+      "revision": "5aae2c71ef9d369df663ff32b4c73e98982c00b2",
+      "path": "bns_legal_qa.jsonl",
+      "license": "apache-2.0",
+      "intended_use": "unreviewed_qa_candidate",
+      "url": "https://huggingface.co/datasets/GSMS-B/Indian-Legal-QA-BNS-BNSS-BSA/resolve/5aae2c71ef9d369df663ff32b4c73e98982c00b2/bns_legal_qa.jsonl",
+      "local_path": "external_candidates/bns_qa_bns_legal_qa.jsonl",
+      "bytes": 1200695,
+      "sha256": "8e43ae62bf740107ee904916f79ef88c56e29f1002e7d268ad27bc676210c436",
+      "retrieved_on": "2026-09-16",
+      "review_status": "quarantined_unreviewed"
+    },
+    {
+      "key": "nyaya_train",
+      "repo": "NyayaLabs98/nyaya-train-v7-raft",
+      "revision": "d8e85637a2a80ee770fb8672b0ff4381c91ffcfc",
+      "path": "train.jsonl",
+      "license": "apache-2.0",
+      "intended_use": "unreviewed_dialogue_candidate",
+      "url": "https://huggingface.co/datasets/NyayaLabs98/nyaya-train-v7-raft/resolve/d8e85637a2a80ee770fb8672b0ff4381c91ffcfc/train.jsonl",
+      "local_path": "external_candidates/nyaya_train_train.jsonl",
+      "bytes": 18096814,
+      "sha256": "39597b420ce3e14519b677bb23342a2ba6eaa1f8664f3fe8ca9097135e6ac12d",
+      "retrieved_on": "2026-09-16",
+      "review_status": "quarantined_unreviewed"
+    },
+    {
+      "key": "nyaya_val",
+      "repo": "NyayaLabs98/nyaya-train-v7-raft",
+      "revision": "d8e85637a2a80ee770fb8672b0ff4381c91ffcfc",
+      "path": "val.jsonl",
+      "license": "apache-2.0",
+      "intended_use": "unreviewed_dialogue_candidate",
+      "url": "https://huggingface.co/datasets/NyayaLabs98/nyaya-train-v7-raft/resolve/d8e85637a2a80ee770fb8672b0ff4381c91ffcfc/val.jsonl",
+      "local_path": "external_candidates/nyaya_val_val.jsonl",
+      "bytes": 2342319,
+      "sha256": "78eff533011dd430448292f976052e6f38f141349945c481efcaf4c0bcb68881",
+      "retrieved_on": "2026-09-16",
+      "review_status": "quarantined_unreviewed"
+    },
+    {
+      "key": "nyaya_eval",
+      "repo": "NyayaLabs98/nyaya-eval-v0",
+      "revision": "e396be04640ca3449ad865c877cf21d9cd85ec2e",
+      "path": "nyaya_eval_v0.jsonl",
+      "license": "cc-by-4.0",
+      "intended_use": "external_audit_only_never_training_or_gold_test",
+      "url": "https://huggingface.co/datasets/NyayaLabs98/nyaya-eval-v0/resolve/e396be04640ca3449ad865c877cf21d9cd85ec2e/nyaya_eval_v0.jsonl",
+      "local_path": "external_candidates/nyaya_eval_nyaya_eval_v0.jsonl",
+      "bytes": 341159,
+      "sha256": "f9bd03bfe0f3de4a4b6f42e1cc091ed0488ade477b54756baaebb71f946ee849",
+      "retrieved_on": "2026-09-16",
+      "review_status": "quarantined_unreviewed"
+    },
+    {
+      "key": "statutory_triage",
+      "repo": "legalnlpresearcher/legal-statutory-triage-sft",
+      "revision": "98b942e5afe250a4163b61d80c1fadd2279580e1",
+      "path": "bns_ipc_dataset_final_dense.jsonl",
+      "license": "cc-by-4.0",
+      "intended_use": "unreviewed_triage_candidate",
+      "url": "https://huggingface.co/datasets/legalnlpresearcher/legal-statutory-triage-sft/resolve/98b942e5afe250a4163b61d80c1fadd2279580e1/bns_ipc_dataset_final_dense.jsonl",
+      "local_path": "external_candidates/statutory_triage_bns_ipc_dataset_final_dense.jsonl",
+      "bytes": 2857208,
+      "sha256": "09cccc7ad98d8f81ec6d408f9a045161d562e037bea7f30634e92ab9c8e5831b",
+      "retrieved_on": "2026-09-16",
+      "review_status": "quarantined_publisher_labels_rejected"
+    }
+  ]
+}

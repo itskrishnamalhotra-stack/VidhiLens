@@ -1,0 +1,275 @@
+{
+  "reviewed_on": "2026-09-16",
+  "reviewer": "Codex AI source audit",
+  "scope": "central Acts and pinned source snapshots; academic prototype",
+  "not_covered": "State amendments, case law, local procedure, and later legal changes require separate review before real-world deployment.",
+  "recommendable_count": 19,
+  "held_count": 1,
+  "entries": [
+    {
+      "id": "BNS_75",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 40,
+      "reviewed_text_sha256": "12eaf4178ba0c067c565835196f22fd7b1e99e021cde0191bb8dcad12dd5f227",
+      "removed_layout_artifacts": [],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "BNS_77",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 40,
+      "reviewed_text_sha256": "6da54b5655009ddf75db82b83d75ac4f6ef2bf2b960758f5cb61727d8018d186",
+      "removed_layout_artifacts": [
+        "41"
+      ],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "BNS_78",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 41,
+      "reviewed_text_sha256": "eb7b241cb59dc3437ac18a637aff6a98c554fb74a99cb97a7f4755843f728f24",
+      "removed_layout_artifacts": [],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "BNS_115",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 51,
+      "reviewed_text_sha256": "8a97614bd839fdca736d6c08df25b8ef6c0404e2a85086a0988246dab8548884",
+      "removed_layout_artifacts": [],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "BNS_117",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 51,
+      "reviewed_text_sha256": "3bbbe6878f564ed425ccf8dbfea46918d159ea5e94c6e206c15196d85df5b547",
+      "removed_layout_artifacts": [],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": "Preserve the source's wording in its illustration; no editorial correction applied."
+    },
+    {
+      "id": "BNS_303",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 88,
+      "reviewed_text_sha256": "4adccc689f0eca7166d5407b073701e2572d5ddaebd0c6d76cd7f0bf28b53699",
+      "removed_layout_artifacts": [
+        "89"
+      ],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "BNS_304",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 89,
+      "reviewed_text_sha256": "81a81eb58e515925bb6a919a338da842443640902e4265de590f2ac22757ea1d",
+      "removed_layout_artifacts": [],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "BNS_316",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 93,
+      "reviewed_text_sha256": "3fd9f80e018b190ba80ad8e5855837255d4fa70c4b56c59d41cbcee7fe5d8e35",
+      "removed_layout_artifacts": [
+        "94",
+        "95",
+        "Of receiving stolen property"
+      ],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "BNS_318",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 95,
+      "reviewed_text_sha256": "18facbf6180bdd7e37159374f2d1280bd7b2c088221ec4a948399a2284eb9788",
+      "removed_layout_artifacts": [
+        "96"
+      ],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "BNS_319",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 96,
+      "reviewed_text_sha256": "7b615361b5bd4d226dd738d5031d027c3d642ffaf0ee74b54a2aa6f797e63694",
+      "removed_layout_artifacts": [
+        "Of fraudulent deeds and dispositions of property"
+      ],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": "Preserve the source's wording in subsection (1); no editorial correction applied."
+    },
+    {
+      "id": "BNS_329",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 99,
+      "reviewed_text_sha256": "fbaf1dba9d6d399cac573bc6c68a9c70ae1f9acb751760096120eb00d47f592f",
+      "removed_layout_artifacts": [],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "BNS_351",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 106,
+      "reviewed_text_sha256": "5d5573cc08d199ef7204345044750f9ef0b6e5df2546255103788f4861e54392",
+      "removed_layout_artifacts": [
+        "107"
+      ],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "ITA_65",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 23,
+      "reviewed_text_sha256": "49bfb084175090af8fed11b30fd48053df58c8a00479be688f788d953e59eaaa",
+      "removed_layout_artifacts": [
+        "1. Subs. by 7 of 2017, s. 169, for “Cyber Appellate Tribunal” (w.e.f. 26-5-2017).",
+        "2. Subs. by notification No. S.O. 1015(E) (w.e.f. 19-9-2002).",
+        "3. Subs. by Act 10 of 2009, s. 31, for marginal heading (w.e.f. 27-10-2009).",
+        "4. Subs. by s. 31, ibid., for “penalty imposed” (w.e.f. 27-10-2009).",
+        "5. Subs. by s. 2, ibid., for “digital signature” (w.e.f. 27-10-2009).",
+        "24"
+      ],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "ITA_66",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 24,
+      "reviewed_text_sha256": "ee68975830c2693ef0a699c3993c36bffd7d63ef54b635b46efa6399412f882e",
+      "removed_layout_artifacts": [
+        "leading editorial footnote marker 1[ removed"
+      ],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": "The pinned consolidation still cites IPC sections 24 and 25; do not silently rewrite this cross-reference."
+    },
+    {
+      "id": "ITA_66B",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 24,
+      "reviewed_text_sha256": "9a9cbcb1fdeac8f7e48da2cd6d1513999824985e041b33654fdfeb9fdc1c44dd",
+      "removed_layout_artifacts": [],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "ITA_66C",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 24,
+      "reviewed_text_sha256": "f729af9d74241c617065244dd17f831eba0a8f50b3cbd87cc7a0835e0cc3054b",
+      "removed_layout_artifacts": [],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "ITA_66D",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 24,
+      "reviewed_text_sha256": "6689b623d6b90d7e0f847d393c36e2e5a252f0c08c608cd770e6b45495c145a1",
+      "removed_layout_artifacts": [],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "ITA_66E",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 24,
+      "reviewed_text_sha256": "3237251471cc16dbacbefa17f2d510bff794cd8474ea78da1501819d62faa73a",
+      "removed_layout_artifacts": [
+        "1. Subs. by Act 10 of 2009, s. 32, for sections 66 and 67 (w.e.f. 27-10-2009).",
+        "2. Section 66A has been struck down by supreme Court’s Order dated 24-3-2015 in the Shreya Singhal Vs. Union of India, AIR",
+        "2015 SC. 1523.",
+        "25"
+      ],
+      "status": "needs_authoritative_text_reconciliation",
+      "recommendable": false,
+      "note": "Pinned India Code consolidation prints 'public area' in Explanation (c); other official reproductions print 'pubic area'. Keep this section out of recommendations pending authoritative reconciliation."
+    },
+    {
+      "id": "ITA_67",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 25,
+      "reviewed_text_sha256": "7356e1c5286053eea64c00f7993b0e06fe014a39272ecb4712fbd5721f82d087",
+      "removed_layout_artifacts": [],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    },
+    {
+      "id": "ITA_67A",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 25,
+      "reviewed_text_sha256": "3a291c2864f2f23c9e04a4c5c8c959e20f4491830e61dbf87329a73f411d8d09",
+      "removed_layout_artifacts": [],
+      "status": "source_checked_for_academic_prototype",
+      "recommendable": true,
+      "note": null
+    }
+  ],
+  "support_entries": [
+    {
+      "id": "BNS_114",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 51,
+      "reviewed_text_sha256": "5f6f546687451450f13fa5bd38675e1b205d1061634399cd31469077f1465b7f",
+      "removed_layout_artifacts": [],
+      "recommendable": false
+    },
+    {
+      "id": "BNS_116",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 51,
+      "reviewed_text_sha256": "97316cfe2fe9ff15ac6d840e5552c9b8e8f3885dbcc5b697418ba3ad4034cc58",
+      "removed_layout_artifacts": [],
+      "recommendable": false
+    },
+    {
+      "id": "ITA_43",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 18,
+      "reviewed_text_sha256": "e8a62e364e66ae55d30c1258d028a73b6c79769fcb37b50953ced0c35ab8041d",
+      "removed_layout_artifacts": [
+        "1. The word “then” omitted by notification No. S.O. 1015(E) (w.e.f. 19-9-2002).",
+        "2. Subs. ibid., for “the key” (w.e.f. 19-9-2002).",
+        "3. Ins. by Act 10 of 2009, s. 19 (w.e.f. 27-10-2009).",
+        "4. The words “to a person not authorised to affix the digital signature of the subscriber” omitted by notification No. S.O.1015(E)",
+        "(w.e.f. 19-9-2002).",
+        "5. Subs. by Act 10 of 2009, s. 20, for “PENALTIES AND ADJUDICATION” (w.e.f. 27-10-2009).",
+        "6. Subs. by s. 21, ibid., for “Penalty” (w.e.f. 27-10-2009).",
+        "7. Ins. by s. 21, ibid. (w.e.f. 27-10-2009).",
+        "19",
+        "eight exact amendment footnote brackets removed"
+      ],
+      "recommendable": false
+    }
+  ]
+}

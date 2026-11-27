@@ -1,0 +1,23 @@
+{
+  "total_indexed_sections": 483,
+  "by_act": {
+    "BNS_2023": 358,
+    "ITA_2000": 125
+  },
+  "source_hashes_match": true,
+  "source_checked_text_sections": 467,
+  "recommendable_sections": 19,
+  "legal_status_counts": {
+    "in_force": 466,
+    "omitted": 16,
+    "uncertain": 1
+  },
+  "short_omitted_notices": [
+    "ITA_54",
+    "ITA_92",
+    "ITA_93"
+  ],
+  "mechanical_issue_counts": {},
+  "mechanical_issues": [],
+  "interpretation": "Mechanical checks do not verify legal text or current legal status. Only verified_text is approved for display."
+}

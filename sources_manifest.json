@@ -1,0 +1,76 @@
+{
+  "retrieved_on": "2026-09-16",
+  "sources": [
+    {
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "act_id": "BNS_2023",
+      "title": "The Bharatiya Nyaya Sanhita, 2023",
+      "url": "https://www.indiacode.nic.in/indiacode/bitstream/123456789/20062/1/a202345.pdf",
+      "path": "sources/bns_2023_indiacode_2025-10-06.pdf",
+      "printed_as_of": "2025-10-06",
+      "pages": 112,
+      "bytes": 896392,
+      "sha256": "ff92dcc72778944011807644b6033b1140ddbe6d7e9f82ac32fd419dae03aa86"
+    },
+    {
+      "source_id": "ITA_INDIA_CODE_SNAPSHOT_2026_09_16",
+      "act_id": "ITA_2000",
+      "title": "The Information Technology Act, 2000",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+      "path": "sources/it_act_2000_indiacode.pdf",
+      "printed_as_of": null,
+      "pages": 36,
+      "bytes": 832355,
+      "sha256": "e71725fa32e892f887308816046c42275fc855b5cbb4ee1063cdbd518f165140",
+      "note": "Historical/stale snapshot retained for comparison only. It still prints pre-Jan-Vishwas text for sections 66A and 72A. Do not use for current IT Act recommendations."
+    },
+    {
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "act_id": "ITA_2000",
+      "title": "The Information Technology Act, 2000 (India Code consolidation including Jan Vishwas 2023 changes)",
+      "url": "https://www.indiacode.nic.in/indiacode/bitstream/123456789/1999/1/A2000-21%20%281%29.pdf",
+      "path": "sources/it_act_2000_indiacode_current.pdf",
+      "printed_as_of": null,
+      "pages": 41,
+      "bytes": 462882,
+      "sha256": "45fb45419e5da89a44a06ac1e64151412d67b52e74a4f34cdd5855bcb2046e0d",
+      "note": "No printed consolidation date found. Contains Jan Vishwas 2023 changes, including 66A omission and 72A civil penalty. Cross-check against MeitY office memorandum."
+    },
+    {
+      "source_id": "ITA_JAN_VISHWAS_MEITY_MEMO_2023",
+      "act_id": "ITA_2000",
+      "title": "MeitY office memorandum and annexures on Jan Vishwas IT Act amendments",
+      "url": "https://www.meity.gov.in/static/uploads/2024/03/MeitY-JVA-1.pdf",
+      "path": "sources/it_act_jan_vishwas_2023_meity_memo.pdf",
+      "printed_as_of": "2023-11-03",
+      "pages": 20,
+      "bytes": 2301885,
+      "sha256": "bdfade182bf457846bb13758829108fe6cefe2442e476dc0f019e09992dda8db",
+      "note": "Confirms IT Act Schedule 32 amendments commenced 30 November 2023; includes amended text for 72A and omitted 66A."
+    },
+    {
+      "source_id": "BNS_COMMENCEMENT_SO_850E_2024",
+      "act_id": "BNS_2023",
+      "title": "Ministry of Home Affairs notification S.O. 850(E)",
+      "url": "https://www.mha.gov.in/sites/default/files/BhartiyaNyayaSanhita_24022024.pdf",
+      "path": "sources/bns_commencement_so_850e_2024.pdf",
+      "printed_as_of": "2024-02-23",
+      "pages": 2,
+      "bytes": 922134,
+      "sha256": "dfcd5df23fb711f2996959b13ee6ff6bd32ed38be1e1f2d1c820cbba86e2a8c9",
+      "note": "Commencement on 2024-07-01 except BNS section 106(2)."
+    },
+    {
+      "source_id": "DPDP_COMMENCEMENT_GSR_843E_2025",
+      "act_id": "ITA_2000",
+      "title": "MeitY G.S.R. 843(E), DPDP Act commencement affecting IT Act section 43A",
+      "url": "https://www.meity.gov.in/static/uploads/2025/11/c56ceae6c383460ca69577428d36828b.pdf",
+      "path": "sources/dpdp_2025_commencement_gsr_843e.pdf",
+      "printed_as_of": "2025-11-13",
+      "pages": 2,
+      "bytes": 1869005,
+      "sha256": "6df25cd8c76ac8eb18cae81835d51d51128ffbf2ed13262843395efddf0998e5",
+      "note": "Section 44(2), which would omit IT Act section 43A, commences 18 months after Gazette publication."
+    }
+  ]
+}

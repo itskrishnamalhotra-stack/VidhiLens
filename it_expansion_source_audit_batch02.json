@@ -1,0 +1,87 @@
+{
+  "reviewed_on": "2026-09-17",
+  "reviewer": "Codex AI PDF text and visual audit",
+  "source_pdf": "sources/it_act_2000_indiacode_current.pdf",
+  "status_limit": "Pinned official central consolidation; later changes still require recheck",
+  "entries": [
+    {
+      "id": "ITA_69",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 26,
+      "reviewed_text_sha256": "a4c8a4a824bbce67256562747d66c98e29bee7fe0e1144edc6b875c0438e088f",
+      "removed_layout_artifacts": [
+        {
+          "removed_layout_line": "1. Subs. by Act 18 of 2023, s. 2 and Schedule for certain words (w.e.f. 30-11-2023)."
+        },
+        {
+          "removed_layout_line": "2. Subs. by Act 10 of 2009, s. 33, for sub-section (2) (w.e.f. 27-10-2009)."
+        },
+        {
+          "removed_layout_line": "3. Subs. by s. 34, ibid., for section 69 (w.e.f. 27-10-2009)."
+        },
+        {
+          "removed_layout_line": "27"
+        },
+        {
+          "from": "3[69.",
+          "to": "69."
+        }
+      ],
+      "provision_kind": "offence",
+      "recommendable": false,
+      "note": "Official central consolidation visually checked on PDF page 26; offence applies only to failure of a specified government/agency direction or duty. Not approved for general complaint suggestions pending order, authority and workflow checks."
+    },
+    {
+      "id": "ITA_69A",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 27,
+      "reviewed_text_sha256": "6815f26572a8bd9c5fd64c951035637e88865255e21d17b4cc5d4eb55cf58839",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "recommendable": false,
+      "note": "Official central consolidation visually checked on PDF page 27; offence applies only to failure of a specified government/agency direction or duty. Not approved for general complaint suggestions pending order, authority and workflow checks."
+    },
+    {
+      "id": "ITA_69B",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 27,
+      "reviewed_text_sha256": "f437211c8790b5f9d28565b225f56d5045c9e20256b81d26bb65f2f875e6a672",
+      "removed_layout_artifacts": [
+        {
+          "from": "1[one year or shall be liable to fine",
+          "to": "one year or shall be liable to fine"
+        },
+        {
+          "from": "rupees, or with both].",
+          "to": "rupees, or with both."
+        },
+        {
+          "from": "any other information.]",
+          "to": "any other information."
+        }
+      ],
+      "provision_kind": "offence",
+      "recommendable": false,
+      "note": "Official central consolidation visually checked on PDF page 27; offence applies only to failure of a specified government/agency direction or duty. Not approved for general complaint suggestions pending order, authority and workflow checks. Preserve printed 'which any extend' wording; no editorial correction."
+    },
+    {
+      "id": "ITA_70B",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 28,
+      "reviewed_text_sha256": "f94d1b2601b6d24cfdb240e400c23f9f54ca7db50873d10ab8462710e823da9b",
+      "removed_layout_artifacts": [
+        {
+          "from": "1[one crore]",
+          "to": "one crore"
+        },
+        {
+          "from": "sub-section (1).]",
+          "to": "sub-section (1)."
+        }
+      ],
+      "provision_kind": "offence",
+      "recommendable": false,
+      "note": "Official central consolidation visually checked on PDF page 28; offence applies only to failure of a specified government/agency direction or duty. Not approved for general complaint suggestions pending order, authority and workflow checks. Subsection (8) restricts court cognizance to an authorised officer complaint."
+    }
+  ]
+}

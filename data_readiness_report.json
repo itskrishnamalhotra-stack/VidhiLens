@@ -1,0 +1,303 @@
+{
+  "as_of": "2026-09-18",
+  "law_database": {
+    "bns_entries": 358,
+    "it_act_entries": 125,
+    "verified_text": 467,
+    "recommendable": 19,
+    "pending_legal_status": 0,
+    "in_force_text_unverified": 0,
+    "priority_review_total": 20,
+    "priority_review_approved": 19,
+    "provision_kind_pending": 0,
+    "reviewed_offences_not_recommendable": 278
+  },
+  "training_examples": {
+    "all_scenarios": 3126,
+    "train_sft_records": 3049,
+    "silver_train_rows": 2760,
+    "silver_fact_pattern_families": 115,
+    "dev_sft_records": 35,
+    "train_sft_target": 3000,
+    "accepted_by_split": {
+      "dev": 35,
+      "sealed_test": 80,
+      "train": 3007
+    },
+    "accepted_by_outcome": {
+      "insufficient_information": 443,
+      "out_of_scope": 296,
+      "provision_match": 2383
+    },
+    "accepted_by_review_tier": {
+      "ai_reviewed": 362,
+      "silver": 2760
+    },
+    "scenarios_with_any_label": 2837,
+    "possible_label_rows": 2510,
+    "structured_fact_rows": 49,
+    "conversation_actions": {
+      "ask_followup": 12,
+      "cancel_draft": 3,
+      "confirm_draft": 5,
+      "draft": 8,
+      "edit_draft": 5,
+      "explain_uncertainty": 4,
+      "offer_draft": 8,
+      "refer_to_authorities": 5,
+      "suggest_provisions": 3
+    },
+    "train_conversation_actions": {
+      "ask_followup": 12,
+      "cancel_draft": 3,
+      "confirm_draft": 3,
+      "draft": 6,
+      "edit_draft": 3,
+      "explain_uncertainty": 3,
+      "offer_draft": 6,
+      "refer_to_authorities": 3,
+      "suggest_provisions": 3
+    },
+    "languages": {
+      "en": 3064,
+      "hi": 22,
+      "hi-Latn": 36
+    },
+    "positive_coverage_by_recommendable_section": [
+      {
+        "provision_id": "BNS_115",
+        "train": 129,
+        "dev": 1,
+        "sealed_test": 2
+      },
+      {
+        "provision_id": "BNS_117",
+        "train": 126,
+        "dev": 1,
+        "sealed_test": 2
+      },
+      {
+        "provision_id": "BNS_303",
+        "train": 131,
+        "dev": 1,
+        "sealed_test": 3
+      },
+      {
+        "provision_id": "BNS_304",
+        "train": 130,
+        "dev": 1,
+        "sealed_test": 2
+      },
+      {
+        "provision_id": "BNS_316",
+        "train": 131,
+        "dev": 1,
+        "sealed_test": 2
+      },
+      {
+        "provision_id": "BNS_318",
+        "train": 128,
+        "dev": 1,
+        "sealed_test": 3
+      },
+      {
+        "provision_id": "BNS_319",
+        "train": 249,
+        "dev": 1,
+        "sealed_test": 4
+      },
+      {
+        "provision_id": "BNS_329",
+        "train": 127,
+        "dev": 1,
+        "sealed_test": 3
+      },
+      {
+        "provision_id": "BNS_351",
+        "train": 134,
+        "dev": 1,
+        "sealed_test": 2
+      },
+      {
+        "provision_id": "BNS_75",
+        "train": 129,
+        "dev": 1,
+        "sealed_test": 3
+      },
+      {
+        "provision_id": "BNS_77",
+        "train": 127,
+        "dev": 1,
+        "sealed_test": 2
+      },
+      {
+        "provision_id": "BNS_78",
+        "train": 129,
+        "dev": 1,
+        "sealed_test": 3
+      },
+      {
+        "provision_id": "ITA_65",
+        "train": 10,
+        "dev": 1,
+        "sealed_test": 2
+      },
+      {
+        "provision_id": "ITA_66",
+        "train": 129,
+        "dev": 1,
+        "sealed_test": 2
+      },
+      {
+        "provision_id": "ITA_66B",
+        "train": 126,
+        "dev": 1,
+        "sealed_test": 2
+      },
+      {
+        "provision_id": "ITA_66C",
+        "train": 127,
+        "dev": 1,
+        "sealed_test": 3
+      },
+      {
+        "provision_id": "ITA_66D",
+        "train": 128,
+        "dev": 1,
+        "sealed_test": 2
+      },
+      {
+        "provision_id": "ITA_67",
+        "train": 127,
+        "dev": 1,
+        "sealed_test": 2
+      },
+      {
+        "provision_id": "ITA_67A",
+        "train": 127,
+        "dev": 1,
+        "sealed_test": 3
+      }
+    ],
+    "unreviewed_accepted_privacy": 0,
+    "unreviewed_accepted_labels": 0,
+    "match_without_reviewed_possible": 0,
+    "abstention_with_possible": 0,
+    "possible_label_not_recommendable": 0,
+    "split_group_leaks": 0,
+    "dataset_audit_issues": 0
+  },
+  "external_candidates": [
+    {
+      "key": "bns_structured",
+      "bytes": 541754,
+      "license": "apache-2.0",
+      "review_status": "quarantined_unreviewed",
+      "hash_valid": true
+    },
+    {
+      "key": "bns_qa",
+      "bytes": 1200695,
+      "license": "apache-2.0",
+      "review_status": "quarantined_unreviewed",
+      "hash_valid": true
+    },
+    {
+      "key": "nyaya_train",
+      "bytes": 18096814,
+      "license": "apache-2.0",
+      "review_status": "quarantined_unreviewed",
+      "hash_valid": true
+    },
+    {
+      "key": "nyaya_val",
+      "bytes": 2342319,
+      "license": "apache-2.0",
+      "review_status": "quarantined_unreviewed",
+      "hash_valid": true
+    },
+    {
+      "key": "nyaya_eval",
+      "bytes": 341159,
+      "license": "cc-by-4.0",
+      "review_status": "quarantined_unreviewed",
+      "hash_valid": true
+    },
+    {
+      "key": "statutory_triage",
+      "bytes": 2857208,
+      "license": "cc-by-4.0",
+      "review_status": "quarantined_publisher_labels_rejected",
+      "hash_valid": true
+    }
+  ],
+  "additional_candidates": [
+    {
+      "key": "nariraksha",
+      "bytes": 41786,
+      "license": "apache-2.0",
+      "indexed_rows": 1000,
+      "hash_valid": true
+    },
+    {
+      "key": "complaint_bns",
+      "bytes": 303757,
+      "license": null,
+      "indexed_rows": 325,
+      "hash_valid": true
+    },
+    {
+      "key": "nyaya_v3_train",
+      "bytes": 71981210,
+      "license": "apache-2.0",
+      "indexed_rows": 5292,
+      "hash_valid": true
+    },
+    {
+      "key": "nyaya_v3_val",
+      "bytes": 3796831,
+      "license": "apache-2.0",
+      "indexed_rows": 280,
+      "hash_valid": true
+    },
+    {
+      "key": "nyaya_v3_test",
+      "bytes": 12551895,
+      "license": "apache-2.0",
+      "indexed_rows": 857,
+      "hash_valid": true
+    },
+    {
+      "key": "fraud_cyber",
+      "bytes": 70136910,
+      "license": [],
+      "indexed_rows": 2658,
+      "hash_valid": true
+    },
+    {
+      "key": "nyaya_statute_bns",
+      "bytes": 533002,
+      "license": "other",
+      "indexed_rows": 358,
+      "hash_valid": true
+    },
+    {
+      "key": "nyaya_statute_it",
+      "bytes": 154075,
+      "license": "other",
+      "indexed_rows": 122,
+      "hash_valid": true
+    }
+  ],
+  "candidate_inventory": {
+    "original_indexed_rows": 6681,
+    "additional_indexed_rows": 10892,
+    "total_indexed_rows": 17573,
+    "additional_training_approved": 0
+  },
+  "ready_for_final_colab_training": false,
+  "blockers": [
+    "Full-act complaint coverage incomplete: 278 classified in-force offences still lack recommendation/evaluation approval"
+  ],
+  "note": "The 3,000 SFT row target includes 2,760 silver synthetic actor/report-frame variants from 115 families. They were family-reviewed and mechanically audited, not independently legal-reviewed row by row; row count is not model-quality evidence. The Nyaya v3 case review accepted 24 further rows and held four. Other raw external rows and publisher labels are not training truth. Full-act readiness requires more than passing a 19-section pilot count."
+}

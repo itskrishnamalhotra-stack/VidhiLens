@@ -1,0 +1,118 @@
+{
+  "reviewed_on": "2026-09-17",
+  "reviewer": "Codex AI PDF text and visual audit",
+  "ledger": "data_drafts\\bns_offence_review_batch02.jsonl",
+  "entries": [
+    {
+      "id": "BNS_55",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 33,
+      "extracted_text_sha256": "78d0aeb1b443bb3ff744357ed7c10e68d0e7bd205a4db0620375054140437c15",
+      "reviewed_text_sha256": "629fb884d7f7281c331e29b216aed7654c1888bdc8a738255e48907531bdeb73",
+      "removed_layout_artifacts": [
+        {
+          "removed_layout_line": "34"
+        }
+      ],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF pages 33-34 and commencement notice checked. Abetment of a death/life-punishable offence, noncommission in consequence, and absence of an express alternative provision matter; the longer term additionally depends on consequent hurt. Removed only the embedded page number. Hold from suggestions pending complaint examples and exception review."
+    },
+    {
+      "id": "BNS_56",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 34,
+      "extracted_text_sha256": "b69deeea5a00d0fc5cfa17465c2046750225b01a65837e0db4355cfe20798169",
+      "reviewed_text_sha256": "b69deeea5a00d0fc5cfa17465c2046750225b01a65837e0db4355cfe20798169",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF page 34 and commencement notice checked. Applies to abetment of an imprisonment-punishable offence not committed as a consequence where no express punishment provision applies; the public-servant branch has a distinct duty condition. Hold from suggestions pending differentiated examples."
+    },
+    {
+      "id": "BNS_57",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 34,
+      "extracted_text_sha256": "9dcfd2ed9ed9b8622e524ef12524677ba859fa358c369db914a51d3bbf602163",
+      "reviewed_text_sha256": "9dcfd2ed9ed9b8622e524ef12524677ba859fa358c369db914a51d3bbf602163",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF page 34 and commencement notice checked. The statutory distinction is abetting commission by the public generally or by a number or class exceeding ten, not simply an ordinary dispute among several people. Hold from suggestions pending evidence and near-miss cases."
+    },
+    {
+      "id": "BNS_58",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 34,
+      "extracted_text_sha256": "64066fe9aaa8842b0dfbab1b5c4d54fa5e30d44b3624db0bdcd4c01433fb7bb3",
+      "reviewed_text_sha256": "64066fe9aaa8842b0dfbab1b5c4d54fa5e30d44b3624db0bdcd4c01433fb7bb3",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF page 34 and commencement notice checked. The target offence must be death/life-punishable, and knowing facilitation plus voluntary concealment or knowing false representation must be assessed. Offence-committed and not-committed branches differ. Hold from suggestions pending complaint examples."
+    },
+    {
+      "id": "BNS_59",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 34,
+      "extracted_text_sha256": "ca214586be385b9def9ba3c0cd4ab05abcb02527277d352da115130c893083ed",
+      "reviewed_text_sha256": "724eff37743831bb7d25ea16170e1d7268b36392221fd53727a52777ba552495",
+      "removed_layout_artifacts": [
+        {
+          "removed_layout_line": "35"
+        }
+      ],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF pages 34-35 and commencement notice checked. Requires a public servant with a duty to prevent the target offence plus intentional/knowing facilitation by concealment or knowing false representation. Removed only the embedded page number. Hold from suggestions pending public-servant-duty cases."
+    },
+    {
+      "id": "BNS_60",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 35,
+      "extracted_text_sha256": "da47d30d09876957150da986e7091b498f4b3330f3b6b927a4c6e6b6465f682f",
+      "reviewed_text_sha256": "a4767eb4b0ee93436145320b914913b14f0ada8d90afef4166715b98074c1cb0",
+      "removed_layout_artifacts": [
+        {
+          "removed_layout_line": "Of criminal conspiracy"
+        }
+      ],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF page 35 and commencement notice checked. Requires design to commit an imprisonment-punishable offence and concealment or knowing false representation with facilitation intent/knowledge. Removed the following subchapter heading from extraction. Hold from suggestions pending examples."
+    },
+    {
+      "id": "BNS_61",
+      "source_id": "BNS_INDIA_CODE_2025_10_06",
+      "source_pdf_page": 35,
+      "extracted_text_sha256": "d6fcd11a6f8f79d8017f6c6457cc4256912a1155d760fc3d03b781dcee6c282c",
+      "reviewed_text_sha256": "502b5a23ca50f403791bc8a26f79cf5e2055977d81078aafac710edf661978e5",
+      "removed_layout_artifacts": [
+        {
+          "removed_layout_line": "36"
+        },
+        {
+          "removed_layout_line": "Of attempt"
+        }
+      ],
+      "provision_kind": "offence",
+      "legal_status": "in_force",
+      "relations": [],
+      "recommendable": false,
+      "note": "Pinned central BNS PDF pages 35-36 and commencement notice checked. Agreement of at least two people, illegal object or illegal means, the overt-act proviso for non-offence agreements, and punishment branches need distinct fact checks. Removed only page number and next subchapter heading. Hold from suggestions pending examples and legal-element review."
+    }
+  ],
+  "note": "Source-checked for the pinned central PDF; later law changes and state amendments require separate review."
+}

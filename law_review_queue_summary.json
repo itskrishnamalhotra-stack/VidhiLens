@@ -1,0 +1,20 @@
+{
+  "pending_sections": 385,
+  "pending_legal_status": 81,
+  "in_force_text_unverified": 304,
+  "review_order_hint_counts": {
+    "1": 210,
+    "2": 4,
+    "3": 171
+  },
+  "mechanical_flag_counts": {
+    "embedded_page_number": 101,
+    "chapter_heading_lines": 30,
+    "possible_criminal_penalty_wording": 210,
+    "editorial_amendment_markers": 57,
+    "amendment_footnote_lines": 22,
+    "possible_civil_penalty_wording": 4
+  },
+  "caution": "Hints are mechanical screening only. Act-wide BNS commencement status does not verify section text, section kind, or later amendments.",
+  "output": "E:\\term paper project\\phase1\\data_drafts\\law_review_queue.jsonl"
+}

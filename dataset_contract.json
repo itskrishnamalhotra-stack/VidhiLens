@@ -1,0 +1,67 @@
+{
+  "version": "dataset-contract-2.0-2026-09-17",
+  "owner": "Krishna Malhotra",
+  "master_dataset": {
+    "path": "db/master_dataset.sqlite",
+    "training_view": "master_training_record",
+    "development_view": "master_dev_scenario",
+    "sealed_test_view": "master_sealed_test_scenario",
+    "artifact_tables": ["dataset_artifact", "dataset_artifact_blob"],
+    "rule": "One canonical SQLite file holds linked law, incidents, labels, facts, conversation examples and embedded hash-checked source artifacts. Quarantined public files are provenance only until individually approved. Never pass the whole database to a training notebook because it contains sealed test cases."
+  },
+  "scope": {
+    "acts": ["BNS_2023", "ITA_2000"],
+    "candidate_source": "recommendable_provision SQLite view",
+    "held_ids": ["ITA_66E"],
+    "blocked_ids": ["ITA_66A", "ITA_72A", "BNS_106_2"],
+    "source_audit": "priority_source_audit.json"
+  },
+  "scenario": {
+    "required_fields": ["scenario_id", "complaint_text", "language", "provenance_type", "privacy_reviewed", "quality_status", "expected_outcome", "review_tier", "scenario_group", "split", "created_on"],
+    "optional_review_fields": ["reviewer", "reviewed_on", "review_note", "source_url", "license"],
+    "expected_outcomes": ["provision_match", "insufficient_information", "out_of_scope"],
+    "review_tiers": ["ai_reviewed", "self_reviewed", "independently_reviewed", "silver"],
+    "provenance_types": ["synthetic", "public_licensed", "consented_anonymized"],
+    "splits": ["train", "dev", "sealed_test"],
+    "rule": "A scenario is an incident family. Paraphrases and translations share scenario_group and split. Silver is train only. AI-reviewed cases may enter the sealed test but must be reported as AI-labeled, not independently validated legal truth."
+  },
+  "scenario_fact": {
+    "states": ["present", "absent", "unknown", "disputed"],
+    "rule": "Evidence span must point to user-supplied text when a fact is recorded as present; unknown is never guessed."
+  },
+  "scenario_provision_label": {
+    "labels": ["possible", "unsupported", "uncertain"],
+    "rule": "Every accepted label has a rationale, named reviewer and review date. A possible label for accepted training/evaluation must be in recommendable_provision."
+  },
+  "conversation_example": {
+    "actions": ["ask_followup", "suggest_provisions", "offer_draft", "draft", "edit_draft", "confirm_draft", "cancel_draft", "explain_uncertainty", "refer_to_authorities"],
+    "rule": "Draft and edit examples carry structured tool payloads; the final local save requires explicit user confirmation."
+  },
+  "pilot_targets": {
+    "distinct_scenarios": "100 target (70 train, 15 dev, 15 held aside)",
+    "reviewed_abstentions": "at least 15",
+    "purpose": "Validate labels, retrieval and workflow before expanding. Not sufficient to claim final legal performance."
+  },
+  "final_training_targets": {
+    "distinct_reviewed_scenarios": "300 is an initial research milestone, not enough by itself to claim a properly trained full-coverage model; expand according to per-section and workflow gaps",
+    "abstention_or_out_of_scope": "at least 60",
+    "sealed_test_distinct_scenarios": "at least 80",
+    "training_variations": "500-1500, train split only and spot reviewed",
+    "minimum_positive_coverage_per_recommendable_section": "5 train and 2 sealed-test distinct incidents; this is only an inspection floor, not evidence of performance",
+    "minimum_workflow_action_coverage": "3 reviewed examples for each supported assistant action; expand further where edits, confirmation, or cancellations fail evaluation",
+    "minimum_hindi_coverage": "20 Romanized Hindi and 20 Devanagari incidents across outcomes; expand from error analysis",
+    "rule": "Before a full-coverage claim, review every intended law provision and achieve substantive positive, near-miss, abstention and conversation coverage for each relevant group. Development errors determine further data collection. No fixed row count guarantees model quality; report actual counts and held-out results."
+  },
+  "export_gate": [
+    "official law source hashes valid",
+    "only approved provision IDs in positive labels",
+    "accepted scenarios have outcome, privacy review, reviewer, date and review tier",
+    "accepted provision_match scenarios have reviewed possible labels",
+    "abstention scenarios have no possible label",
+    "no scenario_group crosses splits",
+    "no exact or near duplicate crosses splits",
+    "sealed test never used for model or prompt selection",
+    "dataset card and source/license ledger stored with versioned export",
+    "train/dev/test and KB hashes saved in Colab run manifest"
+  ]
+}

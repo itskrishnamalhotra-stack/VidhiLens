@@ -1,0 +1,40 @@
+# Generated and private project data
+/archive/
+/data/
+/data_drafts/
+/db/
+/exports/
+/external_candidates/
+/model_artifacts/
+/release_evidence/
+/review_automation/
+/runtime_backups/
+/sources/
+/tmp/
+
+# Local runtime files
+**/__pycache__/
+*.py[cod]
+*.sqlite*
+*.db
+*.safetensors
+*.zip
+*.log
+*.pem
+*.key
+*.p12
+*.pfx
+.env
+.env.*
+!.env.example
+frontend/node_modules/
+frontend/dist/
+frontend/.firebase/
+frontend/.playwright-cli/
+frontend/.vite-temp/
+frontend/.firebaserc
+
+# Credentials are never part of this repository
+*credential*.json
+*service-account*.json
+*service_account*.json

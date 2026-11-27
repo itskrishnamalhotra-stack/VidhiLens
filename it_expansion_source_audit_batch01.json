@@ -1,0 +1,137 @@
+{
+  "reviewed_on": "2026-09-17",
+  "reviewer": "Codex AI PDF text and visual audit",
+  "source_pdf": "sources/it_act_2000_indiacode_current.pdf",
+  "status_limit": "Pinned official central consolidation; later changes still require recheck",
+  "entries": [
+    {
+      "id": "ITA_66F",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 25,
+      "reviewed_text_sha256": "daa03710c0759774469530734bb8e15a06c11c9a9e5d1a5eb754b48b5da4fe0e",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "recommendable": false,
+      "note": "Official central consolidation visually checked on pages 25; not approved for complaint suggestions pending case labels and evaluation."
+    },
+    {
+      "id": "ITA_67B",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 25,
+      "reviewed_text_sha256": "3e776e8b75a7a666ebeb73bb533d0dd63224a4903af3aa599112ce9189d72a75",
+      "removed_layout_artifacts": [
+        {
+          "removed_layout_line": "26"
+        }
+      ],
+      "provision_kind": "offence",
+      "recommendable": false,
+      "note": "Official central consolidation visually checked on pages 25-26; not approved for complaint suggestions pending case labels and evaluation."
+    },
+    {
+      "id": "ITA_70",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 27,
+      "reviewed_text_sha256": "6d4782b5ab55d5befe8f9777568c9bbe36fcd32664e0ab2b52cf7a6d1916f3eb",
+      "removed_layout_artifacts": [
+        {
+          "from": "70. Protected system.–2[(1)",
+          "to": "70. Protected system.–(1)",
+          "count": 1
+        },
+        {
+          "from": "safety.]",
+          "to": "safety.",
+          "count": 1
+        },
+        {
+          "from": "3[(4)",
+          "to": "(4)",
+          "count": 1
+        },
+        {
+          "from": "system.]",
+          "to": "system.",
+          "count": 1
+        }
+      ],
+      "provision_kind": "offence",
+      "recommendable": false,
+      "note": "Official central consolidation visually checked on pages 27; not approved for complaint suggestions pending case labels and evaluation. Section 70 additionally requires a protected-system notification before application."
+    },
+    {
+      "id": "ITA_71",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 28,
+      "reviewed_text_sha256": "fed788c004c0ea3c729e051c43e39f33258321deb15149d03ab92ffd1cfc89fd",
+      "removed_layout_artifacts": [
+        {
+          "from": "2[electronic\nsignature]",
+          "to": "electronic\nsignature",
+          "count": 1
+        }
+      ],
+      "provision_kind": "offence",
+      "recommendable": false,
+      "note": "Official central consolidation visually checked on pages 28; not approved for complaint suggestions pending case labels and evaluation."
+    },
+    {
+      "id": "ITA_73",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 29,
+      "reviewed_text_sha256": "fe58ed1795b40431334454f9c94102a57e0ebc0bf0fea5017927f29d65a94fa5",
+      "removed_layout_artifacts": [
+        {
+          "from": "2[electronic signature]",
+          "to": "electronic signature",
+          "count": 3
+        }
+      ],
+      "provision_kind": "offence",
+      "recommendable": false,
+      "note": "Official central consolidation visually checked on pages 29; not approved for complaint suggestions pending case labels and evaluation."
+    },
+    {
+      "id": "ITA_74",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 29,
+      "reviewed_text_sha256": "99db3b8784d46db70dc36e83dc295e77ac8306a2cbb5e56d088c37dc6575065a",
+      "removed_layout_artifacts": [
+        {
+          "from": "2[electronic signature]",
+          "to": "electronic signature",
+          "count": 1
+        }
+      ],
+      "provision_kind": "offence",
+      "recommendable": false,
+      "note": "Official central consolidation visually checked on pages 29; not approved for complaint suggestions pending case labels and evaluation."
+    },
+    {
+      "id": "ITA_84B",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 32,
+      "reviewed_text_sha256": "3ad60e2462ab826d39c047f677b9f4e77704439ad2ff5508eebbc314c5390378",
+      "removed_layout_artifacts": [],
+      "provision_kind": "offence",
+      "recommendable": false,
+      "note": "Official central consolidation visually checked on pages 32; not approved for complaint suggestions pending case labels and evaluation."
+    },
+    {
+      "id": "ITA_84C",
+      "source_id": "ITA_INDIA_CODE_CURRENT_2026_09_16",
+      "source_pdf_page": 32,
+      "reviewed_text_sha256": "f9cbc33239efebf00b21d89a7338b9e85c9263ccc96b9afc1ba859d580ae0e8b",
+      "removed_layout_artifacts": [
+        {
+          "from": "with both.]",
+          "to": "with both.",
+          "count": 1
+        }
+      ],
+      "provision_kind": "offence",
+      "recommendable": false,
+      "note": "Official central consolidation visually checked on pages 32; not approved for complaint suggestions pending case labels and evaluation."
+    }
+  ]
+}

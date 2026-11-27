@@ -1,0 +1,2712 @@
+{
+  "schema_version": 1,
+  "rag_version": "verified_catalogue_hybrid_bm25_v2",
+  "chosen_variant": "complaint_only",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "adapter_sha256": "2120aa63b63213c4fee541d91f2aa009fc21e4a9ff6282bf342d595ec3b8610c",
+  "top_k": 8,
+  "total_test_cases": 21,
+  "completed_test_cases": 21,
+  "comparisons": [
+    {
+      "case_id": "TEST_001",
+      "category": "clear_theft",
+      "review_goal": "Check whether the model recognises an apparent theft.",
+      "complaint": "I was travelling on a crowded bus when someone opened my backpack and removed my phone without my permission. I noticed it missing immediately after getting off the bus.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_304\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_304"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "BNS_304",
+              "title": "Snatching",
+              "recommendable": true,
+              "official_text_preview": "304. Snatching.—(1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly\nor forcibly seizes or secures or grabs or takes away from any person or from his possession any movable\nproperty.\n(2) Whoever commits snatching, shall be punished with imprisonment of either description for a term\nwhich may extend to three years, and shall also be liable to fine."
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_001",
+        "category": "clear_theft",
+        "review_goal": "Check whether the model recognises an apparent theft.",
+        "complaint": "I was travelling on a crowded bus when someone opened my backpack and removed my phone without my permission. I noticed it missing immediately after getting off the bus.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_303",
+            "title": "Theft",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 48.665192
+          },
+          {
+            "provision_id": "BNS_304",
+            "title": "Snatching",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 23.411652
+          },
+          {
+            "provision_id": "BNS_305",
+            "title": "Theft in a dwelling house, or means of transportation or place of worship, etc",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 55.31422
+          },
+          {
+            "provision_id": "BNS_314",
+            "title": "Dishonest misappropriation of property",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 34.699338
+          },
+          {
+            "provision_id": "BNS_306",
+            "title": "Theft by clerk or servant of property in possession of master",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 32.219793
+          },
+          {
+            "provision_id": "BNS_307",
+            "title": "Theft after preparation made for causing death, hurt or restraint in order to committing of theft",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 31.962649
+          },
+          {
+            "provision_id": "BNS_318",
+            "title": "Cheating",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 28.70124
+          },
+          {
+            "provision_id": "BNS_349",
+            "title": "Selling goods marked with a counterfeit property mark",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 24.899494
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_303\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_303"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_002",
+      "category": "physical_injury",
+      "review_goal": "Check injury and grievous-hurt distinction.",
+      "complaint": "During an argument, my neighbour intentionally struck my arm with an iron rod. My arm was fractured, and I have hospital records and an X-ray.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_117\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_117"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "BNS_117",
+              "title": "Voluntarily causing grievous hurt",
+              "recommendable": true,
+              "official_text_preview": "117. Voluntarily causing grievous hurt.—(1) Whoever voluntarily causes hurt, if the hurt which he\nintends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is\ngrievous hurt, is said “voluntarily to cause grievous hurt”.\nExplanation.—A person is not said voluntarily to cause grievous hurt except when he both causes\ngrievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily\nto cause grievous hurt, if in"
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_002",
+        "category": "physical_injury",
+        "review_goal": "Check injury and grievous-hurt distinction.",
+        "complaint": "During an argument, my neighbour intentionally struck my arm with an iron rod. My arm was fractured, and I have hospital records and an X-ray.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_117",
+            "title": "Voluntarily causing grievous hurt",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 21.33068
+          },
+          {
+            "provision_id": "BNS_118",
+            "title": "Voluntarily causing hurt or grievous hurt by dangerous weapons or means",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 36.243422
+          },
+          {
+            "provision_id": "BNS_116",
+            "title": "Grievous hurt",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 30.079809
+          },
+          {
+            "provision_id": "BNS_311",
+            "title": "Robbery, or dacoity, with attempt to cause death or grievous hurt",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 24.758846
+          },
+          {
+            "provision_id": "BNS_119",
+            "title": "Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 23.374461
+          },
+          {
+            "provision_id": "BNS_25",
+            "title": "Act not intended and not known to be likely to cause death or grievous hurt, done by consent",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "exception",
+            "anchor_matched": false,
+            "retrieval_score": 21.020054
+          },
+          {
+            "provision_id": "BNS_120",
+            "title": "Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 20.768631
+          },
+          {
+            "provision_id": "BNS_122",
+            "title": "Voluntarily causing hurt or grievous hurt on provocation",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 19.578753
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_117\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_117"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": false
+    },
+    {
+      "case_id": "TEST_003",
+      "category": "sexual_harassment",
+      "review_goal": "Check recognition of sexual harassment facts.",
+      "complaint": "My manager repeatedly made sexual remarks about my body and asked me for sexual favours. I clearly told him to stop, and two coworkers heard him.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_75\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_75"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "BNS_75",
+              "title": "Sexual harassment",
+              "recommendable": true,
+              "official_text_preview": "75. Sexual harassment.—(1) A man committing any of the following acts:—\n(i) physical contact and advances involving unwelcome and explicit sexual overtures; or\n(ii) a demand or request for sexual favours; or\n(iii) showing pornography against the will of a woman; or\n(iv) making sexually coloured remarks,\nshall be guilty of the offence of sexual harassment.\n(2) Any man who commits the offence specified in clause (i) or clause (ii) or clause (iii) of\nsub-section (1) shall be punished with rigorous "
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_003",
+        "category": "sexual_harassment",
+        "review_goal": "Check recognition of sexual harassment facts.",
+        "complaint": "My manager repeatedly made sexual remarks about my body and asked me for sexual favours. I clearly told him to stop, and two coworkers heard him.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_75",
+            "title": "Sexual harassment",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 61.228734
+          },
+          {
+            "provision_id": "ITA_67B",
+            "title": "Punishment for publishing or transmitting of material depicting children in sexually explicit act, etc., in electronic form",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 35.205012
+          },
+          {
+            "provision_id": "ITA_67A",
+            "title": "Punishment for publishing or transmitting of material containing sexually explicit act, etc., in electronic form",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 31.28647
+          },
+          {
+            "provision_id": "BNS_68",
+            "title": "Sexual intercourse by a person in authority",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 27.732967
+          },
+          {
+            "provision_id": "ITA_67",
+            "title": "Punishment for publishing or transmitting obscene material in electronic form",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 25.689988
+          },
+          {
+            "provision_id": "BNS_63",
+            "title": "Rape",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 25.242768
+          },
+          {
+            "provision_id": "BNS_67",
+            "title": "Sexual intercourse by husband upon his wife during separation",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 23.950426
+          },
+          {
+            "provision_id": "BNS_294",
+            "title": "Sale, etc., of obscene books, etc",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 22.141271
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_75\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_75"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": false
+    },
+    {
+      "case_id": "TEST_004",
+      "category": "stalking",
+      "review_goal": "Check repeated following and unwanted contact.",
+      "complaint": "I told a man several times that I did not want any contact with him. He continues following me to work, waiting outside my house and monitoring my social-media activity.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_78\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_78"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "BNS_78",
+              "title": "Stalking",
+              "recommendable": true,
+              "official_text_preview": "78. Stalking.—(1) Any man who—\n(i) follows a woman and contacts, or attempts to contact such woman to foster personal\ninteraction repeatedly despite a clear indication of disinterest by such woman; or\n(ii) monitors the use by a woman of the internet, e-mail or any other form of electronic\ncommunication,\ncommits the offence of stalking:\nProvided that such conduct shall not amount to stalking if the man who pursued it proves that—\n(i) it was pursued for the purpose of preventing or detecting crime"
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_004",
+        "category": "stalking",
+        "review_goal": "Check repeated following and unwanted contact.",
+        "complaint": "I told a man several times that I did not want any contact with him. He continues following me to work, waiting outside my house and monitoring my social-media activity.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_78",
+            "title": "Stalking",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 67.768431
+          },
+          {
+            "provision_id": "BNS_75",
+            "title": "Sexual harassment",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 26.120847
+          },
+          {
+            "provision_id": "BNS_63",
+            "title": "Rape",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 25.362395
+          },
+          {
+            "provision_id": "ITA_13",
+            "title": "Time and place of despatch and receipt of electronic record",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "other",
+            "anchor_matched": false,
+            "retrieval_score": 21.278903
+          },
+          {
+            "provision_id": "BNS_18",
+            "title": "Accident in doing a lawful act",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "exception",
+            "anchor_matched": false,
+            "retrieval_score": 21.263952
+          },
+          {
+            "provision_id": "BNS_330",
+            "title": "House-trespass and house-breaking",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 20.298098
+          },
+          {
+            "provision_id": "BNS_81",
+            "title": "Cohabitation caused by man deceitfully inducing belief of lawful marriage",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 20.062217
+          },
+          {
+            "provision_id": "BNS_9",
+            "title": "Limit of punishment of offence made up of several offences",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "other",
+            "anchor_matched": false,
+            "retrieval_score": 18.990864
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_78\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_78"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": false
+    },
+    {
+      "case_id": "TEST_005",
+      "category": "voyeurism_privacy",
+      "review_goal": "Check physical and electronic privacy provisions.",
+      "complaint": "Someone secretly recorded me while I was changing clothes in a private changing room. I never consented to the recording, and he later sent the video to another person.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_77\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_77"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "BNS_77",
+              "title": "Voyeurism",
+              "recommendable": true,
+              "official_text_preview": "77. Voyeurism.—Whoever watches, or captures the image of a woman engaging in a private act in\ncircumstances where she would usually have the expectation of not being observed either by the\nperpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be\npunished on first conviction with imprisonment of either description for a term which shall not be less\nthan one year, but which may extend to three years, and shall also be liable to fine, and be punished o"
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_005",
+        "category": "voyeurism_privacy",
+        "review_goal": "Check physical and electronic privacy provisions.",
+        "complaint": "Someone secretly recorded me while I was changing clothes in a private changing room. I never consented to the recording, and he later sent the video to another person.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_77",
+            "title": "Voyeurism",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 43.55922
+          },
+          {
+            "provision_id": "ITA_66E",
+            "title": "Punishment for violation of privacy",
+            "recommendable": false,
+            "legal_status": "uncertain",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 63.137138
+          },
+          {
+            "provision_id": "ITA_67",
+            "title": "Punishment for publishing or transmitting obscene material in electronic form",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 2.351315
+          },
+          {
+            "provision_id": "ITA_67A",
+            "title": "Punishment for publishing or transmitting of material containing sexually explicit act, etc., in electronic form",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 2.214352
+          },
+          {
+            "provision_id": "ITA_2",
+            "title": "Definitions",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 24.704373
+          },
+          {
+            "provision_id": "ITA_15",
+            "title": "Secure electronic signature",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 21.750478
+          },
+          {
+            "provision_id": "BNS_44",
+            "title": "Right of private defence against deadly assault when there is risk of harm to innocent person",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "exception",
+            "anchor_matched": false,
+            "retrieval_score": 20.621672
+          },
+          {
+            "provision_id": "ITA_43",
+            "title": "6[Penalty and compensation] for damage to computer, computer system, etc",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "civil_penalty",
+            "anchor_matched": false,
+            "retrieval_score": 20.128807
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"ITA_66E\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "ITA_66E"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [
+            "ITA_66E"
+          ],
+          "uncertain_status_provision_ids": [
+            "ITA_66E"
+          ],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": false
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_006",
+      "category": "bank_impersonation",
+      "review_goal": "Check cyber impersonation, identity misuse and cheating.",
+      "complaint": "A person called me pretending to be an employee of my bank. He convinced me to provide an OTP and used it to transfer ₹45,000 from my account.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"ITA_66D\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "ITA_66D"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "ITA_66D",
+              "title": "Punishment for cheating by personation by using computer resource",
+              "recommendable": true,
+              "official_text_preview": "66D. Punishment for cheating by personation by using computer resource.–Whoever, by means\nof any communication device or computer resource cheats by personating, shall be punished with\nimprisonment of either description for a term which may extend to three years and shall also be liable to\nfine which may extend to one lakh rupees."
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_006",
+        "category": "bank_impersonation",
+        "review_goal": "Check cyber impersonation, identity misuse and cheating.",
+        "complaint": "A person called me pretending to be an employee of my bank. He convinced me to provide an OTP and used it to transfer ₹45,000 from my account.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "ITA_66",
+            "title": "Computer related offences",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 26.798312
+          },
+          {
+            "provision_id": "ITA_66C",
+            "title": "Punishment for identity theft",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 49.169342
+          },
+          {
+            "provision_id": "ITA_66D",
+            "title": "Punishment for cheating by personation by using computer resource",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 75.718426
+          },
+          {
+            "provision_id": "BNS_319",
+            "title": "Cheating by personation",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 41.431148
+          },
+          {
+            "provision_id": "ITA_66B",
+            "title": "Punishment for dishonestly receiving stolen computer resource or communication device",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 62.977122
+          },
+          {
+            "provision_id": "ITA_69B",
+            "title": "Power to authorise to monitor and collect traffic data or information through any computer resource for cyber security",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 52.750036
+          },
+          {
+            "provision_id": "ITA_69",
+            "title": "Power to issue directions for interception or monitoring or decryption of any information through any computer resource",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 43.064233
+          },
+          {
+            "provision_id": "ITA_43",
+            "title": "6[Penalty and compensation] for damage to computer, computer system, etc",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "civil_penalty",
+            "anchor_matched": false,
+            "retrieval_score": 39.165249
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"ITA_66\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "ITA_66"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_007",
+      "category": "fake_social_identity",
+      "review_goal": "Check online identity impersonation.",
+      "complaint": "Someone created an Instagram account using my name and photograph. They are pretending to be me and asking my friends to send money.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"ITA_66D\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "ITA_66D"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "ITA_66D",
+              "title": "Punishment for cheating by personation by using computer resource",
+              "recommendable": true,
+              "official_text_preview": "66D. Punishment for cheating by personation by using computer resource.–Whoever, by means\nof any communication device or computer resource cheats by personating, shall be punished with\nimprisonment of either description for a term which may extend to three years and shall also be liable to\nfine which may extend to one lakh rupees."
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_007",
+        "category": "fake_social_identity",
+        "review_goal": "Check online identity impersonation.",
+        "complaint": "Someone created an Instagram account using my name and photograph. They are pretending to be me and asking my friends to send money.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_319",
+            "title": "Cheating by personation",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 41.835286
+          },
+          {
+            "provision_id": "ITA_66C",
+            "title": "Punishment for identity theft",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 1.481356
+          },
+          {
+            "provision_id": "ITA_66D",
+            "title": "Punishment for cheating by personation by using computer resource",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 73.176849
+          },
+          {
+            "provision_id": "ITA_66B",
+            "title": "Punishment for dishonestly receiving stolen computer resource or communication device",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 48.863487
+          },
+          {
+            "provision_id": "ITA_69B",
+            "title": "Power to authorise to monitor and collect traffic data or information through any computer resource for cyber security",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 26.751396
+          },
+          {
+            "provision_id": "ITA_2",
+            "title": "Definitions",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 26.708702
+          },
+          {
+            "provision_id": "ITA_43",
+            "title": "6[Penalty and compensation] for damage to computer, computer system, etc",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "civil_penalty",
+            "anchor_matched": false,
+            "retrieval_score": 24.551902
+          },
+          {
+            "provision_id": "BNS_318",
+            "title": "Cheating",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 23.428223
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"ITA_66C\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "ITA_66C"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_008",
+      "category": "account_intrusion",
+      "review_goal": "Check unauthorised account access.",
+      "complaint": "Someone accessed my email account without permission, changed the password and downloaded private documents stored in it. The login history shows an unfamiliar device.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"ITA_66C\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "ITA_66C"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "ITA_66C",
+              "title": "Punishment for identity theft",
+              "recommendable": true,
+              "official_text_preview": "66C. Punishment for identity theft.–Whoever, fraudulently or dishonestly make use of the\nelectronic signature, password or any other unique identification feature of any other person, shall be\npunished with imprisonment of either description for a term which may extend to three years and shall\nalso be liable to fine which may extend to rupees one lakh."
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_008",
+        "category": "account_intrusion",
+        "review_goal": "Check unauthorised account access.",
+        "complaint": "Someone accessed my email account without permission, changed the password and downloaded private documents stored in it. The login history shows an unfamiliar device.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "ITA_43",
+            "title": "6[Penalty and compensation] for damage to computer, computer system, etc",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "civil_penalty",
+            "anchor_matched": true,
+            "retrieval_score": 50.166068
+          },
+          {
+            "provision_id": "ITA_66",
+            "title": "Computer related offences",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 33.112374
+          },
+          {
+            "provision_id": "ITA_66C",
+            "title": "Punishment for identity theft",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 56.271727
+          },
+          {
+            "provision_id": "ITA_66D",
+            "title": "Punishment for cheating by personation by using computer resource",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 34.969828
+          },
+          {
+            "provision_id": "ITA_69B",
+            "title": "Power to authorise to monitor and collect traffic data or information through any computer resource for cyber security",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 52.813528
+          },
+          {
+            "provision_id": "ITA_69A",
+            "title": "Power to issue directions for blocking for public access of any information through any computer resource",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 45.1963
+          },
+          {
+            "provision_id": "ITA_66B",
+            "title": "Punishment for dishonestly receiving stolen computer resource or communication device",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 44.006828
+          },
+          {
+            "provision_id": "BNS_73",
+            "title": "Printing or publishing any matter relating to Court proceedings without permission",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 40.727235
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"ITA_43\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "ITA_43"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [
+            "ITA_43"
+          ],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [
+            "ITA_43"
+          ],
+          "release_gate_passed": false
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_009",
+      "category": "intimate_image_distribution",
+      "review_goal": "Check non-consensual electronic distribution.",
+      "complaint": "My former partner shared my private intimate photographs in a WhatsApp group without my consent. I have screenshots showing who posted them.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_77\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_77"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "BNS_77",
+              "title": "Voyeurism",
+              "recommendable": true,
+              "official_text_preview": "77. Voyeurism.—Whoever watches, or captures the image of a woman engaging in a private act in\ncircumstances where she would usually have the expectation of not being observed either by the\nperpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be\npunished on first conviction with imprisonment of either description for a term which shall not be less\nthan one year, but which may extend to three years, and shall also be liable to fine, and be punished o"
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_009",
+        "category": "intimate_image_distribution",
+        "review_goal": "Check non-consensual electronic distribution.",
+        "complaint": "My former partner shared my private intimate photographs in a WhatsApp group without my consent. I have screenshots showing who posted them.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_77",
+            "title": "Voyeurism",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 43.158969
+          },
+          {
+            "provision_id": "ITA_66E",
+            "title": "Punishment for violation of privacy",
+            "recommendable": false,
+            "legal_status": "uncertain",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 62.299029
+          },
+          {
+            "provision_id": "ITA_67",
+            "title": "Punishment for publishing or transmitting obscene material in electronic form",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 2.716943
+          },
+          {
+            "provision_id": "ITA_67A",
+            "title": "Punishment for publishing or transmitting of material containing sexually explicit act, etc., in electronic form",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 0.955975
+          },
+          {
+            "provision_id": "ITA_72",
+            "title": "Penalty for Breach of confidentiality and privacy",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "civil_penalty",
+            "anchor_matched": false,
+            "retrieval_score": 22.694436
+          },
+          {
+            "provision_id": "BNS_44",
+            "title": "Right of private defence against deadly assault when there is risk of harm to innocent person",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "exception",
+            "anchor_matched": false,
+            "retrieval_score": 21.341967
+          },
+          {
+            "provision_id": "ITA_42",
+            "title": "Control of private key",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "procedure",
+            "anchor_matched": false,
+            "retrieval_score": 18.345338
+          },
+          {
+            "provision_id": "BNS_36",
+            "title": "Right of private defence against act of a person of unsound mind, etc",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "exception",
+            "anchor_matched": false,
+            "retrieval_score": 18.257961
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"ITA_66E\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "ITA_66E"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [
+            "ITA_66E"
+          ],
+          "uncertain_status_provision_ids": [
+            "ITA_66E"
+          ],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": false
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_010",
+      "category": "online_shopping_fraud",
+      "review_goal": "Check dishonest intention and online cheating.",
+      "complaint": "I saw an advertisement for a laptop and transferred ₹35,000 to the seller. After receiving the payment, the seller blocked me, deleted the advertisement and never delivered the laptop.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_318\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_318"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "BNS_318",
+              "title": "Cheating",
+              "recommendable": true,
+              "official_text_preview": "318. Cheating.—(1) Whoever, by deceiving any person, fraudulently or dishonestly induces the\nperson so deceived to deliver any property to any person, or to consent that any person shall retain any\nproperty, or intentionally induces the person so deceived to do or omit to do anything which he would not\ndo or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or\nharm to that person in body, mind, reputation or property, is said to cheat.\nExplanation.—A "
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_010",
+        "category": "online_shopping_fraud",
+        "review_goal": "Check dishonest intention and online cheating.",
+        "complaint": "I saw an advertisement for a laptop and transferred ₹35,000 to the seller. After receiving the payment, the seller blocked me, deleted the advertisement and never delivered the laptop.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_176",
+            "title": "Illegal payments in connection with an election",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 16.648837
+          },
+          {
+            "provision_id": "BNS_8",
+            "title": "Amount of fine, liability in default of payment of fine, etc",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "other",
+            "anchor_matched": false,
+            "retrieval_score": 16.451313
+          },
+          {
+            "provision_id": "BNS_155",
+            "title": "Receiving property taken by war or depredation mentioned in sections 153 and 154",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 15.907301
+          },
+          {
+            "provision_id": "ITA_66B",
+            "title": "Punishment for dishonestly receiving stolen computer resource or communication device",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 13.912049
+          },
+          {
+            "provision_id": "ITA_12",
+            "title": "Acknowledgment of receipt",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "procedure",
+            "anchor_matched": false,
+            "retrieval_score": 12.708064
+          },
+          {
+            "provision_id": "ITA_87",
+            "title": "Power of Central Government to make rules",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "power",
+            "anchor_matched": false,
+            "retrieval_score": 11.872561
+          },
+          {
+            "provision_id": "BNS_139",
+            "title": "Kidnapping or maiming a child for purposes of begging",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 11.497748
+          },
+          {
+            "provision_id": "BNS_335",
+            "title": "Making a false document",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 10.707586
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"insufficient_information\",\"possible_provision_ids\":[],\"uncertain_sections\":[{\"missing_facts\":\"Whether the laptop was stolen and whether the recipient knew it was stolen\",\"provision_id\":\"ITA_66B\"}]}",
+        "parsed_output": {
+          "outcome": "insufficient_information",
+          "possible_provision_ids": [],
+          "uncertain_sections": [
+            {
+              "missing_facts": "Whether the laptop was stolen and whether the recipient knew it was stolen",
+              "provision_id": "ITA_66B"
+            }
+          ]
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_011",
+      "category": "missing_information",
+      "review_goal": "The model should avoid assuming that a lost phone was stolen.",
+      "complaint": "I cannot find my phone after attending a crowded wedding. I do not know whether someone stole it or whether I accidentally left it somewhere.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"insufficient_information\",\"possible_provision_ids\":[],\"uncertain_sections\":[{\"provision_id\":\"BNS_303\",\"missing_facts\":\"whether_a_person_stole_or_dishonestly_concealed_another_person_s_phone_from_their_possession\"}]}",
+        "parsed_output": {
+          "outcome": "insufficient_information",
+          "possible_provision_ids": [],
+          "uncertain_sections": [
+            {
+              "provision_id": "BNS_303",
+              "missing_facts": "whether_a_person_stole_or_dishonestly_concealed_another_person_s_phone_from_their_possession"
+            }
+          ]
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": []
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_011",
+        "category": "missing_information",
+        "review_goal": "The model should avoid assuming that a lost phone was stolen.",
+        "complaint": "I cannot find my phone after attending a crowded wedding. I do not know whether someone stole it or whether I accidentally left it somewhere.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_303",
+            "title": "Theft",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 35.228759
+          },
+          {
+            "provision_id": "BNS_304",
+            "title": "Snatching",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 17.445965
+          },
+          {
+            "provision_id": "BNS_305",
+            "title": "Theft in a dwelling house, or means of transportation or place of worship, etc",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 13.070261
+          },
+          {
+            "provision_id": "BNS_314",
+            "title": "Dishonest misappropriation of property",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 28.702669
+          },
+          {
+            "provision_id": "BNS_306",
+            "title": "Theft by clerk or servant of property in possession of master",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 25.448812
+          },
+          {
+            "provision_id": "BNS_307",
+            "title": "Theft after preparation made for causing death, hurt or restraint in order to committing of theft",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 23.458436
+          },
+          {
+            "provision_id": "BNS_317",
+            "title": "Stolen property",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 22.963267
+          },
+          {
+            "provision_id": "BNS_35",
+            "title": "Right of private defence of body and of property",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "exception",
+            "anchor_matched": false,
+            "retrieval_score": 22.46996
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"insufficient_information\",\"possible_provision_ids\":[],\"uncertain_sections\":[{\"missing_facts\":\"Whether someone moved the phone dishonestly out of the person's possession without consent\",\"provision_id\":\"BNS_303\"}]}",
+        "parsed_output": {
+          "outcome": "insufficient_information",
+          "possible_provision_ids": [],
+          "uncertain_sections": [
+            {
+              "missing_facts": "Whether someone moved the phone dishonestly out of the person's possession without consent",
+              "provision_id": "BNS_303"
+            }
+          ]
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_012",
+      "category": "missing_information",
+      "review_goal": "The model should distinguish delay from proven fraud.",
+      "complaint": "I paid someone for a product, but it has not arrived yet. The seller says delivery is delayed. I do not know whether the seller intended to deceive me.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"insufficient_information\",\"possible_provision_ids\":[],\"uncertain_sections\":[{\"missing_facts\":\"Whether the seller knew delivery would be impossible and still represented it would happen\",\"provision_id\":\"BNS_318\"}]}",
+        "parsed_output": {
+          "outcome": "insufficient_information",
+          "possible_provision_ids": [],
+          "uncertain_sections": [
+            {
+              "missing_facts": "Whether the seller knew delivery would be impossible and still represented it would happen",
+              "provision_id": "BNS_318"
+            }
+          ]
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": []
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_012",
+        "category": "missing_information",
+        "review_goal": "The model should distinguish delay from proven fraud.",
+        "complaint": "I paid someone for a product, but it has not arrived yet. The seller says delivery is delayed. I do not know whether the seller intended to deceive me.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_26",
+            "title": "Act not intended to cause death, done by consent in good faith for person’s benefit",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "exception",
+            "anchor_matched": false,
+            "retrieval_score": 23.489905
+          },
+          {
+            "provision_id": "BNS_356",
+            "title": "Defamation",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 23.215717
+          },
+          {
+            "provision_id": "BNS_25",
+            "title": "Act not intended and not known to be likely to cause death or grievous hurt, done by consent",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "exception",
+            "anchor_matched": false,
+            "retrieval_score": 20.665004
+          },
+          {
+            "provision_id": "ITA_6A",
+            "title": "Delivery of services by service provider",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "procedure",
+            "anchor_matched": false,
+            "retrieval_score": 18.321846
+          },
+          {
+            "provision_id": "BNS_2",
+            "title": "Definitions",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 17.608491
+          },
+          {
+            "provision_id": "BNS_130",
+            "title": "Assault",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 16.768228
+          },
+          {
+            "provision_id": "BNS_318",
+            "title": "Cheating",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 16.536695
+          },
+          {
+            "provision_id": "BNS_335",
+            "title": "Making a false document",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 16.125668
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"insufficient_information\",\"possible_provision_ids\":[],\"uncertain_sections\":[{\"missing_facts\":\"Whether the seller intended to deceive the buyer before or at the time of payment\",\"provision_id\":\"BNS_318\"}]}",
+        "parsed_output": {
+          "outcome": "insufficient_information",
+          "possible_provision_ids": [],
+          "uncertain_sections": [
+            {
+              "missing_facts": "Whether the seller intended to deceive the buyer before or at the time of payment",
+              "provision_id": "BNS_318"
+            }
+          ]
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_013",
+      "category": "missing_information",
+      "review_goal": "The model should not assume hacking without supporting facts.",
+      "complaint": "My social-media password stopped working. I think someone may have hacked my account, but I have no login alert or other evidence.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"insufficient_information\",\"possible_provision_ids\":[],\"uncertain_sections\":[{\"missing_facts\":\"Evidence of unauthorized access or personation and the statutory conditions for identity theft\",\"provision_id\":\"ITA_66D\"}]}",
+        "parsed_output": {
+          "outcome": "insufficient_information",
+          "possible_provision_ids": [],
+          "uncertain_sections": [
+            {
+              "missing_facts": "Evidence of unauthorized access or personation and the statutory conditions for identity theft",
+              "provision_id": "ITA_66D"
+            }
+          ]
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": []
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_013",
+        "category": "missing_information",
+        "review_goal": "The model should not assume hacking without supporting facts.",
+        "complaint": "My social-media password stopped working. I think someone may have hacked my account, but I have no login alert or other evidence.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "ITA_43",
+            "title": "6[Penalty and compensation] for damage to computer, computer system, etc",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "civil_penalty",
+            "anchor_matched": true,
+            "retrieval_score": 50.685702
+          },
+          {
+            "provision_id": "ITA_66",
+            "title": "Computer related offences",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 36.790019
+          },
+          {
+            "provision_id": "ITA_66C",
+            "title": "Punishment for identity theft",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 57.973724
+          },
+          {
+            "provision_id": "ITA_66D",
+            "title": "Punishment for cheating by personation by using computer resource",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 28.864307
+          },
+          {
+            "provision_id": "ITA_69B",
+            "title": "Power to authorise to monitor and collect traffic data or information through any computer resource for cyber security",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 54.46256
+          },
+          {
+            "provision_id": "ITA_29",
+            "title": "Access to computers and data",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "power",
+            "anchor_matched": false,
+            "retrieval_score": 41.476362
+          },
+          {
+            "provision_id": "ITA_69A",
+            "title": "Power to issue directions for blocking for public access of any information through any computer resource",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 38.267717
+          },
+          {
+            "provision_id": "ITA_66F",
+            "title": "Punishment for cyber terrorism",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 37.941877
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"insufficient_information\",\"possible_provision_ids\":[],\"uncertain_sections\":[{\"missing_facts\":\"Evidence of dishonest or fraudulent use of another person's password or unique identification feature\",\"provision_id\":\"ITA_66C\"},{\"missing_facts\":\"Evidence of cheating by personation using a computer resource\",\"provision_id\":\"ITA_66D\"},{\"missing_facts\":\"Evidence of the specific act and intent required for section 43 and dishonest or fraudulent intent for section 66\",\"provision_id\":\"ITA_66\"}]}",
+        "parsed_output": {
+          "outcome": "insufficient_information",
+          "possible_provision_ids": [],
+          "uncertain_sections": [
+            {
+              "missing_facts": "Evidence of dishonest or fraudulent use of another person's password or unique identification feature",
+              "provision_id": "ITA_66C"
+            },
+            {
+              "missing_facts": "Evidence of cheating by personation using a computer resource",
+              "provision_id": "ITA_66D"
+            },
+            {
+              "missing_facts": "Evidence of the specific act and intent required for section 43 and dishonest or fraudulent intent for section 66",
+              "provision_id": "ITA_66"
+            }
+          ]
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_014",
+      "category": "missing_information",
+      "review_goal": "The model should request or identify missing assault facts.",
+      "complaint": "A person injured me yesterday. I have not explained how it happened, whether it was intentional, what injury occurred or whether a weapon was used.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"insufficient_information\",\"possible_provision_ids\":[],\"uncertain_sections\":[{\"provision_id\":\"BNS_115\",\"missing_facts\":\"intentional_criminal_injury_to_a_person_and_the_circumstances_of_injury_or_death\"}]}",
+        "parsed_output": {
+          "outcome": "insufficient_information",
+          "possible_provision_ids": [],
+          "uncertain_sections": [
+            {
+              "provision_id": "BNS_115",
+              "missing_facts": "intentional_criminal_injury_to_a_person_and_the_circumstances_of_injury_or_death"
+            }
+          ]
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": []
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_014",
+        "category": "missing_information",
+        "review_goal": "The model should request or identify missing assault facts.",
+        "complaint": "A person injured me yesterday. I have not explained how it happened, whether it was intentional, what injury occurred or whether a weapon was used.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_117",
+            "title": "Voluntarily causing grievous hurt",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 2.758984
+          },
+          {
+            "provision_id": "BNS_118",
+            "title": "Voluntarily causing hurt or grievous hurt by dangerous weapons or means",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 9.306904
+          },
+          {
+            "provision_id": "BNS_259",
+            "title": "Intentional omission to apprehend on part of public servant bound to apprehend",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 23.41292
+          },
+          {
+            "provision_id": "BNS_260",
+            "title": "Intentional omission to apprehend on part of public servant bound to apprehend person under sentence or lawfully committed",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 21.51857
+          },
+          {
+            "provision_id": "BNS_100",
+            "title": "Culpable homicide",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 19.7136
+          },
+          {
+            "provision_id": "BNS_2",
+            "title": "Definitions",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 19.377825
+          },
+          {
+            "provision_id": "ITA_66E",
+            "title": "Punishment for violation of privacy",
+            "recommendable": false,
+            "legal_status": "uncertain",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 19.163283
+          },
+          {
+            "provision_id": "BNS_139",
+            "title": "Kidnapping or maiming a child for purposes of begging",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 18.346844
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"insufficient_information\",\"possible_provision_ids\":[],\"uncertain_sections\":[{\"missing_facts\":\"The nature of the hurt, whether it was intentional or voluntary, and whether a dangerous weapon or means was used\",\"provision_id\":\"BNS_117\"}]}",
+        "parsed_output": {
+          "outcome": "insufficient_information",
+          "possible_provision_ids": [],
+          "uncertain_sections": [
+            {
+              "missing_facts": "The nature of the hurt, whether it was intentional or voluntary, and whether a dangerous weapon or means was used",
+              "provision_id": "BNS_117"
+            }
+          ]
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_015",
+      "category": "entrusted_property",
+      "review_goal": "Check misuse of property that was voluntarily entrusted.",
+      "complaint": "I gave my laptop to a repair-shop owner only for repairs. Instead of returning it, he sold it to another person and kept the money.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_316\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_316"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "BNS_316",
+              "title": "Criminal breach of trust",
+              "recommendable": true,
+              "official_text_preview": "316. Criminal breach of trust.—(1) Whoever, being in any manner entrusted with property, or with\nany dominion over property, dishonestly misappropriates or converts to his own use that property, or\ndishonestly uses or disposes of that property in violation of any direction of law prescribing the mode in\nwhich such trust is to be discharged, or of any legal contract, express or implied, which he has made\ntouching the discharge of such trust, or wilfully suffers any other person so to do, commits "
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_015",
+        "category": "entrusted_property",
+        "review_goal": "Check misuse of property that was voluntarily entrusted.",
+        "complaint": "I gave my laptop to a repair-shop owner only for repairs. Instead of returning it, he sold it to another person and kept the money.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_316",
+            "title": "Criminal breach of trust",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 57.330911
+          },
+          {
+            "provision_id": "BNS_314",
+            "title": "Dishonest misappropriation of property",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 30.397203
+          },
+          {
+            "provision_id": "BNS_303",
+            "title": "Theft",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 25.553007
+          },
+          {
+            "provision_id": "BNS_315",
+            "title": "Dishonest misappropriation of property possessed by deceased person at the time of his death",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 24.007727
+          },
+          {
+            "provision_id": "BNS_317",
+            "title": "Stolen property",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 23.897259
+          },
+          {
+            "provision_id": "BNS_193",
+            "title": "Liability of owner, occupier, etc., of land on which an unlawful assembly or riot takes place",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 23.676841
+          },
+          {
+            "provision_id": "BNS_318",
+            "title": "Cheating",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 19.815993
+          },
+          {
+            "provision_id": "ITA_72A",
+            "title": "5[Penalty] for disclosure of information in breach of lawful contract",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "civil_penalty",
+            "anchor_matched": false,
+            "retrieval_score": 19.77626
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_314\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_314"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [
+            "BNS_314"
+          ],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": false
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_016",
+      "category": "document_deception",
+      "review_goal": "Check deception using fabricated ownership documents.",
+      "complaint": "A man falsely claimed that he owned a flat and showed me fabricated ownership documents. I relied on those documents and paid him ₹2 lakh as an advance.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_318\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_318"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "BNS_318",
+              "title": "Cheating",
+              "recommendable": true,
+              "official_text_preview": "318. Cheating.—(1) Whoever, by deceiving any person, fraudulently or dishonestly induces the\nperson so deceived to deliver any property to any person, or to consent that any person shall retain any\nproperty, or intentionally induces the person so deceived to do or omit to do anything which he would not\ndo or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or\nharm to that person in body, mind, reputation or property, is said to cheat.\nExplanation.—A "
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_016",
+        "category": "document_deception",
+        "review_goal": "Check deception using fabricated ownership documents.",
+        "complaint": "A man falsely claimed that he owned a flat and showed me fabricated ownership documents. I relied on those documents and paid him ₹2 lakh as an advance.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_318",
+            "title": "Cheating",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 27.526981
+          },
+          {
+            "provision_id": "BNS_336",
+            "title": "Forgery",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 33.028317
+          },
+          {
+            "provision_id": "BNS_340",
+            "title": "Forged document or electronic record and using it as genuine",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 38.103013
+          },
+          {
+            "provision_id": "BNS_342",
+            "title": "Counterfeiting device or mark used for authenticating documents described in section 338, or possessing counterfeit marked material",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 33.977494
+          },
+          {
+            "provision_id": "BNS_182",
+            "title": "Making or using documents resembling currency-notes or bank-notes",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 31.860966
+          },
+          {
+            "provision_id": "BNS_335",
+            "title": "Making a false document",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 30.679913
+          },
+          {
+            "provision_id": "BNS_339",
+            "title": "Having possession of document described in section 337 or section 338, knowing it to be forged and intending to use it as genuine",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 28.345051
+          },
+          {
+            "provision_id": "ITA_65",
+            "title": "Tampering with computer source documents",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 24.287056
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_318\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_318"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": false
+    },
+    {
+      "case_id": "TEST_017",
+      "category": "threat_and_extortion",
+      "review_goal": "Check a threat demanding money even though payment was not made.",
+      "complaint": "Someone sent me messages threatening to publish private photographs unless I paid ₹50,000. I did not pay, and I saved all the messages.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_351\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_351"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "BNS_351",
+              "title": "Criminal intimidation",
+              "recommendable": true,
+              "official_text_preview": "351. Criminal intimidation.—(1) Whoever threatens another by any means, with any injury to his\nperson, reputation or property, or to the person or reputation of any one in whom that person is interested,\nwith intent to cause alarm to that person, or to cause that person to do any act which he is not legally\nbound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding\nthe execution of such threat, commits criminal intimidation.\nExplanation.—A threat "
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_017",
+        "category": "threat_and_extortion",
+        "review_goal": "Check a threat demanding money even though payment was not made.",
+        "complaint": "Someone sent me messages threatening to publish private photographs unless I paid ₹50,000. I did not pay, and I saved all the messages.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_77",
+            "title": "Voyeurism",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 43.623141
+          },
+          {
+            "provision_id": "ITA_66E",
+            "title": "Punishment for violation of privacy",
+            "recommendable": false,
+            "legal_status": "uncertain",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 59.16041
+          },
+          {
+            "provision_id": "ITA_67",
+            "title": "Punishment for publishing or transmitting obscene material in electronic form",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 4.102832
+          },
+          {
+            "provision_id": "ITA_67A",
+            "title": "Punishment for publishing or transmitting of material containing sexually explicit act, etc., in electronic form",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 0.99645
+          },
+          {
+            "provision_id": "BNS_308",
+            "title": "Extortion",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 37.973181
+          },
+          {
+            "provision_id": "BNS_351",
+            "title": "Criminal intimidation",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 32.679779
+          },
+          {
+            "provision_id": "BNS_43",
+            "title": "Commencement and continuance of right of private defence of property",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "exception",
+            "anchor_matched": false,
+            "retrieval_score": 29.69427
+          },
+          {
+            "provision_id": "BNS_35",
+            "title": "Right of private defence of body and of property",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "exception",
+            "anchor_matched": false,
+            "retrieval_score": 26.493976
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_308\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_308"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [
+            "BNS_308"
+          ],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": false
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_018",
+      "category": "multiple_possible_offences",
+      "review_goal": "Check identity misuse, impersonation and financial deception.",
+      "complaint": "A person created a fake profile using my identity, contacted my relatives while pretending to be me and convinced one relative to transfer ₹20,000.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_319\",\"ITA_66D\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_319",
+            "ITA_66D"
+          ],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": [
+            {
+              "provision_id": "BNS_319",
+              "title": "Cheating by personation",
+              "recommendable": true,
+              "official_text_preview": "319. Cheating by personation.—(1) A person is said to cheat by personation if he cheats by\npretending to be some other person, or by knowingly substituting one person for or another, or\nrepresenting that he or any other person is a person other than he or such other person really is.\nExplanation.—The offence is committed whether the individual personated is a real or imaginary\nperson.\nIllustrations.\n(a) A cheats by pretending to be a certain rich banker of the same name. A cheats by personation."
+            },
+            {
+              "provision_id": "ITA_66D",
+              "title": "Punishment for cheating by personation by using computer resource",
+              "recommendable": true,
+              "official_text_preview": "66D. Punishment for cheating by personation by using computer resource.–Whoever, by means\nof any communication device or computer resource cheats by personating, shall be punished with\nimprisonment of either description for a term which may extend to three years and shall also be liable to\nfine which may extend to one lakh rupees."
+            }
+          ]
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_018",
+        "category": "multiple_possible_offences",
+        "review_goal": "Check identity misuse, impersonation and financial deception.",
+        "complaint": "A person created a fake profile using my identity, contacted my relatives while pretending to be me and convinced one relative to transfer ₹20,000.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_319",
+            "title": "Cheating by personation",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 41.344838
+          },
+          {
+            "provision_id": "ITA_66C",
+            "title": "Punishment for identity theft",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 19.538491
+          },
+          {
+            "provision_id": "ITA_66D",
+            "title": "Punishment for cheating by personation by using computer resource",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 74.805597
+          },
+          {
+            "provision_id": "ITA_66B",
+            "title": "Punishment for dishonestly receiving stolen computer resource or communication device",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 50.939658
+          },
+          {
+            "provision_id": "ITA_69B",
+            "title": "Power to authorise to monitor and collect traffic data or information through any computer resource for cyber security",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 27.71766
+          },
+          {
+            "provision_id": "ITA_69",
+            "title": "Power to issue directions for interception or monitoring or decryption of any information through any computer resource",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 22.444331
+          },
+          {
+            "provision_id": "ITA_2",
+            "title": "Definitions",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 21.637705
+          },
+          {
+            "provision_id": "ITA_69A",
+            "title": "Power to issue directions for blocking for public access of any information through any computer resource",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 21.15236
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"provision_match\",\"possible_provision_ids\":[\"BNS_319\"],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "provision_match",
+          "possible_provision_ids": [
+            "BNS_319"
+          ],
+          "uncertain_sections": []
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_019",
+      "category": "out_of_scope",
+      "review_goal": "The model should avoid creating a criminal case from an academic dispute.",
+      "complaint": "My university gave me fewer marks than I expected in an examination, and I want the professor arrested.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"out_of_scope\",\"possible_provision_ids\":[],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "out_of_scope",
+          "possible_provision_ids": [],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": []
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_019",
+        "category": "out_of_scope",
+        "review_goal": "The model should avoid creating a criminal case from an academic dispute.",
+        "complaint": "My university gave me fewer marks than I expected in an examination, and I want the professor arrested.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "ITA_80",
+            "title": "Power of police officer and other officers to enter, search, etc",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "power",
+            "anchor_matched": false,
+            "retrieval_score": 11.447687
+          },
+          {
+            "provision_id": "BNS_77",
+            "title": "Voyeurism",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 10.436131
+          },
+          {
+            "provision_id": "ITA_15",
+            "title": "Secure electronic signature",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 10.104674
+          },
+          {
+            "provision_id": "BNS_75",
+            "title": "Sexual harassment",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 9.924579
+          },
+          {
+            "provision_id": "BNS_18",
+            "title": "Accident in doing a lawful act",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "exception",
+            "anchor_matched": false,
+            "retrieval_score": 9.513528
+          },
+          {
+            "provision_id": "BNS_122",
+            "title": "Voluntarily causing hurt or grievous hurt on provocation",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 9.428161
+          },
+          {
+            "provision_id": "BNS_64",
+            "title": "Punishment for rape",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 9.176506
+          },
+          {
+            "provision_id": "BNS_78",
+            "title": "Stalking",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 9.08442
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"insufficient_information\",\"possible_provision_ids\":[],\"uncertain_sections\":[{\"missing_facts\":\"Whether the university altered marks contrary to rules and whether that was dishonest or fraudulent conduct\",\"provision_id\":\"BNS_244\"}]}",
+        "parsed_output": {
+          "outcome": "insufficient_information",
+          "possible_provision_ids": [],
+          "uncertain_sections": [
+            {
+              "missing_facts": "Whether the university altered marks contrary to rules and whether that was dishonest or fraudulent conduct",
+              "provision_id": "BNS_244"
+            }
+          ]
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_020",
+      "category": "out_of_scope",
+      "review_goal": "The model should recognise an ordinary service complaint.",
+      "complaint": "My internet connection has been slow for three days even though I paid the monthly bill.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"out_of_scope\",\"possible_provision_ids\":[],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "out_of_scope",
+          "possible_provision_ids": [],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": []
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_020",
+        "category": "out_of_scope",
+        "review_goal": "The model should recognise an ordinary service complaint.",
+        "complaint": "My internet connection has been slow for three days even though I paid the monthly bill.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_176",
+            "title": "Illegal payments in connection with an election",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 17.221811
+          },
+          {
+            "provision_id": "BNS_335",
+            "title": "Making a false document",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 16.389544
+          },
+          {
+            "provision_id": "BNS_175",
+            "title": "False statement in connection with an election",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 13.444953
+          },
+          {
+            "provision_id": "BNS_78",
+            "title": "Stalking",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 12.782006
+          },
+          {
+            "provision_id": "BNS_185",
+            "title": "Erasure of mark denoting that stamp has been used",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 12.028817
+          },
+          {
+            "provision_id": "ITA_37",
+            "title": "Suspension of Digital Signature Certificate",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "procedure",
+            "anchor_matched": false,
+            "retrieval_score": 11.341862
+          },
+          {
+            "provision_id": "BNS_253",
+            "title": "Harbouring offender who has escaped from custody or whose apprehension has been ordered",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 10.613563
+          },
+          {
+            "provision_id": "ITA_2",
+            "title": "Definitions",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 9.111668
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"insufficient_information\",\"possible_provision_ids\":[],\"uncertain_sections\":[{\"missing_facts\":\"Whether the internet provider knowingly altered or concealed a digital signature or electronic record and intended dishonest deception or cheating.\",\"provision_id\":\"ITA_37\"}]}",
+        "parsed_output": {
+          "outcome": "insufficient_information",
+          "possible_provision_ids": [],
+          "uncertain_sections": [
+            {
+              "missing_facts": "Whether the internet provider knowingly altered or concealed a digital signature or electronic record and intended dishonest deception or cheating.",
+              "provision_id": "ITA_37"
+            }
+          ]
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": true
+    },
+    {
+      "case_id": "TEST_021",
+      "category": "civil_disagreement",
+      "review_goal": "The model should avoid inventing criminal intent.",
+      "complaint": "My landlord and I disagree about deductions from my security deposit. There were no threats, forged documents or dishonest claims when the agreement was made.",
+      "lora_only": {
+        "raw_model_output": "{\"outcome\":\"out_of_scope\",\"possible_provision_ids\":[],\"uncertain_sections\":[]}",
+        "parsed_output": {
+          "outcome": "out_of_scope",
+          "possible_provision_ids": [],
+          "uncertain_sections": []
+        },
+        "database_validation": {
+          "all_ids_exist": true,
+          "invalid_provision_ids": [],
+          "non_recommendable_provision_ids": [],
+          "matched_sections": []
+        }
+      },
+      "lora_plus_rag": {
+        "case_id": "TEST_021",
+        "category": "civil_disagreement",
+        "review_goal": "The model should avoid inventing criminal intent.",
+        "complaint": "My landlord and I disagree about deductions from my security deposit. There were no threats, forged documents or dishonest claims when the agreement was made.",
+        "retrieved_candidates": [
+          {
+            "provision_id": "BNS_308",
+            "title": "Extortion",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 33.554457
+          },
+          {
+            "provision_id": "BNS_351",
+            "title": "Criminal intimidation",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 30.032956
+          },
+          {
+            "provision_id": "BNS_318",
+            "title": "Cheating",
+            "recommendable": true,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 28.010571
+          },
+          {
+            "provision_id": "BNS_336",
+            "title": "Forgery",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 40.598041
+          },
+          {
+            "provision_id": "BNS_340",
+            "title": "Forged document or electronic record and using it as genuine",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": true,
+            "retrieval_score": 43.043407
+          },
+          {
+            "provision_id": "BNS_339",
+            "title": "Having possession of document described in section 337 or section 338, knowing it to be forged and intending to use it as genuine",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 32.696403
+          },
+          {
+            "provision_id": "BNS_335",
+            "title": "Making a false document",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "definition",
+            "anchor_matched": false,
+            "retrieval_score": 32.521061
+          },
+          {
+            "provision_id": "BNS_338",
+            "title": "Forgery of valuable security, will, etc",
+            "recommendable": false,
+            "legal_status": "in_force",
+            "provision_kind": "offence",
+            "anchor_matched": false,
+            "retrieval_score": 30.825957
+          }
+        ],
+        "raw_model_output": "{\"outcome\":\"insufficient_information\",\"possible_provision_ids\":[],\"uncertain_sections\":[{\"missing_facts\":\"Whether the landlord cheated the tenant by false pretences or deceit and whether property or consent was induced or moved by that deceit.\",\"provision_id\":\"BNS_318\"}]}",
+        "parsed_output": {
+          "outcome": "insufficient_information",
+          "possible_provision_ids": [],
+          "uncertain_sections": [
+            {
+              "missing_facts": "Whether the landlord cheated the tenant by false pretences or deceit and whether property or consent was induced or moved by that deceit.",
+              "provision_id": "BNS_318"
+            }
+          ]
+        },
+        "validation": {
+          "json_valid": true,
+          "schema_errors": [],
+          "invalid_provision_ids": [],
+          "unsupported_by_retrieval": [],
+          "non_recommendable_provision_ids": [],
+          "uncertain_status_provision_ids": [],
+          "non_offence_provision_ids": [],
+          "release_gate_passed": true
+        }
+      },
+      "outputs_differ": true
+    }
+  ]
+}
